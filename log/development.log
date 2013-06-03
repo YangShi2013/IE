@@ -2444,3 +2444,39 @@ Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-06-03 15:22:29 -0500
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-03 15:22:29 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-03 15:50:28 -0500
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 79ms (Views: 77.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-03 15:50:29 -0500
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-06-03 15:50:29 -0500
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-06-03 15:50:29 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-06-03 15:50:29 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-06-03 15:50:29 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-03 15:50:29 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-03 15:50:29 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-06-03 15:50:29 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-06-03 15:50:29 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-03 15:50:29 -0500
