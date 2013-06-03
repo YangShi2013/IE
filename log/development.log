@@ -2354,3 +2354,93 @@ Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-06-03 15:14:55 -0500
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-03 15:14:55 -0500
+
+
+Started GET "/search?name=sisley&password=[FILTERED]" for 127.0.0.1 at 2013-06-03 15:22:16 -0500
+Processing by PagesController#search as HTML
+  Parameters: {"name"=>"sisley", "password"=>"[FILTERED]"}
+Redirected to http://0.0.0.0:3000/sisley?name=sisley
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sisley?name=sisley" for 127.0.0.1 at 2013-06-03 15:22:17 -0500
+Processing by PagesController#sisley as HTML
+  Parameters: {"name"=>"sisley"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered pages/sisley.html.erb within layouts/application (14.9ms)
+Completed 200 OK in 106ms (Views: 104.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-03 15:22:17 -0500
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-06-03 15:22:17 -0500
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-06-03 15:22:17 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-06-03 15:22:17 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-06-03 15:22:17 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-03 15:22:17 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-03 15:22:17 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-06-03 15:22:17 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-06-03 15:22:17 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-03 15:22:17 -0500
+
+
+Started GET "/search?name=%E6%97%B6%E9%98%B3&password=[FILTERED]" for 127.0.0.1 at 2013-06-03 15:22:28 -0500
+Processing by PagesController#search as HTML
+  Parameters: {"name"=>"时阳", "password"=>"[FILTERED]"}
+Redirected to http://0.0.0.0:3000/student?name=%E6%97%B6%E9%98%B3&password=123
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/student?name=%E6%97%B6%E9%98%B3&password=[FILTERED]" for 127.0.0.1 at 2013-06-03 15:22:28 -0500
+Processing by PagesController#student as HTML
+  Parameters: {"name"=>"时阳", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."name" = '时阳' LIMIT 1
+  Rendered pages/student.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 7ms (Views: 4.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-06-03 15:22:28 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-03 15:22:28 -0500
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-06-03 15:22:28 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-03 15:22:28 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-06-03 15:22:28 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-03 15:22:28 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-06-03 15:22:28 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-06-03 15:22:28 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-06-03 15:22:29 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-03 15:22:29 -0500
