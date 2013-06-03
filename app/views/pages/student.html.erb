@@ -1,0 +1,25 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+</head>
+<body>
+	<br/>
+	<h1>Student Account</h1>
+	<br/>
+	<div class="container">	
+		<h5>His course:</h5>
+		<div id="courseTable">
+			<table class = "table table-striped sortable" data-provides="rowlink">
+				<tr>
+					<td><b>name</b></td>
+					<td><b>course</b></td></tr>
+					<td><%= @u.name %></td>
+					<td><%= @u.course %></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</body>
+</html>
