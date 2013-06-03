@@ -14,3 +14,18 @@
 [06/03/13 15:50:23 -0500 wireless-165-124-255-220.nuwlan.northwestern.edu (7883)] INFO : Installing ActiveRecord 4 instrumentation
 [06/03/13 15:50:23 -0500 wireless-165-124-255-220.nuwlan.northwestern.edu (7883)] INFO : Installing Rails4 Error instrumentation
 [06/03/13 15:50:23 -0500 wireless-165-124-255-220.nuwlan.northwestern.edu (7883)] INFO : Finished instrumentation
+[06/03/13 16:25:17 -0500 wireless-165-124-255-220.nuwlan.northwestern.edu (9011)] INFO : Starting the New Relic agent in "development" environment.
+[06/03/13 16:25:17 -0500 wireless-165-124-255-220.nuwlan.northwestern.edu (9011)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[06/03/13 16:25:17 -0500 wireless-165-124-255-220.nuwlan.northwestern.edu (9011)] INFO : Reading configuration from 
+[06/03/13 16:25:17 -0500 wireless-165-124-255-220.nuwlan.northwestern.edu (9011)] ERROR : Unable to read configuration file : no implicit conversion of nil into String
+[06/03/13 16:25:17 -0500 wireless-165-124-255-220.nuwlan.northwestern.edu (9011)] INFO : Disabling the Request Sampler.
+[06/03/13 16:25:17 -0500 wireless-165-124-255-220.nuwlan.northwestern.edu (9011)] INFO : Environment: development
+[06/03/13 16:25:17 -0500 wireless-165-124-255-220.nuwlan.northwestern.edu (9011)] INFO : No known dispatcher detected.
+[06/03/13 16:25:17 -0500 wireless-165-124-255-220.nuwlan.northwestern.edu (9011)] INFO : Application: development
+[06/03/13 16:25:17 -0500 wireless-165-124-255-220.nuwlan.northwestern.edu (9011)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[06/03/13 16:25:17 -0500 wireless-165-124-255-220.nuwlan.northwestern.edu (9011)] INFO : Installing Net instrumentation
+[06/03/13 16:25:17 -0500 wireless-165-124-255-220.nuwlan.northwestern.edu (9011)] INFO : Installing Rails 4 Controller instrumentation
+[06/03/13 16:25:17 -0500 wireless-165-124-255-220.nuwlan.northwestern.edu (9011)] INFO : Installing Rails 4 view instrumentation
+[06/03/13 16:25:17 -0500 wireless-165-124-255-220.nuwlan.northwestern.edu (9011)] INFO : Installing ActiveRecord 4 instrumentation
+[06/03/13 16:25:17 -0500 wireless-165-124-255-220.nuwlan.northwestern.edu (9011)] INFO : Installing Rails4 Error instrumentation
+[06/03/13 16:25:17 -0500 wireless-165-124-255-220.nuwlan.northwestern.edu (9011)] INFO : Finished instrumentation
