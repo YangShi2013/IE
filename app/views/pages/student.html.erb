@@ -9,12 +9,12 @@
 	<h1>Student Account</h1>
 	<br/>
 	<div class="container">	
-		<h5>His course:</h5>
+		<h5><%@u.name%>的课程</h5>
 		<div id="courseTable">
 			<table class = "table table-striped sortable" data-provides="rowlink">
 				<tr>
-					<td><b>name</b></td>
-					<td><b>course</b></td></tr>
+					<td><b>姓名</b></td>
+					<td><b>课程</b></td></tr>
 					<td><%= @u.name %></td>
 					<td><%= @u.course %></td>
 				</tr>
