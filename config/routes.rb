@@ -2,8 +2,11 @@ IE::Application.routes.draw do
   resources :users
   root to: 'pages#home'
   get "pages/home"
-  get "/pages/home" => "pages#home"
-  get "/pages/student" => "pages#student"
+  get "pages/home" => "pages#home"
+  get "search" => "pages#search"
+  get "student" => "pages#student"
+  get "sisley" => "pages#sisley"
+  get "create" => "users#index"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

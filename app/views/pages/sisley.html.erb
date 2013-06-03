@@ -1,0 +1,31 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+</head>
+<body>
+	<br/>
+	<h1>Student Account</h1>
+	<br/>
+	<div class="container">	
+		<h5>All people courses:</h5>
+    	<form action="create" method="get">
+			<button class="btn parkBtn">创建新人</button>
+		</form>
+		<div id="recTable">
+			<table class = "table table-striped sortable" data-provides="rowlink">
+				<tr>
+					<td><b>Name</b></td>
+					<td><b>Course</b></td></tr>
+					<% @u.each do |user| %>
+					<td><%= user.name %></td>
+					<td><%= user.course %></td>
+				</tr>
+				<% end %>
+			</table>
+		</div>
+		
+	</div>
+</body>
+</html>
