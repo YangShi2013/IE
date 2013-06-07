@@ -3,24 +3,67 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
 </head>
 <body>
-	<br/>
-	<h1>Student Account</h1>
-	<br/>
 	<div class="container">	
-		<h5><%= @u.name%>的页面</h5>
-		<%= @broadcast%>
-		<div id="courseTable">
-			<table class = "table table-striped sortable" data-provides="rowlink">
-				<tr>
-					<td><b>姓名</b></td>
-					<td><b>课程</b></td></tr>
-					<td><%= @u.name %></td>
-					<td></td>
-				</tr>
-			</table>
+		<h3><%= @u.name%>的页面</h3>
+		
+		<div id="broadcast">
+			<h5>消息发布</h5>
+			<% @broadcast.each do |broadcast| %>
+			<%= broadcast.content %>
+			<% end %>
 		</div>
-	</div>
+	</br>
+	<div id="topicTable">
+		<table class = "table table-striped sortable" data-provides="rowlink">
+			<tr>
+				<td><b>上课日期</b></td>
+				<td><b>上课时间</b></td>
+				<td><b>上课人员</b></td>
+				<td><b>课程主题</b></td>
+				<td><b>课前准备工作</b></td>
+				<td><b>课后作业</b></td>
+			</tr>
+			<% @topic.each do |user| %>
+			<td><%= user.date %></td>
+			<td><%= user.time %></td>
+			<td><%= user.people %></td>
+			<td><%= user.theme %></td>
+			<td><%= user.preparation %></td>
+			<td><%= user.homework %></td>
+		</tr>
+		<% end %>
+	</table>
+</div>
+<button class="btn parkBtn" id="checkClassTime">查看上课情况</button>
+<div>
+	<table style="display:none" id="classTimeTable" class = "table table-striped sortable" data-provides="rowlink">
+		<tr>
+			<td><b>共有课时</b></td>
+			<td><b>已上课时</b></td>
+			<td><b>剩余课时</b></td>
+			<td><b>现有VIP课时</b></td>
+			<td><b>已上VIP课时</b></td>
+			<td><b>上次上课时间</b></td>
+			<td><b>课程有效期</b></td>
+		</tr>
+		<td><%= @classTime.totalTime %></td>
+		<td><%= @classTime.takenTime %></td>
+		<td><%= @classTime.balance %></td>
+		<td><%= @classTime.VIPbalance %></td>
+		<td><%= @classTime.takenVIPTime %></td>
+		<td><%= @classTime.lastClass %></td>
+		<td><%= @classTime.validDate %></td>
+	</tr>
+</table>
+</div>
+<script>
+$('#checkClassTime').click(function() {
+$('#classTimeTable').toggle();
+});
+</script>
+</div>
 </body>
 </html>

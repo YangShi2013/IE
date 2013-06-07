@@ -21,14 +21,18 @@ class PagesController < ApplicationController
   def broadcast
     broadcast = params[:broadcast]
     Broadcast.create(:content => broadcast)
+    redirect_to :action => "sisley"
   end
   
   def student
     name = params[:name]
     password = params[:password]
     @u = User.find_by_name(name)
-    latest = Broadcast.order("created_at")
-    @broadcast = latest.take(1)
+    latestBroadcast = Broadcast.order("created_at")
+    @broadcast = latestBroadcast.take(1)
+    latestTopic = Topic.order("created_at")
+    @topic = latestTopic.take(3)
+    @classTime = Classtime.find_by_name(name)
   end
   
   def editUser

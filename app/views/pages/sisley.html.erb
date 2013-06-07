@@ -10,36 +10,24 @@
 	<br/>
 	<div class="container">	
 		
-		<p><%= @broadcast%></p>
+		<form action="broadcast" method="get">
+			<h5>发布消息</h5>
+			<input type="text" name="broadcast"></input>
+			<button class="btn parkBtn">发布</button>
+		</form>
 		
-		<h5>发布消息</h5>
-		<input type="text" name="broadcast"></input>
-		<button class="btn parkBtn" onClick="broadcast">发布</button>
-		
-    	<form action="editUser" method="get">
+		<form action="editUser" method="get">
 			<button class="btn parkBtn">编辑学生信息</button>
 		</form>
 		
-    	<form action="editClasstime" method="get">
+		<form action="editClasstime" method="get">
 			<button class="btn parkBtn">编辑学生课程信息</button>
 		</form>
 		
-    	<form action="editTopic" method="get">
+		<form action="editTopic" method="get">
 			<button class="btn parkBtn">编辑本周课程</button>
 		</form>
 		
-		<div id="recTable">
-			<table class = "table table-striped sortable" data-provides="rowlink">
-				<tr>
-					<td><b>Name</b></td>
-					<td><b>Course</b></td></tr>
-					<% @u.each do |user| %>
-					<td><%= user.name %></td>
-					<td></td>
-				</tr>
-				<% end %>
-			</table>
-		</div>
 		
 	</div>
 </body>
