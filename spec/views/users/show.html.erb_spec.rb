@@ -13,7 +13,9 @@ describe "users/show" do
       :address => "Address",
       :from => "From",
       :qq => "Qq",
-      :MSN => "Msn"
+      :MSN => "Msn",
+      :location => "Location",
+      :condition => "Condition"
     ))
   end
 
@@ -31,5 +33,7 @@ describe "users/show" do
     rendered.should match(/From/)
     rendered.should match(/Qq/)
     rendered.should match(/Msn/)
+    rendered.should match(/Location/)
+    rendered.should match(/Condition/)
   end
 end

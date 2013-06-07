@@ -12,6 +12,8 @@ class CreateUsers < ActiveRecord::Migration
       t.string :from
       t.string :qq
       t.string :MSN
+      t.string :location
+      t.string :condition
 
       t.timestamps
     end

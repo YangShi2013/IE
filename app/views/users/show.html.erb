@@ -55,6 +55,16 @@
   <%= @user.MSN %>
 </p>
 
+<p>
+  <strong>Location:</strong>
+  <%= @user.location %>
+</p>
+
+<p>
+  <strong>Condition:</strong>
+  <%= @user.condition %>
+</p>
+
 
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>

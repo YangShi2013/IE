@@ -14,6 +14,8 @@
       <th>From</th>
       <th>Qq</th>
       <th>Msn</th>
+      <th>Location</th>
+      <th>Condition</th>
       <th></th>
       <th></th>
       <th></th>
@@ -34,6 +36,8 @@
       <td><%= user.from %></td>
       <td><%= user.qq %></td>
       <td><%= user.MSN %></td>
+      <td><%= user.location %></td>
+      <td><%= user.condition %></td>
       <td><%= link_to 'Show', user %></td>
       <td><%= link_to 'Edit', edit_user_path(user) %></td>
       <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>

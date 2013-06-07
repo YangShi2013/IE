@@ -14,7 +14,9 @@ describe "users/index" do
         :address => "Address",
         :from => "From",
         :qq => "Qq",
-        :MSN => "Msn"
+        :MSN => "Msn",
+        :location => "Location",
+        :condition => "Condition"
       ),
       stub_model(User,
         :name => "Name",
@@ -27,7 +29,9 @@ describe "users/index" do
         :address => "Address",
         :from => "From",
         :qq => "Qq",
-        :MSN => "Msn"
+        :MSN => "Msn",
+        :location => "Location",
+        :condition => "Condition"
       )
     ])
   end
@@ -46,5 +50,7 @@ describe "users/index" do
     assert_select "tr>td", :text => "From".to_s, :count => 2
     assert_select "tr>td", :text => "Qq".to_s, :count => 2
     assert_select "tr>td", :text => "Msn".to_s, :count => 2
+    assert_select "tr>td", :text => "Location".to_s, :count => 2
+    assert_select "tr>td", :text => "Condition".to_s, :count => 2
   end
 end

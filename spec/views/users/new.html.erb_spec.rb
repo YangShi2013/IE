@@ -13,7 +13,9 @@ describe "users/new" do
       :address => "MyString",
       :from => "MyString",
       :qq => "MyString",
-      :MSN => "MyString"
+      :MSN => "MyString",
+      :location => "MyString",
+      :condition => "MyString"
     ).as_new_record)
   end
 
@@ -33,6 +35,8 @@ describe "users/new" do
       assert_select "input#user_from[name=?]", "user[from]"
       assert_select "input#user_qq[name=?]", "user[qq]"
       assert_select "input#user_MSN[name=?]", "user[MSN]"
+      assert_select "input#user_location[name=?]", "user[location]"
+      assert_select "input#user_condition[name=?]", "user[condition]"
     end
   end
 end
