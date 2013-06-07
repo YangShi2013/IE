@@ -1,49 +1,49 @@
 <h1>Listing users</h1>
 
 <table>
-  <thead>
-    <tr>
-      <th>Name   </th>
-      <th>Password   </th>
-      <th>Birth   </th>
-      <th>Cellnum   </th>
-      <th>Homenum   </th>
-      <th>Club</th>
-      <th>Email      </th>
-      <th>Address       </th>
-      <th>From</th>
-      <th>Qq   </th>
-      <th>Msn   </th>
-      <th>Location     </th>
-      <th>Condition    </th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Password</th>
+			<th>Birth</th>
+			<th>Cellnum</th>
+			<th>Homenum</th>
+			<th>Club</th>
+			<th>Email</th>
+			<th>Address</th>
+			<th>From</th>
+			<th>Qq</th>
+			<th>Msn</th>
+			<th>Location</th>
+			<th>Condition</th>
+			<th></th>
+			<th></th>
+			<th></th>
+		</tr>
+	</thead>
 
-  <tbody>
-    <% @users.each do |user| %>
-    <tr>
-      <td><%= user.name %></td>
-      <td><%= user.password %></td>
-      <td><%= user.birth %></td>
-      <td><%= user.cellNum %></td>
-      <td><%= user.homeNum %></td>
-      <td><%= user.club %></td>
-      <td><%= user.email %></td>
-      <td><%= user.address %></td>
-      <td><%= user.from %></td>
-      <td><%= user.qq %></td>
-      <td><%= user.MSN %></td>
-      <td><%= user.location %></td>
-      <td><%= user.condition %></td>
-      <td><%= link_to 'Show', user %></td>
-      <td><%= link_to 'Edit', edit_user_path(user) %></td>
-      <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-    </tr>
-    <% end %>
-  </tbody>
+	<body>
+		<% @users.each do |user| %>
+		<tr>
+			<td><%= user.name %></td>
+			<td><%= user.password %></td>
+			<td><%= user.birth %></td>
+			<td><%= user.cellNum %></td>
+			<td><%= user.homeNum %></td>
+			<td><%= user.club %></td>
+			<td><%= user.email %></td>
+			<td><%= user.address %></td>
+			<td><%= user.from %></td>
+			<td><%= user.qq %></td>
+			<td><%= user.MSN %></td>
+			<td><%= user.location %></td>
+			<td><%= user.condition %></td>
+			<td><%= link_to 'Show', user %></td>
+			<td><%= link_to 'Edit', edit_user_path(user) %></td>
+			<td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+		</tr>
+		<% end %>
+	</body>
 </table>
 
 <br />

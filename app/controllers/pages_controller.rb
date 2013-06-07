@@ -28,9 +28,9 @@ class PagesController < ApplicationController
     name = params[:name]
     password = params[:password]
     @u = User.find_by_name(name)
-    latestBroadcast = Broadcast.order("created_at")
+    latestBroadcast = Broadcast.order("created_at DESC")
     @broadcast = latestBroadcast.take(1)
-    latestTopic = Topic.order("created_at")
+    latestTopic = Topic.order("created_at DESC")
     @topic = latestTopic.take(3)
     @classTime = Classtime.find_by_name(name)
   end

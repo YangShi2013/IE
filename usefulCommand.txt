@@ -10,3 +10,4 @@ rails generate scaffold topic date:string time:string people:string theme:string
 
 发布信息
 rails generate scaffold broadcast content:string
+
