@@ -7,6 +7,8 @@
       <th>Time</th>
       <th>People</th>
       <th>Theme</th>
+      <th>Preparation</th>
+      <th>Homework</th>
       <th></th>
       <th></th>
       <th></th>
@@ -20,6 +22,8 @@
       <td><%= topic.time %></td>
       <td><%= topic.people %></td>
       <td><%= topic.theme %></td>
+      <td><%= topic.preparation %></td>
+      <td><%= topic.homework %></td>
       <td><%= link_to 'Show', topic %></td>
       <td><%= link_to 'Edit', edit_topic_path(topic) %></td>
       <td><%= link_to 'Destroy', topic, method: :delete, data: { confirm: 'Are you sure?' } %></td>

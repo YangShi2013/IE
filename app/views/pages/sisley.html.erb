@@ -6,13 +6,28 @@
 </head>
 <body>
 	<br/>
-	<h1>Student Account</h1>
+	<h1>Sisley 专属页面</h1>
 	<br/>
 	<div class="container">	
-		<h5>所有人的课程</h5>
-    	<form action="create" method="get">
-			<button class="btn parkBtn">创建新人</button>
+		
+		<p><%= @broadcast%></p>
+		
+		<h5>发布消息</h5>
+		<input type="text" name="broadcast"></input>
+		<button class="btn parkBtn" onClick="broadcast">发布</button>
+		
+    	<form action="editUser" method="get">
+			<button class="btn parkBtn">编辑学生信息</button>
 		</form>
+		
+    	<form action="editClasstime" method="get">
+			<button class="btn parkBtn">编辑学生课程信息</button>
+		</form>
+		
+    	<form action="editTopic" method="get">
+			<button class="btn parkBtn">编辑本周课程</button>
+		</form>
+		
 		<div id="recTable">
 			<table class = "table table-striped sortable" data-provides="rowlink">
 				<tr>
@@ -20,7 +35,7 @@
 					<td><b>Course</b></td></tr>
 					<% @u.each do |user| %>
 					<td><%= user.name %></td>
-					<td><%= user.course %></td>
+					<td></td>
 				</tr>
 				<% end %>
 			</table>

@@ -6,4 +6,7 @@ rails generate scaffold user name:string password:string birth:string cellNum:st
 rails generate scaffold classtime name:string password:string totalTime:integer takenTime:integer balance:integer VIPbalance:integer takenVIPTime:integer lastClass:string validDate:string
 
 （1）上课日期、（2）上课时间，（3）上课人员，（4）课程主题，（5）课前准备工作，（6）课后作业。 创建时间
-rails generate scaffold topic date:string time:string people:string theme;string preparation:string homework:string createTime:datetime
+rails generate scaffold topic date:string time:string people:string theme:string preparation:string homework:string
+
+发布信息
+rails generate scaffold broadcast content:string

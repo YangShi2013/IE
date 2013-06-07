@@ -6,7 +6,9 @@ describe "topics/show" do
       :date => "Date",
       :time => "Time",
       :people => "People",
-      :theme => "Theme"
+      :theme => "Theme",
+      :preparation => "Preparation",
+      :homework => "Homework"
     ))
   end
 
@@ -17,5 +19,7 @@ describe "topics/show" do
     rendered.should match(/Time/)
     rendered.should match(/People/)
     rendered.should match(/Theme/)
+    rendered.should match(/Preparation/)
+    rendered.should match(/Homework/)
   end
 end

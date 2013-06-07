@@ -20,6 +20,16 @@
   <%= @topic.theme %>
 </p>
 
+<p>
+  <strong>Preparation:</strong>
+  <%= @topic.preparation %>
+</p>
+
+<p>
+  <strong>Homework:</strong>
+  <%= @topic.homework %>
+</p>
+
 
 <%= link_to 'Edit', edit_topic_path(@topic) %> |
 <%= link_to 'Back', topics_path %>

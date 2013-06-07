@@ -7,13 +7,17 @@ describe "topics/index" do
         :date => "Date",
         :time => "Time",
         :people => "People",
-        :theme => "Theme"
+        :theme => "Theme",
+        :preparation => "Preparation",
+        :homework => "Homework"
       ),
       stub_model(Topic,
         :date => "Date",
         :time => "Time",
         :people => "People",
-        :theme => "Theme"
+        :theme => "Theme",
+        :preparation => "Preparation",
+        :homework => "Homework"
       )
     ])
   end
@@ -25,5 +29,7 @@ describe "topics/index" do
     assert_select "tr>td", :text => "Time".to_s, :count => 2
     assert_select "tr>td", :text => "People".to_s, :count => 2
     assert_select "tr>td", :text => "Theme".to_s, :count => 2
+    assert_select "tr>td", :text => "Preparation".to_s, :count => 2
+    assert_select "tr>td", :text => "Homework".to_s, :count => 2
   end
 end

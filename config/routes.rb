@@ -1,4 +1,6 @@
 IE::Application.routes.draw do
+  resources :broadcasts
+
   resources :topics
 
   resources :classtimes
@@ -10,7 +12,10 @@ IE::Application.routes.draw do
   get "search" => "pages#search"
   get "student" => "pages#student"
   get "sisley" => "pages#sisley"
-  get "create" => "users#index"
+  get "editUser" => "users#index"
+  get "editClasstime" => "classtimes#index"
+  get "editTopic" => "topics#index"
+  get "broadcast"=> "pages#sisley"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

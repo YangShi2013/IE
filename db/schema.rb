@@ -11,7 +11,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130607164832) do
+ActiveRecord::Schema.define(version: 20130607173226) do
+
+  create_table "broadcasts", force: true do |t|
+    t.string   "content"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "classtimes", force: true do |t|
     t.string   "name"
@@ -32,6 +38,8 @@ ActiveRecord::Schema.define(version: 20130607164832) do
     t.string   "time"
     t.string   "people"
     t.string   "theme"
+    t.string   "preparation"
+    t.string   "homework"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

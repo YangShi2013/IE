@@ -6,7 +6,9 @@ describe "topics/new" do
       :date => "MyString",
       :time => "MyString",
       :people => "MyString",
-      :theme => "MyString"
+      :theme => "MyString",
+      :preparation => "MyString",
+      :homework => "MyString"
     ).as_new_record)
   end
 
@@ -19,6 +21,8 @@ describe "topics/new" do
       assert_select "input#topic_time[name=?]", "topic[time]"
       assert_select "input#topic_people[name=?]", "topic[people]"
       assert_select "input#topic_theme[name=?]", "topic[theme]"
+      assert_select "input#topic_preparation[name=?]", "topic[preparation]"
+      assert_select "input#topic_homework[name=?]", "topic[homework]"
     end
   end
 end

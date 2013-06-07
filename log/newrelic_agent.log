@@ -119,3 +119,108 @@
 [06/07/13 11:48:32 -0500 ShimatoMacBook-Pro.local (1837)] INFO : Installing ActiveRecord 4 instrumentation
 [06/07/13 11:48:32 -0500 ShimatoMacBook-Pro.local (1837)] INFO : Installing Rails4 Error instrumentation
 [06/07/13 11:48:32 -0500 ShimatoMacBook-Pro.local (1837)] INFO : Finished instrumentation
+[06/07/13 11:52:15 -0500 ShimatoMacBook-Pro.local (2004)] INFO : Starting the New Relic agent in "development" environment.
+[06/07/13 11:52:15 -0500 ShimatoMacBook-Pro.local (2004)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[06/07/13 11:52:15 -0500 ShimatoMacBook-Pro.local (2004)] INFO : Reading configuration from 
+[06/07/13 11:52:15 -0500 ShimatoMacBook-Pro.local (2004)] ERROR : Unable to read configuration file : no implicit conversion of nil into String
+[06/07/13 11:52:15 -0500 ShimatoMacBook-Pro.local (2004)] INFO : Disabling the Request Sampler.
+[06/07/13 11:52:15 -0500 ShimatoMacBook-Pro.local (2004)] INFO : Environment: development
+[06/07/13 11:52:15 -0500 ShimatoMacBook-Pro.local (2004)] INFO : Dispatcher: webrick
+[06/07/13 11:52:15 -0500 ShimatoMacBook-Pro.local (2004)] INFO : Application: development
+[06/07/13 11:52:15 -0500 ShimatoMacBook-Pro.local (2004)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[06/07/13 11:52:15 -0500 ShimatoMacBook-Pro.local (2004)] INFO : Installing Net instrumentation
+[06/07/13 11:52:15 -0500 ShimatoMacBook-Pro.local (2004)] INFO : Installing Rails 4 Controller instrumentation
+[06/07/13 11:52:15 -0500 ShimatoMacBook-Pro.local (2004)] INFO : Installing Rails 4 view instrumentation
+[06/07/13 11:52:15 -0500 ShimatoMacBook-Pro.local (2004)] INFO : Installing ActiveRecord 4 instrumentation
+[06/07/13 11:52:15 -0500 ShimatoMacBook-Pro.local (2004)] INFO : Installing Rails4 Error instrumentation
+[06/07/13 11:52:15 -0500 ShimatoMacBook-Pro.local (2004)] INFO : Finished instrumentation
+[06/07/13 12:28:43 -0500 ShimatoMacBook-Pro.local (2551)] INFO : Starting the New Relic agent in "development" environment.
+[06/07/13 12:28:43 -0500 ShimatoMacBook-Pro.local (2551)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[06/07/13 12:28:43 -0500 ShimatoMacBook-Pro.local (2551)] INFO : Reading configuration from 
+[06/07/13 12:28:43 -0500 ShimatoMacBook-Pro.local (2551)] ERROR : Unable to read configuration file : no implicit conversion of nil into String
+[06/07/13 12:28:43 -0500 ShimatoMacBook-Pro.local (2551)] INFO : Disabling the Request Sampler.
+[06/07/13 12:28:43 -0500 ShimatoMacBook-Pro.local (2551)] INFO : Environment: development
+[06/07/13 12:28:43 -0500 ShimatoMacBook-Pro.local (2551)] INFO : No known dispatcher detected.
+[06/07/13 12:28:43 -0500 ShimatoMacBook-Pro.local (2551)] INFO : Application: development
+[06/07/13 12:28:43 -0500 ShimatoMacBook-Pro.local (2551)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[06/07/13 12:28:43 -0500 ShimatoMacBook-Pro.local (2551)] INFO : Installing Net instrumentation
+[06/07/13 12:28:43 -0500 ShimatoMacBook-Pro.local (2551)] INFO : Installing Rails 4 Controller instrumentation
+[06/07/13 12:28:43 -0500 ShimatoMacBook-Pro.local (2551)] INFO : Installing Rails 4 view instrumentation
+[06/07/13 12:28:43 -0500 ShimatoMacBook-Pro.local (2551)] INFO : Installing ActiveRecord 4 instrumentation
+[06/07/13 12:28:43 -0500 ShimatoMacBook-Pro.local (2551)] INFO : Installing Rails4 Error instrumentation
+[06/07/13 12:28:43 -0500 ShimatoMacBook-Pro.local (2551)] INFO : Finished instrumentation
+[06/07/13 12:29:40 -0500 ShimatoMacBook-Pro.local (2563)] INFO : Starting the New Relic agent in "development" environment.
+[06/07/13 12:29:40 -0500 ShimatoMacBook-Pro.local (2563)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[06/07/13 12:29:40 -0500 ShimatoMacBook-Pro.local (2563)] INFO : Reading configuration from 
+[06/07/13 12:29:40 -0500 ShimatoMacBook-Pro.local (2563)] ERROR : Unable to read configuration file : no implicit conversion of nil into String
+[06/07/13 12:29:40 -0500 ShimatoMacBook-Pro.local (2563)] INFO : Disabling the Request Sampler.
+[06/07/13 12:29:40 -0500 ShimatoMacBook-Pro.local (2563)] INFO : Environment: development
+[06/07/13 12:29:40 -0500 ShimatoMacBook-Pro.local (2563)] INFO : No known dispatcher detected.
+[06/07/13 12:29:40 -0500 ShimatoMacBook-Pro.local (2563)] INFO : Application: development
+[06/07/13 12:29:40 -0500 ShimatoMacBook-Pro.local (2563)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[06/07/13 12:29:40 -0500 ShimatoMacBook-Pro.local (2563)] INFO : Installing Net instrumentation
+[06/07/13 12:29:40 -0500 ShimatoMacBook-Pro.local (2563)] INFO : Installing Rails 4 Controller instrumentation
+[06/07/13 12:29:40 -0500 ShimatoMacBook-Pro.local (2563)] INFO : Installing Rails 4 view instrumentation
+[06/07/13 12:29:40 -0500 ShimatoMacBook-Pro.local (2563)] INFO : Installing ActiveRecord 4 instrumentation
+[06/07/13 12:29:40 -0500 ShimatoMacBook-Pro.local (2563)] INFO : Installing Rails4 Error instrumentation
+[06/07/13 12:29:40 -0500 ShimatoMacBook-Pro.local (2563)] INFO : Finished instrumentation
+[06/07/13 12:31:39 -0500 ShimatoMacBook-Pro.local (2585)] INFO : Starting the New Relic agent in "development" environment.
+[06/07/13 12:31:39 -0500 ShimatoMacBook-Pro.local (2585)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[06/07/13 12:31:39 -0500 ShimatoMacBook-Pro.local (2585)] INFO : Reading configuration from 
+[06/07/13 12:31:39 -0500 ShimatoMacBook-Pro.local (2585)] ERROR : Unable to read configuration file : no implicit conversion of nil into String
+[06/07/13 12:31:39 -0500 ShimatoMacBook-Pro.local (2585)] INFO : Disabling the Request Sampler.
+[06/07/13 12:31:39 -0500 ShimatoMacBook-Pro.local (2585)] INFO : Environment: development
+[06/07/13 12:31:39 -0500 ShimatoMacBook-Pro.local (2585)] INFO : No known dispatcher detected.
+[06/07/13 12:31:39 -0500 ShimatoMacBook-Pro.local (2585)] INFO : Application: development
+[06/07/13 12:31:39 -0500 ShimatoMacBook-Pro.local (2585)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[06/07/13 12:31:39 -0500 ShimatoMacBook-Pro.local (2585)] INFO : Installing Net instrumentation
+[06/07/13 12:31:39 -0500 ShimatoMacBook-Pro.local (2585)] INFO : Installing Rails 4 Controller instrumentation
+[06/07/13 12:31:39 -0500 ShimatoMacBook-Pro.local (2585)] INFO : Installing Rails 4 view instrumentation
+[06/07/13 12:31:39 -0500 ShimatoMacBook-Pro.local (2585)] INFO : Installing ActiveRecord 4 instrumentation
+[06/07/13 12:31:39 -0500 ShimatoMacBook-Pro.local (2585)] INFO : Installing Rails4 Error instrumentation
+[06/07/13 12:31:39 -0500 ShimatoMacBook-Pro.local (2585)] INFO : Finished instrumentation
+[06/07/13 12:32:25 -0500 ShimatoMacBook-Pro.local (2621)] INFO : Starting the New Relic agent in "development" environment.
+[06/07/13 12:32:25 -0500 ShimatoMacBook-Pro.local (2621)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[06/07/13 12:32:25 -0500 ShimatoMacBook-Pro.local (2621)] INFO : Reading configuration from 
+[06/07/13 12:32:25 -0500 ShimatoMacBook-Pro.local (2621)] ERROR : Unable to read configuration file : no implicit conversion of nil into String
+[06/07/13 12:32:25 -0500 ShimatoMacBook-Pro.local (2621)] INFO : Disabling the Request Sampler.
+[06/07/13 12:32:25 -0500 ShimatoMacBook-Pro.local (2621)] INFO : Environment: development
+[06/07/13 12:32:25 -0500 ShimatoMacBook-Pro.local (2621)] INFO : No known dispatcher detected.
+[06/07/13 12:32:25 -0500 ShimatoMacBook-Pro.local (2621)] INFO : Application: development
+[06/07/13 12:32:25 -0500 ShimatoMacBook-Pro.local (2621)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[06/07/13 12:32:25 -0500 ShimatoMacBook-Pro.local (2621)] INFO : Installing Net instrumentation
+[06/07/13 12:32:25 -0500 ShimatoMacBook-Pro.local (2621)] INFO : Installing Rails 4 Controller instrumentation
+[06/07/13 12:32:25 -0500 ShimatoMacBook-Pro.local (2621)] INFO : Installing Rails 4 view instrumentation
+[06/07/13 12:32:25 -0500 ShimatoMacBook-Pro.local (2621)] INFO : Installing ActiveRecord 4 instrumentation
+[06/07/13 12:32:25 -0500 ShimatoMacBook-Pro.local (2621)] INFO : Installing Rails4 Error instrumentation
+[06/07/13 12:32:25 -0500 ShimatoMacBook-Pro.local (2621)] INFO : Finished instrumentation
+[06/07/13 12:39:31 -0500 ShimatoMacBook-Pro.local (2747)] INFO : Starting the New Relic agent in "development" environment.
+[06/07/13 12:39:31 -0500 ShimatoMacBook-Pro.local (2747)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[06/07/13 12:39:31 -0500 ShimatoMacBook-Pro.local (2747)] INFO : Reading configuration from 
+[06/07/13 12:39:31 -0500 ShimatoMacBook-Pro.local (2747)] ERROR : Unable to read configuration file : no implicit conversion of nil into String
+[06/07/13 12:39:31 -0500 ShimatoMacBook-Pro.local (2747)] INFO : Disabling the Request Sampler.
+[06/07/13 12:39:31 -0500 ShimatoMacBook-Pro.local (2747)] INFO : Environment: development
+[06/07/13 12:39:31 -0500 ShimatoMacBook-Pro.local (2747)] INFO : Dispatcher: webrick
+[06/07/13 12:39:31 -0500 ShimatoMacBook-Pro.local (2747)] INFO : Application: development
+[06/07/13 12:39:31 -0500 ShimatoMacBook-Pro.local (2747)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[06/07/13 12:39:31 -0500 ShimatoMacBook-Pro.local (2747)] INFO : Installing Net instrumentation
+[06/07/13 12:39:31 -0500 ShimatoMacBook-Pro.local (2747)] INFO : Installing Rails 4 Controller instrumentation
+[06/07/13 12:39:31 -0500 ShimatoMacBook-Pro.local (2747)] INFO : Installing Rails 4 view instrumentation
+[06/07/13 12:39:31 -0500 ShimatoMacBook-Pro.local (2747)] INFO : Installing ActiveRecord 4 instrumentation
+[06/07/13 12:39:31 -0500 ShimatoMacBook-Pro.local (2747)] INFO : Installing Rails4 Error instrumentation
+[06/07/13 12:39:31 -0500 ShimatoMacBook-Pro.local (2747)] INFO : Finished instrumentation
+[06/07/13 12:39:50 -0500 ShimatoMacBook-Pro.local (2751)] INFO : Starting the New Relic agent in "development" environment.
+[06/07/13 12:39:50 -0500 ShimatoMacBook-Pro.local (2751)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[06/07/13 12:39:50 -0500 ShimatoMacBook-Pro.local (2751)] INFO : Reading configuration from 
+[06/07/13 12:39:50 -0500 ShimatoMacBook-Pro.local (2751)] ERROR : Unable to read configuration file : no implicit conversion of nil into String
+[06/07/13 12:39:50 -0500 ShimatoMacBook-Pro.local (2751)] INFO : Disabling the Request Sampler.
+[06/07/13 12:39:50 -0500 ShimatoMacBook-Pro.local (2751)] INFO : Environment: development
+[06/07/13 12:39:50 -0500 ShimatoMacBook-Pro.local (2751)] INFO : Dispatcher: webrick
+[06/07/13 12:39:50 -0500 ShimatoMacBook-Pro.local (2751)] INFO : Application: development
+[06/07/13 12:39:50 -0500 ShimatoMacBook-Pro.local (2751)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[06/07/13 12:39:50 -0500 ShimatoMacBook-Pro.local (2751)] INFO : Installing Net instrumentation
+[06/07/13 12:39:50 -0500 ShimatoMacBook-Pro.local (2751)] INFO : Installing Rails 4 Controller instrumentation
+[06/07/13 12:39:50 -0500 ShimatoMacBook-Pro.local (2751)] INFO : Installing Rails 4 view instrumentation
+[06/07/13 12:39:50 -0500 ShimatoMacBook-Pro.local (2751)] INFO : Installing ActiveRecord 4 instrumentation
+[06/07/13 12:39:50 -0500 ShimatoMacBook-Pro.local (2751)] INFO : Installing Rails4 Error instrumentation
+[06/07/13 12:39:50 -0500 ShimatoMacBook-Pro.local (2751)] INFO : Finished instrumentation
