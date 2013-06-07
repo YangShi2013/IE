@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130607164436) do
+ActiveRecord::Schema.define(version: 20130607164832) do
 
   create_table "classtimes", force: true do |t|
     t.string   "name"
@@ -23,6 +23,15 @@ ActiveRecord::Schema.define(version: 20130607164436) do
     t.integer  "takenVIPTime"
     t.string   "lastClass"
     t.string   "validDate"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "topics", force: true do |t|
+    t.string   "date"
+    t.string   "time"
+    t.string   "people"
+    t.string   "theme"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

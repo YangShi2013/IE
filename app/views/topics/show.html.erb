@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @topic.date %>
+</p>
+
+<p>
+  <strong>Time:</strong>
+  <%= @topic.time %>
+</p>
+
+<p>
+  <strong>People:</strong>
+  <%= @topic.people %>
+</p>
+
+<p>
+  <strong>Theme:</strong>
+  <%= @topic.theme %>
+</p>
+
+
+<%= link_to 'Edit', edit_topic_path(@topic) %> |
+<%= link_to 'Back', topics_path %>

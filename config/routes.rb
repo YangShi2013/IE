@@ -1,4 +1,6 @@
 IE::Application.routes.draw do
+  resources :topics
+
   resources :classtimes
 
   resources :users
