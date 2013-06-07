@@ -11,12 +11,34 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130602055135) do
+ActiveRecord::Schema.define(version: 20130607163740) do
+
+  create_table "classtimes", force: true do |t|
+    t.string   "name"
+    t.string   "password"
+    t.integer  "totalTime"
+    t.integer  "takenTime"
+    t.integer  "balance"
+    t.integer  "VIPbalance"
+    t.integer  "takenVIPTime"
+    t.string   "lastClass"
+    t.string   "validDate"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", force: true do |t|
     t.string   "name"
     t.string   "password"
-    t.string   "course"
+    t.string   "birth"
+    t.string   "cellNum"
+    t.string   "homeNum"
+    t.string   "club"
+    t.string   "email"
+    t.string   "address"
+    t.string   "from"
+    t.string   "qq"
+    t.string   "MSN"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

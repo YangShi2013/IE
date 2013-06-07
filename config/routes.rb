@@ -1,4 +1,6 @@
 IE::Application.routes.draw do
+  resources :classtimes
+
   resources :users
   root to: 'pages#home'
   get "pages/home"

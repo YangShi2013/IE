@@ -1,11 +1,19 @@
-<h1>所有学生</h1>
+<h1>Listing users</h1>
 
 <table>
   <thead>
     <tr>
       <th>Name</th>
       <th>Password</th>
-      <th>Course</th>
+      <th>Birth</th>
+      <th>Cellnum</th>
+      <th>Homenum</th>
+      <th>Club</th>
+      <th>Email</th>
+      <th>Address</th>
+      <th>From</th>
+      <th>Qq</th>
+      <th>Msn</th>
       <th></th>
       <th></th>
       <th></th>
@@ -14,18 +22,26 @@
 
   <tbody>
     <% @users.each do |user| %>
-      <tr>
-        <td><%= user.name %></td>
-        <td><%= user.password %></td>
-        <td><%= user.course %></td>
-        <td><%= link_to 'Show', user %></td>
-        <td><%= link_to 'Edit', edit_user_path(user) %></td>
-        <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+    <tr>
+      <td><%= user.name %></td>
+      <td><%= user.password %></td>
+      <td><%= user.birth %></td>
+      <td><%= user.cellNum %></td>
+      <td><%= user.homeNum %></td>
+      <td><%= user.club %></td>
+      <td><%= user.email %></td>
+      <td><%= user.address %></td>
+      <td><%= user.from %></td>
+      <td><%= user.qq %></td>
+      <td><%= user.MSN %></td>
+      <td><%= link_to 'Show', user %></td>
+      <td><%= link_to 'Edit', edit_user_path(user) %></td>
+      <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    </tr>
     <% end %>
   </tbody>
 </table>
 
-<br>
+<br />
 
 <%= link_to 'New User', new_user_path %>

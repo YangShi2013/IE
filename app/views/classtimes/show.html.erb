@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @classtime.name %>
+</p>
+
+<p>
+  <strong>Password:</strong>
+  <%= @classtime.password %>
+</p>
+
+<p>
+  <strong>Totaltime:</strong>
+  <%= @classtime.totalTime %>
+</p>
+
+<p>
+  <strong>Takentime:</strong>
+  <%= @classtime.takenTime %>
+</p>
+
+<p>
+  <strong>Balance:</strong>
+  <%= @classtime.balance %>
+</p>
+
+<p>
+  <strong>Vipbalance:</strong>
+  <%= @classtime.VIPbalance %>
+</p>
+
+<p>
+  <strong>Takenviptime:</strong>
+  <%= @classtime.takenVIPTime %>
+</p>
+
+<p>
+  <strong>Lastclass:</strong>
+  <%= @classtime.lastClass %>
+</p>
+
+<p>
+  <strong>Validdate:</strong>
+  <%= @classtime.validDate %>
+</p>
+
+
+<%= link_to 'Edit', edit_classtime_path(@classtime) %> |
+<%= link_to 'Back', classtimes_path %>

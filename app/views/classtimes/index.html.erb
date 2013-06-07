@@ -1,0 +1,43 @@
+<h1>Listing classtimes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Password</th>
+      <th>Totaltime</th>
+      <th>Takentime</th>
+      <th>Balance</th>
+      <th>Vipbalance</th>
+      <th>Takenviptime</th>
+      <th>Lastclass</th>
+      <th>Validdate</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @classtimes.each do |classtime| %>
+    <tr>
+      <td><%= classtime.name %></td>
+      <td><%= classtime.password %></td>
+      <td><%= classtime.totalTime %></td>
+      <td><%= classtime.takenTime %></td>
+      <td><%= classtime.balance %></td>
+      <td><%= classtime.VIPbalance %></td>
+      <td><%= classtime.takenVIPTime %></td>
+      <td><%= classtime.lastClass %></td>
+      <td><%= classtime.validDate %></td>
+      <td><%= link_to 'Show', classtime %></td>
+      <td><%= link_to 'Edit', edit_classtime_path(classtime) %></td>
+      <td><%= link_to 'Destroy', classtime, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br />
+
+<%= link_to 'New Classtime', new_classtime_path %>

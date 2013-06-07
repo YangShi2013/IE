@@ -1,0 +1,53 @@
+<%= form_for(@classtime) do |f| %>
+  <% if @classtime.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@classtime.errors.count, "error") %> prohibited this classtime from being saved:</h2>
+
+      <ul>
+      <% @classtime.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :password %><br />
+    <%= f.text_field :password %>
+  </div>
+  <div class="field">
+    <%= f.label :totalTime %><br />
+    <%= f.number_field :totalTime %>
+  </div>
+  <div class="field">
+    <%= f.label :takenTime %><br />
+    <%= f.number_field :takenTime %>
+  </div>
+  <div class="field">
+    <%= f.label :balance %><br />
+    <%= f.number_field :balance %>
+  </div>
+  <div class="field">
+    <%= f.label :VIPbalance %><br />
+    <%= f.number_field :VIPbalance %>
+  </div>
+  <div class="field">
+    <%= f.label :takenVIPTime %><br />
+    <%= f.number_field :takenVIPTime %>
+  </div>
+  <div class="field">
+    <%= f.label :lastClass %><br />
+    <%= f.text_field :lastClass %>
+  </div>
+  <div class="field">
+    <%= f.label :validDate %><br />
+    <%= f.text_field :validDate %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

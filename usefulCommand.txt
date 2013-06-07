@@ -1,0 +1,5 @@
+姓名，出生年月，手机号码，座机号码，所在俱乐部，邮箱，家庭住址，籍贯这些，QQ，MSN等
+rails generate scaffold user name:string password:string birth:string cellNum:string homeNum:string club:string email:string address:string from:string qq:string MSN:string
+
+共有课时，已上课时，剩余课时，现有VIP课时，已上VIP课时，上次上课时间，课程有效期。
+rails generate scaffold classtime name:string password:string totalTime:integer takenTime:integer balance:integer VIPbalance:integer takenVIPTime:integer lastClass:string validDate:string
