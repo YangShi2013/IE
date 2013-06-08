@@ -2,7 +2,9 @@ source 'https://rubygems.org'
 ruby '2.0.0'
 
 gem 'rails', '4.0.0.beta1'
-gem "twitter-bootstrap-rails"
+gem 'bootstrap-sass', '2.3.0.1'
+gem 'less-rails-bootstrap'
+gem 'therubyracer'
 
 group :development, :test do
   gem 'sqlite3', '1.3.7'
@@ -23,11 +25,11 @@ end
 gem 'jquery-rails', '2.2.1'
 gem 'turbolinks', '1.0.0'
 gem 'jbuilder', '1.0.1'
-gem 'twilio-ruby'
 
 group :production do
   gem 'pg', '0.14.1'
 end
 
-gem 'rufus-scheduler'
-gem 'newrelic_rpm'
+gem 'roo'
+
+gem 'statsample'

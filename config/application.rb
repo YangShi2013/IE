@@ -21,3 +21,4 @@ module IE
     # config.i18n.default_locale = :de
   end
 end
+# Heroku requires this to be false

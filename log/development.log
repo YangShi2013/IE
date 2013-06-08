@@ -17255,3 +17255,1228 @@ Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-06-07 13:34:47 -0500
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-07 13:34:47 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-07 17:09:00 -0500
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (17.7ms)
+Completed 200 OK in 1109ms (Views: 1107.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-07 17:09:02 -0500
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2013-06-07 17:09:02 -0500
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2013-06-07 17:09:02 -0500
+
+
+Started GET "/assets/broadcasts.css?body=1" for 127.0.0.1 at 2013-06-07 17:09:02 -0500
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-06-07 17:09:02 -0500
+
+
+Started GET "/assets/classtimes.css?body=1" for 127.0.0.1 at 2013-06-07 17:09:02 -0500
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-06-07 17:09:02 -0500
+
+
+Started GET "/assets/scaffold.css?body=1" for 127.0.0.1 at 2013-06-07 17:09:02 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-06-07 17:09:02 -0500
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-06-07 17:09:02 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-06-07 17:09:02 -0500
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-06-07 17:09:02 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-07 17:09:02 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-06-07 17:09:02 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-07 17:09:02 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-06-07 17:09:02 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-06-07 17:09:02 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-06-07 17:09:02 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-06-07 17:09:02 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-06-07 17:09:02 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-06-07 17:09:02 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-06-07 17:09:02 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-06-07 17:09:02 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-06-07 17:09:02 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-06-07 17:09:02 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-06-07 17:09:02 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-06-07 17:09:02 -0500
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-06-07 17:09:02 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-06-07 17:09:02 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-06-07 17:09:02 -0500
+
+
+Started GET "/assets/broadcasts.js?body=1" for 127.0.0.1 at 2013-06-07 17:09:02 -0500
+
+
+Started GET "/assets/classtimes.js?body=1" for 127.0.0.1 at 2013-06-07 17:09:02 -0500
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-06-07 17:09:02 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-06-07 17:09:02 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-07 17:09:02 -0500
+
+
+Started GET "/search?name=sisley&password=[FILTERED]" for 127.0.0.1 at 2013-06-07 17:09:11 -0500
+Processing by PagesController#search as HTML
+  Parameters: {"name"=>"sisley", "password"=>"[FILTERED]"}
+Redirected to http://0.0.0.0:3000/sisley?name=sisley
+Completed 302 Found in 16ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sisley?name=sisley" for 127.0.0.1 at 2013-06-07 17:09:11 -0500
+Processing by PagesController#sisley as HTML
+  Parameters: {"name"=>"sisley"}
+  [1m[36mBroadcast Load (45.6ms)[0m  [1mSELECT "broadcasts".* FROM "broadcasts" ORDER BY created_at DESC LIMIT 1[0m
+  Rendered pages/sisley.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 173ms (Views: 62.0ms | ActiveRecord: 46.1ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-06-07 17:09:11 -0500
+
+
+Started GET "/editUser" for 127.0.0.1 at 2013-06-07 17:09:13 -0500
+Processing by UsersController#show as HTML
+Completed 404 Not Found in 33ms
+
+ActiveRecord::RecordNotFound (Couldn't find User without an ID):
+  app/controllers/users_controller.rb:67:in `set_user'
+
+
+  Rendered /Users/shiyang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.beta1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /Users/shiyang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.beta1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/shiyang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.beta1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/shiyang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.beta1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (21.1ms)
+
+
+Started GET "/editUser" for 127.0.0.1 at 2013-06-07 17:09:55 -0500
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (33.3ms)
+Completed 200 OK in 68ms (Views: 65.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-07 17:09:56 -0500
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-06-07 17:09:56 -0500
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2013-06-07 17:09:56 -0500
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2013-06-07 17:09:56 -0500
+
+
+Started GET "/assets/broadcasts.css?body=1" for 127.0.0.1 at 2013-06-07 17:09:56 -0500
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-06-07 17:09:56 -0500
+
+
+Started GET "/assets/classtimes.css?body=1" for 127.0.0.1 at 2013-06-07 17:09:56 -0500
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-06-07 17:09:56 -0500
+
+
+Started GET "/assets/scaffold.css?body=1" for 127.0.0.1 at 2013-06-07 17:09:56 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-06-07 17:09:56 -0500
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-06-07 17:09:56 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-06-07 17:09:56 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-07 17:09:56 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-07 17:09:56 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-06-07 17:09:56 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-06-07 17:09:56 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-06-07 17:09:56 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-06-07 17:09:56 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-06-07 17:09:56 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-06-07 17:09:56 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-06-07 17:09:56 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-06-07 17:09:56 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-06-07 17:09:56 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-06-07 17:09:56 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-06-07 17:09:56 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-06-07 17:09:56 -0500
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-06-07 17:09:56 -0500
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-06-07 17:09:56 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-06-07 17:09:56 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-06-07 17:09:56 -0500
+
+
+Started GET "/assets/broadcasts.js?body=1" for 127.0.0.1 at 2013-06-07 17:09:56 -0500
+
+
+Started GET "/assets/classtimes.js?body=1" for 127.0.0.1 at 2013-06-07 17:09:56 -0500
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-06-07 17:09:56 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-06-07 17:09:56 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-07 17:09:56 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-07 17:37:12 -0500
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (12.4ms)
+Completed 500 Internal Server Error in 120ms
+
+ActionView::Template::Error (couldn't find file 'twitter-bootstrap-static/bootstrap'
+  (in /Users/shiyang/Desktop/IE/app/assets/stylesheets/bootstrap_and_overrides.css:2)):
+    2: <html>
+    3: <head>
+    4:   <title>IE</title>
+    5:   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+    6:   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___1357621129308318410_70179952787520'
+
+
+  Rendered /Users/shiyang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.beta1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /Users/shiyang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.beta1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (7.8ms)
+  Rendered /Users/shiyang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.beta1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (18.7ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2013-06-07 17:37:29 -0500
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (33.4ms)
+Completed 500 Internal Server Error in 45ms
+
+ActionView::Template::Error (couldn't find file 'twitter-bootstrap-static/bootstrap'
+  (in /Users/shiyang/Desktop/IE/app/assets/stylesheets/bootstrap_and_overrides.css:2)):
+    2: <html>
+    3: <head>
+    4:   <title>IE</title>
+    5:   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+    6:   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___1357621129308318410_70179952787520'
+
+
+  Rendered /Users/shiyang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.beta1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/shiyang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.beta1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/shiyang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.beta1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (34.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2013-06-07 17:38:32 -0500
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2013-06-07 17:38:35 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered users/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 15ms (Views: 12.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2013-06-07 17:38:37 -0500
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2013-06-07 17:38:39 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered users/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2013-06-07 17:38:40 -0500
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2013-06-07 17:38:59 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered users/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2013-06-07 17:39:01 -0500
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-07 17:39:05 -0500
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 45ms (Views: 44.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2013-06-07 17:39:11 -0500
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2013-06-07 17:39:13 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered users/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2013-06-07 17:39:15 -0500
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/topics" for 127.0.0.1 at 2013-06-07 17:39:43 -0500
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (0.1ms)[0m  SELECT "topics".* FROM "topics"
+  Rendered topics/index.html.erb within layouts/application (19.5ms)
+Completed 200 OK in 34ms (Views: 31.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/topics/1" for 127.0.0.1 at 2013-06-07 17:39:44 -0500
+Processing by TopicsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTopic Load (0.1ms)[0m  [1mSELECT "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered topics/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/topics" for 127.0.0.1 at 2013-06-07 17:39:46 -0500
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (0.2ms)[0m  SELECT "topics".* FROM "topics"
+  Rendered topics/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/topics/1" for 127.0.0.1 at 2013-06-07 17:39:51 -0500
+Processing by TopicsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTopic Load (0.1ms)[0m  [1mSELECT "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered topics/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/topics" for 127.0.0.1 at 2013-06-07 17:39:52 -0500
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (0.2ms)[0m  SELECT "topics".* FROM "topics"
+  Rendered topics/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-07 17:40:38 -0500
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 29ms (Views: 28.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/editUser" for 127.0.0.1 at 2013-06-07 17:40:55 -0500
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (2.5ms)
+Completed 500 Internal Server Error in 190ms
+
+ActionView::Template::Error (couldn't find file 'twitter-bootstrap-static/bootstrap'
+  (in /Users/shiyang/Desktop/IE/app/assets/stylesheets/bootstrap_and_overrides.css:2)):
+    2: <html>
+    3: <head>
+    4:   <title>IE</title>
+    5:   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+    6:   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___1357621129308318410_70179983785740'
+
+
+  Rendered /Users/shiyang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.beta1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /Users/shiyang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.beta1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /Users/shiyang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.beta1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-07 17:44:59 -0500
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.1ms)
+Completed 500 Internal Server Error in 142ms
+
+ActionView::Template::Error (couldn't find file 'twitter-bootstrap-static/bootstrap'
+  (in /Users/shiyang/Desktop/IE/app/assets/stylesheets/bootstrap_and_overrides.css:2)):
+    2: <html>
+    3: <head>
+    4:   <title>IE</title>
+    5:   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+    6:   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___1357621129308318410_70179983785740'
+
+
+  Rendered /Users/shiyang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.beta1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /Users/shiyang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.beta1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /Users/shiyang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.beta1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-07 17:45:24 -0500
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-07 17:46:59 -0500
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 352ms
+
+ActionView::Template::Error (couldn't find file 'twitter/bootstrap'
+  (in /Users/shiyang/Desktop/IE/app/assets/javascripts/application.js:15)):
+    3: <head>
+    4:   <title>IE</title>
+    5:   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+    6:   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+    9: <body>
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb___1357621129308318410_70179931254400'
+
+
+  Rendered /Users/shiyang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.beta1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /Users/shiyang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.beta1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/shiyang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.beta1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-07 17:48:51 -0500
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 17ms (Views: 16.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/broadcasts.css?body=1" for 127.0.0.1 at 2013-06-07 17:48:51 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-07 17:48:51 -0500
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-06-07 17:48:51 -0500
+
+
+Started GET "/assets/scaffold.css?body=1" for 127.0.0.1 at 2013-06-07 17:48:51 -0500
+
+
+Started GET "/assets/classtimes.css?body=1" for 127.0.0.1 at 2013-06-07 17:48:51 -0500
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-06-07 17:48:51 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-06-07 17:48:51 -0500
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-06-07 17:48:51 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-06-07 17:48:51 -0500
+
+
+Started GET "/users" for 127.0.0.1 at 2013-06-07 17:48:58 -0500
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-07 17:48:58 -0500
+
+
+Started GET "/assets/broadcasts.css?body=1" for 127.0.0.1 at 2013-06-07 17:48:58 -0500
+
+
+Started GET "/assets/classtimes.css?body=1" for 127.0.0.1 at 2013-06-07 17:48:58 -0500
+
+
+Started GET "/assets/scaffold.css?body=1" for 127.0.0.1 at 2013-06-07 17:48:58 -0500
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-06-07 17:48:58 -0500
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-06-07 17:48:58 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-06-07 17:48:58 -0500
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-06-07 17:48:58 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-06-07 17:48:58 -0500
+
+
+Started GET "/users/1" for 127.0.0.1 at 2013-06-07 17:48:59 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered users/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 42ms (Views: 40.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-07 17:48:59 -0500
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-06-07 17:48:59 -0500
+
+
+Started GET "/assets/broadcasts.css?body=1" for 127.0.0.1 at 2013-06-07 17:48:59 -0500
+
+
+Started GET "/assets/classtimes.css?body=1" for 127.0.0.1 at 2013-06-07 17:48:59 -0500
+
+
+Started GET "/assets/scaffold.css?body=1" for 127.0.0.1 at 2013-06-07 17:48:59 -0500
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-06-07 17:48:59 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-06-07 17:48:59 -0500
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-06-07 17:48:59 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-06-07 17:48:59 -0500
+
+
+Started GET "/users" for 127.0.0.1 at 2013-06-07 17:49:01 -0500
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 32ms (Views: 31.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-07 17:49:01 -0500
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-06-07 17:49:01 -0500
+
+
+Started GET "/assets/broadcasts.css?body=1" for 127.0.0.1 at 2013-06-07 17:49:01 -0500
+
+
+Started GET "/assets/classtimes.css?body=1" for 127.0.0.1 at 2013-06-07 17:49:01 -0500
+
+
+Started GET "/assets/scaffold.css?body=1" for 127.0.0.1 at 2013-06-07 17:49:01 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-06-07 17:49:01 -0500
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-06-07 17:49:01 -0500
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-06-07 17:49:01 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-06-07 17:49:01 -0500
+
+
+Started GET "/users/1" for 127.0.0.1 at 2013-06-07 17:49:02 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered users/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-07 17:49:02 -0500
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-06-07 17:49:02 -0500
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-06-07 17:49:02 -0500
+
+
+Started GET "/assets/broadcasts.css?body=1" for 127.0.0.1 at 2013-06-07 17:49:02 -0500
+
+
+Started GET "/assets/scaffold.css?body=1" for 127.0.0.1 at 2013-06-07 17:49:02 -0500
+
+
+Started GET "/assets/classtimes.css?body=1" for 127.0.0.1 at 2013-06-07 17:49:02 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-06-07 17:49:02 -0500
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-06-07 17:49:02 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-06-07 17:49:02 -0500
+
+
+Started GET "/users" for 127.0.0.1 at 2013-06-07 17:49:03 -0500
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-07 17:49:03 -0500
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-06-07 17:49:03 -0500
+
+
+Started GET "/assets/broadcasts.css?body=1" for 127.0.0.1 at 2013-06-07 17:49:03 -0500
+
+
+Started GET "/assets/scaffold.css?body=1" for 127.0.0.1 at 2013-06-07 17:49:03 -0500
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-06-07 17:49:03 -0500
+
+
+Started GET "/assets/classtimes.css?body=1" for 127.0.0.1 at 2013-06-07 17:49:03 -0500
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-06-07 17:49:03 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-06-07 17:49:03 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-06-07 17:49:03 -0500
+
+
+Started GET "/users/1" for 127.0.0.1 at 2013-06-07 17:49:15 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered users/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/broadcasts.css?body=1" for 127.0.0.1 at 2013-06-07 17:49:15 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-07 17:49:15 -0500
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-06-07 17:49:15 -0500
+
+
+Started GET "/assets/classtimes.css?body=1" for 127.0.0.1 at 2013-06-07 17:49:15 -0500
+
+
+Started GET "/assets/scaffold.css?body=1" for 127.0.0.1 at 2013-06-07 17:49:15 -0500
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-06-07 17:49:15 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-06-07 17:49:15 -0500
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-06-07 17:49:15 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-06-07 17:49:15 -0500
+
+
+Started GET "/users" for 127.0.0.1 at 2013-06-07 17:49:18 -0500
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-07 17:49:18 -0500
+
+
+Started GET "/assets/classtimes.css?body=1" for 127.0.0.1 at 2013-06-07 17:49:18 -0500
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-06-07 17:49:18 -0500
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-06-07 17:49:18 -0500
+
+
+Started GET "/assets/scaffold.css?body=1" for 127.0.0.1 at 2013-06-07 17:49:18 -0500
+
+
+Started GET "/assets/broadcasts.css?body=1" for 127.0.0.1 at 2013-06-07 17:49:18 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-06-07 17:49:18 -0500
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-06-07 17:49:18 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-06-07 17:49:18 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-07 17:49:54 -0500
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-07 17:49:54 -0500
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-06-07 17:49:54 -0500
+
+
+Started GET "/assets/broadcasts.css?body=1" for 127.0.0.1 at 2013-06-07 17:49:54 -0500
+
+
+Started GET "/assets/classtimes.css?body=1" for 127.0.0.1 at 2013-06-07 17:49:54 -0500
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-06-07 17:49:54 -0500
+
+
+Started GET "/assets/scaffold.css?body=1" for 127.0.0.1 at 2013-06-07 17:49:54 -0500
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-06-07 17:49:54 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-06-07 17:49:54 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-06-07 17:49:54 -0500
+
+
+Started GET "/search?name=sisley&password=[FILTERED]" for 127.0.0.1 at 2013-06-07 17:49:59 -0500
+Processing by PagesController#search as HTML
+  Parameters: {"name"=>"sisley", "password"=>"[FILTERED]"}
+Redirected to http://0.0.0.0:3000/sisley?name=sisley
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sisley?name=sisley" for 127.0.0.1 at 2013-06-07 17:49:59 -0500
+Processing by PagesController#sisley as HTML
+  Parameters: {"name"=>"sisley"}
+  [1m[36mBroadcast Load (22.4ms)[0m  [1mSELECT "broadcasts".* FROM "broadcasts" ORDER BY created_at DESC LIMIT 1[0m
+  Rendered pages/sisley.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 93ms (Views: 16.7ms | ActiveRecord: 22.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-07 17:50:00 -0500
+
+
+Started GET "/assets/broadcasts.css?body=1" for 127.0.0.1 at 2013-06-07 17:50:00 -0500
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-06-07 17:50:00 -0500
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-06-07 17:50:00 -0500
+
+
+Started GET "/assets/scaffold.css?body=1" for 127.0.0.1 at 2013-06-07 17:50:00 -0500
+
+
+Started GET "/assets/classtimes.css?body=1" for 127.0.0.1 at 2013-06-07 17:50:00 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-06-07 17:50:00 -0500
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-06-07 17:50:00 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-06-07 17:50:00 -0500
+
+
+Started GET "/broadcast?broadcast=%E9%A1%B5%E9%9D%A2%E5%A4%AA%E4%B8%91%E4%BA%86%E3%80%82%E3%80%82%E3%80%82" for 127.0.0.1 at 2013-06-07 17:50:28 -0500
+Processing by PagesController#broadcast as HTML
+  Parameters: {"broadcast"=>"页面太丑了。。。"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (780.6ms)[0m  [1mINSERT INTO "broadcasts" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "页面太丑了。。。"], ["created_at", Fri, 07 Jun 2013 22:50:28 UTC +00:00], ["updated_at", Fri, 07 Jun 2013 22:50:28 UTC +00:00]]
+  [1m[35m (1.5ms)[0m  commit transaction
+Redirected to http://0.0.0.0:3000/sisley
+Completed 302 Found in 877ms (ActiveRecord: 782.2ms)
+
+
+Started GET "/sisley" for 127.0.0.1 at 2013-06-07 17:50:29 -0500
+Processing by PagesController#sisley as HTML
+  [1m[36mBroadcast Load (0.2ms)[0m  [1mSELECT "broadcasts".* FROM "broadcasts" ORDER BY created_at DESC LIMIT 1[0m
+  Rendered pages/sisley.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 22ms (Views: 20.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-07 17:50:29 -0500
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-06-07 17:50:29 -0500
+
+
+Started GET "/assets/classtimes.css?body=1" for 127.0.0.1 at 2013-06-07 17:50:29 -0500
+
+
+Started GET "/assets/broadcasts.css?body=1" for 127.0.0.1 at 2013-06-07 17:50:29 -0500
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-06-07 17:50:29 -0500
+
+
+Started GET "/assets/scaffold.css?body=1" for 127.0.0.1 at 2013-06-07 17:50:29 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-06-07 17:50:29 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-06-07 17:50:29 -0500
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-06-07 17:50:29 -0500
+
+
+Started GET "/editUser" for 127.0.0.1 at 2013-06-07 17:50:30 -0500
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-07 17:50:30 -0500
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-06-07 17:50:30 -0500
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-06-07 17:50:30 -0500
+
+
+Started GET "/assets/scaffold.css?body=1" for 127.0.0.1 at 2013-06-07 17:50:30 -0500
+
+
+Started GET "/assets/classtimes.css?body=1" for 127.0.0.1 at 2013-06-07 17:50:30 -0500
+
+
+Started GET "/assets/broadcasts.css?body=1" for 127.0.0.1 at 2013-06-07 17:50:30 -0500
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-06-07 17:50:30 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-06-07 17:50:30 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-06-07 17:50:30 -0500
+
+
+Started GET "/editClasstime" for 127.0.0.1 at 2013-06-07 17:50:33 -0500
+Processing by ClasstimesController#index as HTML
+  [1m[36mClasstime Load (0.1ms)[0m  [1mSELECT "classtimes".* FROM "classtimes"[0m
+  Rendered classtimes/index.html.erb within layouts/application (53.8ms)
+Completed 200 OK in 60ms (Views: 57.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/scaffold.css?body=1" for 127.0.0.1 at 2013-06-07 17:50:33 -0500
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-06-07 17:50:33 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-07 17:50:33 -0500
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-06-07 17:50:33 -0500
+
+
+Started GET "/assets/classtimes.css?body=1" for 127.0.0.1 at 2013-06-07 17:50:33 -0500
+
+
+Started GET "/assets/broadcasts.css?body=1" for 127.0.0.1 at 2013-06-07 17:50:33 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-06-07 17:50:33 -0500
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-06-07 17:50:33 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-06-07 17:50:33 -0500
+
+
+Started GET "/editTopic" for 127.0.0.1 at 2013-06-07 17:50:35 -0500
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (0.2ms)[0m  SELECT "topics".* FROM "topics"
+  Rendered topics/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-06-07 17:50:35 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-07 17:50:35 -0500
+
+
+Started GET "/assets/broadcasts.css?body=1" for 127.0.0.1 at 2013-06-07 17:50:35 -0500
+
+
+Started GET "/assets/scaffold.css?body=1" for 127.0.0.1 at 2013-06-07 17:50:35 -0500
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-06-07 17:50:35 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-06-07 17:50:35 -0500
+
+
+Started GET "/assets/classtimes.css?body=1" for 127.0.0.1 at 2013-06-07 17:50:35 -0500
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-06-07 17:50:35 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-06-07 17:50:35 -0500
+
+
+Started GET "/search?name=%E6%97%B6%E9%98%B3&password=[FILTERED]" for 127.0.0.1 at 2013-06-07 17:50:47 -0500
+Processing by PagesController#search as HTML
+  Parameters: {"name"=>"时阳", "password"=>"[FILTERED]"}
+Redirected to http://0.0.0.0:3000/student?name=%E6%97%B6%E9%98%B3&password=123
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/student?name=%E6%97%B6%E9%98%B3&password=[FILTERED]" for 127.0.0.1 at 2013-06-07 17:50:47 -0500
+Processing by PagesController#student as HTML
+  Parameters: {"name"=>"时阳", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."name" = '时阳' LIMIT 1[0m
+  [1m[35mBroadcast Load (0.2ms)[0m  SELECT "broadcasts".* FROM "broadcasts" ORDER BY created_at DESC LIMIT 1
+  [1m[36mTopic Load (0.1ms)[0m  [1mSELECT "topics".* FROM "topics" ORDER BY created_at DESC LIMIT 3[0m
+  [1m[35mClasstime Load (0.2ms)[0m  SELECT "classtimes".* FROM "classtimes" WHERE "classtimes"."name" = '时阳' LIMIT 1
+  Rendered pages/student.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 130ms (Views: 60.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-07 17:50:47 -0500
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-06-07 17:50:47 -0500
+
+
+Started GET "/assets/broadcasts.css?body=1" for 127.0.0.1 at 2013-06-07 17:50:47 -0500
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-06-07 17:50:47 -0500
+
+
+Started GET "/assets/scaffold.css?body=1" for 127.0.0.1 at 2013-06-07 17:50:47 -0500
+
+
+Started GET "/assets/classtimes.css?body=1" for 127.0.0.1 at 2013-06-07 17:50:47 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-06-07 17:50:47 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-06-07 17:50:47 -0500
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-06-07 17:50:47 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-07 18:06:02 -0500
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 80ms (Views: 79.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-07 18:06:03 -0500
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-06-07 18:06:03 -0500
+
+
+Started GET "/assets/classtimes.css?body=1" for 127.0.0.1 at 2013-06-07 18:06:03 -0500
+
+
+Started GET "/assets/broadcasts.css?body=1" for 127.0.0.1 at 2013-06-07 18:06:03 -0500
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-06-07 18:06:03 -0500
+
+
+Started GET "/assets/scaffold.css?body=1" for 127.0.0.1 at 2013-06-07 18:06:03 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-06-07 18:06:03 -0500
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-06-07 18:06:03 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-06-07 18:06:03 -0500
+
+
+Started GET "/search?name=sisley&password=[FILTERED]" for 127.0.0.1 at 2013-06-07 18:06:12 -0500
+Processing by PagesController#search as HTML
+  Parameters: {"name"=>"sisley", "password"=>"[FILTERED]"}
+Redirected to http://0.0.0.0:3000/sisley?name=sisley
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sisley?name=sisley" for 127.0.0.1 at 2013-06-07 18:06:12 -0500
+Processing by PagesController#sisley as HTML
+  Parameters: {"name"=>"sisley"}
+  [1m[36mBroadcast Load (0.1ms)[0m  [1mSELECT "broadcasts".* FROM "broadcasts" ORDER BY created_at DESC LIMIT 1[0m
+  Rendered pages/sisley.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 17ms (Views: 4.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-06-07 18:06:12 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-07 18:06:12 -0500
+
+
+Started GET "/assets/scaffold.css?body=1" for 127.0.0.1 at 2013-06-07 18:06:12 -0500
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-06-07 18:06:12 -0500
+
+
+Started GET "/assets/classtimes.css?body=1" for 127.0.0.1 at 2013-06-07 18:06:12 -0500
+
+
+Started GET "/assets/broadcasts.css?body=1" for 127.0.0.1 at 2013-06-07 18:06:12 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-06-07 18:06:12 -0500
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-06-07 18:06:12 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-06-07 18:06:12 -0500
+
+
+Started GET "/search?name=%E6%97%B6%E9%98%B3&password=[FILTERED]" for 127.0.0.1 at 2013-06-07 18:06:20 -0500
+Processing by PagesController#search as HTML
+  Parameters: {"name"=>"时阳", "password"=>"[FILTERED]"}
+Redirected to http://0.0.0.0:3000/student?name=%E6%97%B6%E9%98%B3&password=123
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/student?name=%E6%97%B6%E9%98%B3&password=[FILTERED]" for 127.0.0.1 at 2013-06-07 18:06:20 -0500
+Processing by PagesController#student as HTML
+  Parameters: {"name"=>"时阳", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."name" = '时阳' LIMIT 1
+  [1m[36mBroadcast Load (0.2ms)[0m  [1mSELECT "broadcasts".* FROM "broadcasts" ORDER BY created_at DESC LIMIT 1[0m
+  [1m[35mTopic Load (0.1ms)[0m  SELECT "topics".* FROM "topics" ORDER BY created_at DESC LIMIT 3
+  [1m[36mClasstime Load (0.1ms)[0m  [1mSELECT "classtimes".* FROM "classtimes" WHERE "classtimes"."name" = '时阳' LIMIT 1[0m
+  Rendered pages/student.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 148ms (Views: 4.9ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-07 18:06:20 -0500
+
+
+Started GET "/assets/broadcasts.css?body=1" for 127.0.0.1 at 2013-06-07 18:06:20 -0500
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-06-07 18:06:20 -0500
+
+
+Started GET "/assets/classtimes.css?body=1" for 127.0.0.1 at 2013-06-07 18:06:20 -0500
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-06-07 18:06:20 -0500
+
+
+Started GET "/assets/scaffold.css?body=1" for 127.0.0.1 at 2013-06-07 18:06:20 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-06-07 18:06:20 -0500
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-06-07 18:06:20 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-06-07 18:06:20 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-08 10:07:31 -0500
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 260ms (Views: 259.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-08 10:07:32 -0500
+
+
+Started GET "/assets/broadcasts.css?body=1" for 127.0.0.1 at 2013-06-08 10:07:32 -0500
+
+
+Started GET "/assets/classtimes.css?body=1" for 127.0.0.1 at 2013-06-08 10:07:32 -0500
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-06-08 10:07:32 -0500
+
+
+Started GET "/assets/scaffold.css?body=1" for 127.0.0.1 at 2013-06-08 10:07:32 -0500
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-06-08 10:07:32 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-06-08 10:07:32 -0500
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-06-08 10:07:32 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-06-08 10:07:32 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-08 10:45:14 -0500
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 500ms (Views: 499.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-08 10:45:15 -0500
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-06-08 10:45:15 -0500
+
+
+Started GET "/assets/broadcasts.css?body=1" for 127.0.0.1 at 2013-06-08 10:45:15 -0500
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-06-08 10:45:15 -0500
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2013-06-08 10:45:15 -0500
+
+
+Started GET "/assets/classtimes.css?body=1" for 127.0.0.1 at 2013-06-08 10:45:15 -0500
+
+
+Started GET "/assets/scaffold.css?body=1" for 127.0.0.1 at 2013-06-08 10:45:15 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-06-08 10:45:15 -0500
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-06-08 10:45:15 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-06-08 10:45:15 -0500
