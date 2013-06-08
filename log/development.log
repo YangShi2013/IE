@@ -18480,3 +18480,139 @@ Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-06-08 10:45:15 -05
 
 
 Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-06-08 10:45:15 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-08 11:25:32 -0500
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (13.6ms)
+Completed 200 OK in 189ms (Views: 188.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-08 11:25:33 -0500
+
+
+Started GET "/assets/broadcasts.css?body=1" for 127.0.0.1 at 2013-06-08 11:25:33 -0500
+
+
+Started GET "/assets/classtimes.css?body=1" for 127.0.0.1 at 2013-06-08 11:25:33 -0500
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-06-08 11:25:33 -0500
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-06-08 11:25:33 -0500
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2013-06-08 11:25:33 -0500
+
+
+Started GET "/assets/scaffold.css?body=1" for 127.0.0.1 at 2013-06-08 11:25:33 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-06-08 11:25:33 -0500
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-06-08 11:25:33 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-06-08 11:25:33 -0500
+
+
+Started GET "/broadcasts" for 127.0.0.1 at 2013-06-08 11:25:35 -0500
+Processing by BroadcastsController#index as HTML
+  [1m[36mBroadcast Load (5.7ms)[0m  [1mSELECT "broadcasts".* FROM "broadcasts"[0m
+  Rendered broadcasts/index.html.erb within layouts/application (21.2ms)
+Completed 200 OK in 46ms (Views: 37.1ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2013-06-08 11:25:35 -0500
+
+
+Started GET "/assets/scaffold.css?body=1" for 127.0.0.1 at 2013-06-08 11:25:35 -0500
+
+
+Started GET "/broadcasts/12" for 127.0.0.1 at 2013-06-08 11:25:36 -0500
+Processing by BroadcastsController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[35mBroadcast Load (0.2ms)[0m  SELECT "broadcasts".* FROM "broadcasts" WHERE "broadcasts"."id" = ? LIMIT 1  [["id", "12"]]
+  Rendered broadcasts/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 19ms (Views: 16.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/scaffold.css?body=1" for 127.0.0.1 at 2013-06-08 11:25:36 -0500
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2013-06-08 11:25:36 -0500
+
+
+Started GET "/broadcasts" for 127.0.0.1 at 2013-06-08 11:25:38 -0500
+Processing by BroadcastsController#index as HTML
+  [1m[36mBroadcast Load (0.2ms)[0m  [1mSELECT "broadcasts".* FROM "broadcasts"[0m
+  Rendered broadcasts/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2013-06-08 11:25:38 -0500
+
+
+Started GET "/assets/scaffold.css?body=1" for 127.0.0.1 at 2013-06-08 11:25:38 -0500
+
+
+Started GET "/broadcasts/12" for 127.0.0.1 at 2013-06-08 11:25:39 -0500
+Processing by BroadcastsController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[35mBroadcast Load (0.1ms)[0m  SELECT "broadcasts".* FROM "broadcasts" WHERE "broadcasts"."id" = ? LIMIT 1  [["id", "12"]]
+  Rendered broadcasts/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/scaffold.css?body=1" for 127.0.0.1 at 2013-06-08 11:25:39 -0500
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2013-06-08 11:25:39 -0500
+
+
+Started GET "/broadcasts" for 127.0.0.1 at 2013-06-08 11:25:40 -0500
+Processing by BroadcastsController#index as HTML
+  [1m[36mBroadcast Load (0.3ms)[0m  [1mSELECT "broadcasts".* FROM "broadcasts"[0m
+  Rendered broadcasts/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2013-06-08 11:25:40 -0500
+
+
+Started GET "/assets/scaffold.css?body=1" for 127.0.0.1 at 2013-06-08 11:25:40 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-08 11:45:36 -0500
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 1442ms (Views: 1441.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-08 11:45:38 -0500
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-06-08 11:45:38 -0500
+
+
+Started GET "/assets/broadcasts.css?body=1" for 127.0.0.1 at 2013-06-08 11:45:38 -0500
+
+
+Started GET "/assets/classtimes.css?body=1" for 127.0.0.1 at 2013-06-08 11:45:38 -0500
+
+
+Started GET "/assets/scaffold.css?body=1" for 127.0.0.1 at 2013-06-08 11:45:38 -0500
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2013-06-08 11:45:38 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-06-08 11:45:38 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-06-08 11:45:38 -0500
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-06-08 11:45:38 -0500
