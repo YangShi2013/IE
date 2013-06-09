@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130607173226) do
+ActiveRecord::Schema.define(version: 20130609230506) do
 
   create_table "broadcasts", force: true do |t|
     t.string   "content"
@@ -29,6 +29,14 @@ ActiveRecord::Schema.define(version: 20130607173226) do
     t.integer  "takenVIPTime"
     t.string   "lastClass"
     t.string   "validDate"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "events", force: true do |t|
+    t.string   "name"
+    t.datetime "start_at"
+    t.datetime "end_at"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
