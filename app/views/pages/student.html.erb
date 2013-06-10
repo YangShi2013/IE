@@ -4,6 +4,42 @@
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
 	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	
+	<script>
+	$(document).ready(function() {
+		$('#calendar').fullCalendar({
+			header: {
+				left: 'prev,next today',
+				center: 'title',
+				right: 'month,agendaWeek,agendaDay'
+			},
+			events: 
+			[
+			{
+				title: "11111",
+				start: new Date(2013, 6, 9),
+				end: new Date(2013, 6, 10)
+			}
+			]
+		});
+		
+	});
+	</script>
+	<style>
+
+	body {
+		margin-top: 40px;
+		text-align: center;
+		font-size: 14px;
+		font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+	}
+
+	#calendar {
+		width: 900px;
+		margin: 0 auto;
+	}
+
+	</style>
 </head>
 <body>
 	<div class="container">	
@@ -16,26 +52,34 @@
 			<% end %>
 		</div>
 	</br>
+	<div id='calendar'></div>
 	<div id="topicTable">
-		<table class = "table table-striped sortable" data-provides="rowlink">
-			<tr>
-				<td><b>上课日期</b></td>
-				<td><b>上课时间</b></td>
-				<td><b>上课人员</b></td>
-				<td><b>课程主题</b></td>
-				<td><b>课前准备工作</b></td>
-				<td><b>课后作业</b></td>
+			<table id="topicTable" class = "table table-striped sortable" data-provides="rowlink">
+				<tr>
+					<td><b>年</b></td>
+					<td><b>月</b></td>
+					<td><b>日</b></td>
+					<td><b>开始时间</b></td>
+					<td><b>结束时间</b></td>
+					<td><b>上课人员</b></td>
+					<td><b>课程主题</b></td>
+					<td><b>课前准备工作</b></td>
+					<td><b>课后作业</b></td>
+				</tr>
+				<% @topic.each do |topic| %>
+				<td><%= topic.year %></td>
+				<td><%= topic.month %></td>
+				<td><%= topic.day %></td>
+				<td><%= topic.startTime %></td>
+				<td><%= topic.endTime %></td>
+				<td><%= topic.people %></td>
+				<td><%= topic.theme %></td>
+				<td><%= topic.preparation %></td>
+				<td><%= topic.homework %></td>
 			</tr>
-			<% @topic.each do |user| %>
-			<td><%= user.date %></td>
-			<td><%= user.time %></td>
-			<td><%= user.people %></td>
-			<td><%= user.theme %></td>
-			<td><%= user.preparation %></td>
-			<td><%= user.homework %></td>
-		</tr>
-		<% end %>
-	</table>
+			<% end %>
+		</table>
+	</div>
 </div>
 <button class="btn parkBtn" id="checkClassTime">查看上课情况</button>
 <div>
