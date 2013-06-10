@@ -3,8 +3,11 @@ require 'spec_helper'
 describe "topics/edit" do
   before(:each) do
     @topic = assign(:topic, stub_model(Topic,
-      :date => "MyString",
-      :time => "MyString",
+      :year => "MyString",
+      :month => "MyString",
+      :day => "MyString",
+      :startTime => "MyString",
+      :endTime => "MyString",
       :people => "MyString",
       :theme => "MyString",
       :preparation => "MyString",
@@ -17,8 +20,11 @@ describe "topics/edit" do
 
     # Run the generator again with the --webrat flag if you want to use webrat matchers
     assert_select "form[action=?][method=?]", topic_path(@topic), "post" do
-      assert_select "input#topic_date[name=?]", "topic[date]"
-      assert_select "input#topic_time[name=?]", "topic[time]"
+      assert_select "input#topic_year[name=?]", "topic[year]"
+      assert_select "input#topic_month[name=?]", "topic[month]"
+      assert_select "input#topic_day[name=?]", "topic[day]"
+      assert_select "input#topic_startTime[name=?]", "topic[startTime]"
+      assert_select "input#topic_endTime[name=?]", "topic[endTime]"
       assert_select "input#topic_people[name=?]", "topic[people]"
       assert_select "input#topic_theme[name=?]", "topic[theme]"
       assert_select "input#topic_preparation[name=?]", "topic[preparation]"

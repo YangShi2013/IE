@@ -14,7 +14,7 @@ IE::Application.routes.draw do
   get "sisley" => "pages#sisley"
   get "editUser" => "users#index"
   get "editClasstime" => "classtimes#index"
-  get "editTopic" => "topics#index"
+  get "editTopic" => "pages#editTopic"
   get "broadcast"=> "pages#broadcast"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

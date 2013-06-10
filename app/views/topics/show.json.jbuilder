@@ -1,1 +1,1 @@
-json.extract! @topic, :date, :time, :people, :theme, :preparation, :homework, :created_at, :updated_at
+json.extract! @topic, :year, :month, :day, :startTime, :endTime, :people, :theme, :preparation, :homework, :created_at, :updated_at

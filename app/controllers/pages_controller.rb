@@ -43,7 +43,33 @@ class PagesController < ApplicationController
     redirect_to :action => "editClasstime"
   end
   
-  def editTopic
+  def editMyTopic
     redirect_to :action => "editTopic"
   end
+  
+  def editTopic
+    year = params [:year]
+    month = params [:month]
+    day = params [:day]
+    startTime = params [:startTime]
+    endTime = params [:endTime]
+    people = params [:people]
+    theme = params [:theme]
+    preparation = params [:preparation]
+    homework = params [:homework]
+    Topic.create(
+    :year => year,
+    :month => month,
+    :day => day,
+    :startTime =>startTime,
+    :endTime => endTime,
+    :people => people,
+    :theme => theme,
+    :preparation => preparation,
+    :homework => homework
+    )
+    redirect_to :action => "sisley"
+  end
+  
+  
 end

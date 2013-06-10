@@ -3,8 +3,11 @@
 <table>
   <thead>
     <tr>
-      <th>Date</th>
-      <th>Time</th>
+      <th>Year</th>
+      <th>Month</th>
+      <th>Day</th>
+      <th>Starttime</th>
+      <th>Endtime</th>
       <th>People</th>
       <th>Theme</th>
       <th>Preparation</th>
@@ -18,8 +21,11 @@
   <tbody>
     <% @topics.each do |topic| %>
     <tr>
-      <td><%= topic.date %></td>
-      <td><%= topic.time %></td>
+      <td><%= topic.year %></td>
+      <td><%= topic.month %></td>
+      <td><%= topic.day %></td>
+      <td><%= topic.startTime %></td>
+      <td><%= topic.endTime %></td>
       <td><%= topic.people %></td>
       <td><%= topic.theme %></td>
       <td><%= topic.preparation %></td>

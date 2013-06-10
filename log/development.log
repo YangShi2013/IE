@@ -18616,3 +18616,76 @@ Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-06-08 11:45:38 -050
 
 
 Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-06-08 11:45:38 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-09 20:38:22 -0500
+
+ActiveRecord::PendingMigrationError (Migrations are pending; run 'rake db:migrate RAILS_ENV=development' to resolve this issue.):
+  activerecord (4.0.0.beta1) lib/active_record/migration.rb:357:in `check_pending!'
+  activerecord (4.0.0.beta1) lib/active_record/migration.rb:346:in `block in call'
+  activesupport (4.0.0.beta1) lib/active_support/logger_silence.rb:16:in `silence'
+  activerecord (4.0.0.beta1) lib/active_record/migration.rb:345:in `call'
+  actionpack (4.0.0.beta1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0.beta1) lib/active_support/callbacks.rb:373:in `_run__1129275269536299092__call__callbacks'
+  activesupport (4.0.0.beta1) lib/active_support/callbacks.rb:78:in `run_callbacks'
+  actionpack (4.0.0.beta1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0.beta1) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0.beta1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0.beta1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0.beta1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0.beta1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0.beta1) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0.beta1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0.beta1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0.beta1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0.beta1) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0.beta1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0.beta1) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0.beta1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0.beta1) lib/rails/engine.rb:510:in `call'
+  railties (4.0.0.beta1) lib/rails/application.rb:96:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/shiyang/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/shiyang/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/shiyang/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/shiyang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.beta1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/shiyang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.beta1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /Users/shiyang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.beta1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /Users/shiyang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.beta1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (69.6ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateTopics (20130610012626)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "topics" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "year" varchar(255), "month" varchar(255), "day" varchar(255), "startTime" varchar(255), "endTime" varchar(255), "people" varchar(255), "theme" varchar(255), "preparation" varchar(255), "homework" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+SQLite3::SQLException: table "topics" already exists: CREATE TABLE "topics" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "year" varchar(255), "month" varchar(255), "day" varchar(255), "startTime" varchar(255), "endTime" varchar(255), "people" varchar(255), "theme" varchar(255), "preparation" varchar(255), "homework" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (492.8ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (347.9ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateClasstimes (20130607163740)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (841.7ms)[0m  [1mCREATE TABLE "classtimes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "password" varchar(255), "totalTime" integer, "takenTime" integer, "balance" integer, "VIPbalance" integer, "takenVIPTime" integer, "lastClass" varchar(255), "validDate" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20130607163740"]]
+  [1m[36m (372.8ms)[0m  [1mcommit transaction[0m
+Migrating to CreateUsers (20130607164436)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (443.1ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "password" varchar(255), "birth" varchar(255), "cellNum" varchar(255), "homeNum" varchar(255), "club" varchar(255), "email" varchar(255), "address" varchar(255), "from" varchar(255), "qq" varchar(255), "MSN" varchar(255), "location" varchar(255), "condition" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20130607164436"]]
+  [1m[36m (882.8ms)[0m  [1mcommit transaction[0m
+Migrating to CreateBroadcasts (20130607173226)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (551.9ms)[0m  [1mCREATE TABLE "broadcasts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "content" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (85.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20130607173226"]]
+  [1m[36m (252.7ms)[0m  [1mcommit transaction[0m
+Migrating to CreateTopics (20130610012626)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mCREATE TABLE "topics" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "year" varchar(255), "month" varchar(255), "day" varchar(255), "startTime" varchar(255), "endTime" varchar(255), "people" varchar(255), "theme" varchar(255), "preparation" varchar(255), "homework" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20130610012626"]]
+  [1m[36m (76.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"

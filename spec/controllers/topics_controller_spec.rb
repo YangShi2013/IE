@@ -24,7 +24,7 @@ describe TopicsController do
   # Topic. As you add validations to Topic, be sure to
   # update the return value of this method accordingly.
   def valid_attributes
-    { "date" => "MyString" }
+    { "year" => "MyString" }
   end
 
   # This should return the minimal set of values that should be in the session
@@ -89,14 +89,14 @@ describe TopicsController do
       it "assigns a newly created but unsaved topic as @topic" do
         # Trigger the behavior that occurs when invalid params are submitted
         Topic.any_instance.stub(:save).and_return(false)
-        post :create, {:topic => { "date" => "invalid value" }}, valid_session
+        post :create, {:topic => { "year" => "invalid value" }}, valid_session
         assigns(:topic).should be_a_new(Topic)
       end
 
       it "re-renders the 'new' template" do
         # Trigger the behavior that occurs when invalid params are submitted
         Topic.any_instance.stub(:save).and_return(false)
-        post :create, {:topic => { "date" => "invalid value" }}, valid_session
+        post :create, {:topic => { "year" => "invalid value" }}, valid_session
         response.should render_template("new")
       end
     end
@@ -110,8 +110,8 @@ describe TopicsController do
         # specifies that the Topic created on the previous line
         # receives the :update_attributes message with whatever params are
         # submitted in the request.
-        Topic.any_instance.should_receive(:update).with({ "date" => "MyString" })
-        put :update, {:id => topic.to_param, :topic => { "date" => "MyString" }}, valid_session
+        Topic.any_instance.should_receive(:update).with({ "year" => "MyString" })
+        put :update, {:id => topic.to_param, :topic => { "year" => "MyString" }}, valid_session
       end
 
       it "assigns the requested topic as @topic" do
@@ -132,7 +132,7 @@ describe TopicsController do
         topic = Topic.create! valid_attributes
         # Trigger the behavior that occurs when invalid params are submitted
         Topic.any_instance.stub(:save).and_return(false)
-        put :update, {:id => topic.to_param, :topic => { "date" => "invalid value" }}, valid_session
+        put :update, {:id => topic.to_param, :topic => { "year" => "invalid value" }}, valid_session
         assigns(:topic).should eq(topic)
       end
 
@@ -140,7 +140,7 @@ describe TopicsController do
         topic = Topic.create! valid_attributes
         # Trigger the behavior that occurs when invalid params are submitted
         Topic.any_instance.stub(:save).and_return(false)
-        put :update, {:id => topic.to_param, :topic => { "date" => "invalid value" }}, valid_session
+        put :update, {:id => topic.to_param, :topic => { "year" => "invalid value" }}, valid_session
         response.should render_template("edit")
       end
     end
