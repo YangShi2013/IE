@@ -33951,3 +33951,586 @@ Processing by UsersController#index as XLS
   [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
   Rendered users/index.xls.erb (1.3ms)
 Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.3ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/sisley?name=sisley" for 127.0.0.1 at 2013-06-10 23:35:18 -0500
+Processing by PagesController#sisley as HTML
+  Parameters: {"name"=>"sisley"}
+  [1m[36mBroadcast Load (0.1ms)[0m  [1mSELECT "broadcasts".* FROM "broadcasts" ORDER BY created_at DESC LIMIT 1[0m
+  Rendered pages/sisley.html.erb within layouts/application (35.6ms)
+Completed 200 OK in 649ms (Views: 628.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2013-06-10 23:35:19 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-10 23:35:19 -0500
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-06-10 23:35:19 -0500
+
+
+Started GET "/assets/classtimes.css?body=1" for 127.0.0.1 at 2013-06-10 23:35:19 -0500
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-06-10 23:35:19 -0500
+
+
+Started GET "/assets/broadcasts.css?body=1" for 127.0.0.1 at 2013-06-10 23:35:19 -0500
+
+
+Started GET "/assets/fullcalendar.css?body=1" for 127.0.0.1 at 2013-06-10 23:35:19 -0500
+
+
+Started GET "/assets/fullcalendar.print.css?body=1" for 127.0.0.1 at 2013-06-10 23:35:19 -0500
+
+
+Started GET "/assets/scaffold.css?body=1" for 127.0.0.1 at 2013-06-10 23:35:19 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-06-10 23:35:19 -0500
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-06-10 23:35:19 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-06-10 23:35:19 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-10 23:35:19 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-10 23:35:19 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-06-10 23:35:19 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-06-10 23:35:19 -0500
+
+
+Started GET "/assets/broadcasts.js?body=1" for 127.0.0.1 at 2013-06-10 23:35:19 -0500
+
+
+Started GET "/assets/classtimes.js?body=1" for 127.0.0.1 at 2013-06-10 23:35:19 -0500
+
+
+Started GET "/assets/jquery-ui-1.10.2.custom.min.js?body=1" for 127.0.0.1 at 2013-06-10 23:35:19 -0500
+
+
+Started GET "/assets/jquery-1.9.1.min.js?body=1" for 127.0.0.1 at 2013-06-10 23:35:19 -0500
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-06-10 23:35:19 -0500
+
+
+Started GET "/assets/fullcalendar.min.js?body=1" for 127.0.0.1 at 2013-06-10 23:35:19 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-06-10 23:35:19 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-10 23:35:19 -0500
+
+
+Started POST "/loadUser" for 127.0.0.1 at 2013-06-10 23:35:54 -0500
+Processing by PagesController#loadUser as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PUI26b3w6Fhb0h5+e03V4FuXXC7XPEHP4biJSgnGnoI=", "import_csv"=>{"csv"=>#<ActionDispatch::Http::UploadedFile:0x007fd6ddda4060 @tempfile=#<Tempfile:/var/folders/j4/r9pzfz3s55x57489ypddszmw0000gn/T/RackMultipart20130610-6002-1kb4pdc>, @original_filename="Workbook1.xlsx", @content_type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", @headers="Content-Disposition: form-data; name=\"import_csv[csv]\"; filename=\"Workbook1.xlsx\"\r\nContent-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet\r\n">}, "commit"=>"上传学生信息"}
+Completed 500 Internal Server Error in 1ms
+
+CSV::MalformedCSVError (Illegal quoting in line 1.):
+  app/models/user.rb:13:in `import_data'
+  app/controllers/pages_controller.rb:63:in `loadUser'
+
+
+  Rendered /Users/shiyang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.beta1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /Users/shiyang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.beta1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /Users/shiyang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.beta1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/shiyang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.beta1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (47.8ms)
+
+
+Started POST "/loadUser" for 127.0.0.1 at 2013-06-10 23:36:25 -0500
+Processing by PagesController#loadUser as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PUI26b3w6Fhb0h5+e03V4FuXXC7XPEHP4biJSgnGnoI=", "import_csv"=>{"csv"=>#<ActionDispatch::Http::UploadedFile:0x007fd6e18529c8 @tempfile=#<Tempfile:/var/folders/j4/r9pzfz3s55x57489ypddszmw0000gn/T/RackMultipart20130610-6002-1sjx7ff>, @original_filename="Workbook1.xlsx", @content_type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", @headers="Content-Disposition: form-data; name=\"import_csv[csv]\"; filename=\"Workbook1.xlsx\"\r\nContent-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet\r\n">}, "commit"=>"上传学生信息"}
+Completed 500 Internal Server Error in 1ms
+
+CSV::MalformedCSVError (Illegal quoting in line 1.):
+  app/models/user.rb:13:in `import_data'
+  app/controllers/pages_controller.rb:63:in `loadUser'
+
+
+  Rendered /Users/shiyang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.beta1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /Users/shiyang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.beta1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /Users/shiyang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.beta1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /Users/shiyang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.beta1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (29.1ms)
+
+
+Started POST "/loadUser" for 127.0.0.1 at 2013-06-10 23:37:00 -0500
+Processing by PagesController#loadUser as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PUI26b3w6Fhb0h5+e03V4FuXXC7XPEHP4biJSgnGnoI=", "import_csv"=>{"csv"=>#<ActionDispatch::Http::UploadedFile:0x007fd6deeb1268 @tempfile=#<Tempfile:/var/folders/j4/r9pzfz3s55x57489ypddszmw0000gn/T/RackMultipart20130610-6002-1j22kdl>, @original_filename="Workbook1.xlsx", @content_type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", @headers="Content-Disposition: form-data; name=\"import_csv[csv]\"; filename=\"Workbook1.xlsx\"\r\nContent-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet\r\n">}, "commit"=>"上传学生信息"}
+Completed 500 Internal Server Error in 1ms
+
+CSV::MalformedCSVError (Illegal quoting in line 1.):
+  app/models/user.rb:13:in `import_data'
+  app/controllers/pages_controller.rb:63:in `loadUser'
+
+
+  Rendered /Users/shiyang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.beta1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/shiyang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.beta1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/shiyang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.beta1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/shiyang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.beta1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.5ms)
+
+
+Started POST "/loadUser" for 127.0.0.1 at 2013-06-10 23:37:02 -0500
+Processing by PagesController#loadUser as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PUI26b3w6Fhb0h5+e03V4FuXXC7XPEHP4biJSgnGnoI=", "import_csv"=>{"csv"=>#<ActionDispatch::Http::UploadedFile:0x007fd6dc2b3e68 @tempfile=#<Tempfile:/var/folders/j4/r9pzfz3s55x57489ypddszmw0000gn/T/RackMultipart20130610-6002-8qbdu>, @original_filename="Workbook1.xlsx", @content_type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", @headers="Content-Disposition: form-data; name=\"import_csv[csv]\"; filename=\"Workbook1.xlsx\"\r\nContent-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet\r\n">}, "commit"=>"上传学生信息"}
+Completed 500 Internal Server Error in 1ms
+
+CSV::MalformedCSVError (Illegal quoting in line 1.):
+  app/models/user.rb:13:in `import_data'
+  app/controllers/pages_controller.rb:63:in `loadUser'
+
+
+  Rendered /Users/shiyang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.beta1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/shiyang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.beta1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/shiyang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.beta1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/shiyang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.beta1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.2ms)
+
+
+Started GET "/sisley?name=sisley" for 127.0.0.1 at 2013-06-10 23:37:49 -0500
+Processing by PagesController#sisley as HTML
+  Parameters: {"name"=>"sisley"}
+  [1m[35mBroadcast Load (0.1ms)[0m  SELECT "broadcasts".* FROM "broadcasts" ORDER BY created_at DESC LIMIT 1
+  Rendered pages/sisley.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 16ms
+
+ActionView::Template::Error (No route matches {:action=>"import", :controller=>"pages"}):
+    27: 		<form action="editTopic" method="get">
+    28: 			<button class="btn parkBtn">编辑本周课程</button>
+    29: 		</form>
+    30: 		<%= form_for :import_csv, :url => {:action => :import}, :html => {:multipart => true} do |f| %>
+    31: 		  <%= f.file_field :csv %>
+    32: 		  <%= f.submit '上传学生信息'%>
+    33: 		<%end%>
+  app/views/pages/sisley.html.erb:30:in `_app_views_pages_sisley_html_erb___2868144440646412962_70280412049620'
+
+
+  Rendered /Users/shiyang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.beta1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/shiyang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.beta1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/shiyang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.beta1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.4ms)
+
+
+Started GET "/sisley?name=sisley" for 127.0.0.1 at 2013-06-10 23:38:25 -0500
+Processing by PagesController#sisley as HTML
+  Parameters: {"name"=>"sisley"}
+  [1m[36mBroadcast Load (0.1ms)[0m  [1mSELECT "broadcasts".* FROM "broadcasts" ORDER BY created_at DESC LIMIT 1[0m
+  Rendered pages/sisley.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 34ms (Views: 21.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2013-06-10 23:38:25 -0500
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-06-10 23:38:25 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-10 23:38:25 -0500
+
+
+Started GET "/assets/classtimes.css?body=1" for 127.0.0.1 at 2013-06-10 23:38:25 -0500
+
+
+Started GET "/assets/broadcasts.css?body=1" for 127.0.0.1 at 2013-06-10 23:38:25 -0500
+
+
+Started GET "/assets/fullcalendar.css?body=1" for 127.0.0.1 at 2013-06-10 23:38:25 -0500
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-06-10 23:38:25 -0500
+
+
+Started GET "/assets/fullcalendar.print.css?body=1" for 127.0.0.1 at 2013-06-10 23:38:25 -0500
+
+
+Started GET "/assets/scaffold.css?body=1" for 127.0.0.1 at 2013-06-10 23:38:25 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-06-10 23:38:25 -0500
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-06-10 23:38:25 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-06-10 23:38:25 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-10 23:38:25 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-10 23:38:25 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-06-10 23:38:25 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-06-10 23:38:25 -0500
+
+
+Started GET "/assets/broadcasts.js?body=1" for 127.0.0.1 at 2013-06-10 23:38:25 -0500
+
+
+Started GET "/assets/fullcalendar.min.js?body=1" for 127.0.0.1 at 2013-06-10 23:38:25 -0500
+
+
+Started GET "/assets/classtimes.js?body=1" for 127.0.0.1 at 2013-06-10 23:38:25 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-06-10 23:38:25 -0500
+
+
+Started GET "/assets/jquery-ui-1.10.2.custom.min.js?body=1" for 127.0.0.1 at 2013-06-10 23:38:25 -0500
+
+
+Started GET "/assets/jquery-1.9.1.min.js?body=1" for 127.0.0.1 at 2013-06-10 23:38:25 -0500
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-06-10 23:38:25 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-10 23:38:25 -0500
+
+
+Started POST "/import" for 127.0.0.1 at 2013-06-10 23:38:32 -0500
+Processing by PagesController#import as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PUI26b3w6Fhb0h5+e03V4FuXXC7XPEHP4biJSgnGnoI=", "import_csv"=>{"csv"=>#<ActionDispatch::Http::UploadedFile:0x007fd6e3097998 @tempfile=#<Tempfile:/var/folders/j4/r9pzfz3s55x57489ypddszmw0000gn/T/RackMultipart20130610-6002-hwqb5x>, @original_filename="Workbook1.xlsx", @content_type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", @headers="Content-Disposition: form-data; name=\"import_csv[csv]\"; filename=\"Workbook1.xlsx\"\r\nContent-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet\r\n">}, "commit"=>"上传学生信息"}
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError (undefined method `import' for #<Class:0x007fd6dee786e8>):
+  app/controllers/pages_controller.rb:58:in `import'
+
+
+  Rendered /Users/shiyang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.beta1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/shiyang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.beta1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/shiyang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.beta1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/shiyang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.beta1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.1ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-10 23:39:13 -0500
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 550ms (Views: 549.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2013-06-10 23:39:14 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-10 23:39:14 -0500
+
+
+Started GET "/assets/broadcasts.css?body=1" for 127.0.0.1 at 2013-06-10 23:39:14 -0500
+
+
+Started GET "/assets/classtimes.css?body=1" for 127.0.0.1 at 2013-06-10 23:39:14 -0500
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-06-10 23:39:14 -0500
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-06-10 23:39:14 -0500
+
+
+Started GET "/assets/fullcalendar.css?body=1" for 127.0.0.1 at 2013-06-10 23:39:14 -0500
+
+
+Started GET "/assets/fullcalendar.print.css?body=1" for 127.0.0.1 at 2013-06-10 23:39:14 -0500
+
+
+Started GET "/assets/scaffold.css?body=1" for 127.0.0.1 at 2013-06-10 23:39:14 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-06-10 23:39:14 -0500
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-06-10 23:39:14 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-06-10 23:39:14 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-10 23:39:14 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-10 23:39:14 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-06-10 23:39:14 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-06-10 23:39:14 -0500
+
+
+Started GET "/assets/broadcasts.js?body=1" for 127.0.0.1 at 2013-06-10 23:39:14 -0500
+
+
+Started GET "/assets/classtimes.js?body=1" for 127.0.0.1 at 2013-06-10 23:39:14 -0500
+
+
+Started GET "/assets/fullcalendar.min.js?body=1" for 127.0.0.1 at 2013-06-10 23:39:14 -0500
+
+
+Started GET "/assets/jquery-1.9.1.min.js?body=1" for 127.0.0.1 at 2013-06-10 23:39:14 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-10 23:39:14 -0500
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-06-10 23:39:14 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-06-10 23:39:14 -0500
+
+
+Started GET "/assets/jquery-ui-1.10.2.custom.min.js?body=1" for 127.0.0.1 at 2013-06-10 23:39:14 -0500
+
+
+Started GET "/search?name=sisley&password=[FILTERED]" for 127.0.0.1 at 2013-06-10 23:39:18 -0500
+Processing by PagesController#search as HTML
+  Parameters: {"name"=>"sisley", "password"=>"[FILTERED]"}
+Redirected to http://0.0.0.0:3000/sisley?name=sisley
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sisley?name=sisley" for 127.0.0.1 at 2013-06-10 23:39:18 -0500
+Processing by PagesController#sisley as HTML
+  Parameters: {"name"=>"sisley"}
+  [1m[36mBroadcast Load (0.1ms)[0m  [1mSELECT "broadcasts".* FROM "broadcasts" ORDER BY created_at DESC LIMIT 1[0m
+  Rendered pages/sisley.html.erb within layouts/application (28.3ms)
+Completed 200 OK in 47ms (Views: 35.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2013-06-10 23:39:18 -0500
+
+
+Started GET "/assets/broadcasts.css?body=1" for 127.0.0.1 at 2013-06-10 23:39:18 -0500
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-06-10 23:39:18 -0500
+
+
+Started GET "/assets/fullcalendar.css?body=1" for 127.0.0.1 at 2013-06-10 23:39:18 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-10 23:39:18 -0500
+
+
+Started GET "/assets/classtimes.css?body=1" for 127.0.0.1 at 2013-06-10 23:39:18 -0500
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-06-10 23:39:18 -0500
+
+
+Started GET "/assets/fullcalendar.print.css?body=1" for 127.0.0.1 at 2013-06-10 23:39:18 -0500
+
+
+Started GET "/assets/scaffold.css?body=1" for 127.0.0.1 at 2013-06-10 23:39:18 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-06-10 23:39:18 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-06-10 23:39:18 -0500
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-06-10 23:39:18 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-10 23:39:18 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-10 23:39:18 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-06-10 23:39:18 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-06-10 23:39:18 -0500
+
+
+Started GET "/assets/broadcasts.js?body=1" for 127.0.0.1 at 2013-06-10 23:39:18 -0500
+
+
+Started GET "/assets/classtimes.js?body=1" for 127.0.0.1 at 2013-06-10 23:39:18 -0500
+
+
+Started GET "/assets/fullcalendar.min.js?body=1" for 127.0.0.1 at 2013-06-10 23:39:18 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-06-10 23:39:18 -0500
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-06-10 23:39:18 -0500
+
+
+Started GET "/assets/jquery-1.9.1.min.js?body=1" for 127.0.0.1 at 2013-06-10 23:39:18 -0500
+
+
+Started GET "/assets/jquery-ui-1.10.2.custom.min.js?body=1" for 127.0.0.1 at 2013-06-10 23:39:18 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-10 23:39:18 -0500
+
+
+Started POST "/import" for 127.0.0.1 at 2013-06-10 23:39:23 -0500
+Processing by PagesController#import as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PUI26b3w6Fhb0h5+e03V4FuXXC7XPEHP4biJSgnGnoI=", "import_csv"=>{"csv"=>#<ActionDispatch::Http::UploadedFile:0x007f94efa18ae8 @tempfile=#<Tempfile:/var/folders/j4/r9pzfz3s55x57489ypddszmw0000gn/T/RackMultipart20130610-6101-9v2mxv>, @original_filename="Workbook1.xlsx", @content_type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", @headers="Content-Disposition: form-data; name=\"import_csv[csv]\"; filename=\"Workbook1.xlsx\"\r\nContent-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet\r\n">}, "commit"=>"上传学生信息"}
+Completed 500 Internal Server Error in 36ms
+
+NoMethodError (undefined method `import' for #<Class:0x007f94f0823430>):
+  app/controllers/pages_controller.rb:58:in `import'
+
+
+  Rendered /Users/shiyang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.beta1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/shiyang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.beta1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/shiyang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.beta1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/shiyang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.beta1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.4ms)
+
+
+Started POST "/import" for 127.0.0.1 at 2013-06-10 23:39:38 -0500
+Processing by PagesController#import as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PUI26b3w6Fhb0h5+e03V4FuXXC7XPEHP4biJSgnGnoI=", "import_csv"=>{"csv"=>#<ActionDispatch::Http::UploadedFile:0x007f94f0830c48 @tempfile=#<Tempfile:/var/folders/j4/r9pzfz3s55x57489ypddszmw0000gn/T/RackMultipart20130610-6101-17krp9v>, @original_filename="Workbook1.xlsx", @content_type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", @headers="Content-Disposition: form-data; name=\"import_csv[csv]\"; filename=\"Workbook1.xlsx\"\r\nContent-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet\r\n">}, "commit"=>"上传学生信息"}
+Completed 500 Internal Server Error in 3ms
+
+NoMethodError (undefined method `import' for #<Class:0x007f94ec5253b8>):
+  app/controllers/pages_controller.rb:58:in `import'
+
+
+  Rendered /Users/shiyang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.beta1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/shiyang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.beta1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/shiyang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.beta1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/shiyang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.beta1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.5ms)
+
+
+Started POST "/import" for 127.0.0.1 at 2013-06-10 23:39:41 -0500
+Processing by PagesController#import as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PUI26b3w6Fhb0h5+e03V4FuXXC7XPEHP4biJSgnGnoI=", "import_csv"=>{"csv"=>#<ActionDispatch::Http::UploadedFile:0x007f94ef8e4910 @tempfile=#<Tempfile:/var/folders/j4/r9pzfz3s55x57489ypddszmw0000gn/T/RackMultipart20130610-6101-hymcte>, @original_filename="Workbook1.xlsx", @content_type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", @headers="Content-Disposition: form-data; name=\"import_csv[csv]\"; filename=\"Workbook1.xlsx\"\r\nContent-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet\r\n">}, "commit"=>"上传学生信息"}
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `import' for #<Class:0x007f94ec5253b8>):
+  app/controllers/pages_controller.rb:58:in `import'
+
+
+  Rendered /Users/shiyang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.beta1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/shiyang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.beta1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/shiyang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.beta1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/shiyang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.beta1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.6ms)
+
+
+Started GET "/sisley?name=sisley" for 127.0.0.1 at 2013-06-10 23:41:16 -0500
+
+LoadError (cannot load such file -- iconv):
+  app/controllers/pages_controller.rb:3:in `<top (required)>'
+
+
+  Rendered /Users/shiyang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.beta1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/shiyang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.beta1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/shiyang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.beta1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (8.3ms)
+  Rendered /Users/shiyang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.beta1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (23.3ms)
+
+
+Started GET "/sisley?name=sisley" for 127.0.0.1 at 2013-06-10 23:42:13 -0500
+Processing by PagesController#sisley as HTML
+  Parameters: {"name"=>"sisley"}
+  [1m[36mBroadcast Load (0.1ms)[0m  [1mSELECT "broadcasts".* FROM "broadcasts" ORDER BY created_at DESC LIMIT 1[0m
+  Rendered pages/sisley.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 140ms (Views: 127.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2013-06-10 23:42:13 -0500
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-06-10 23:42:13 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-10 23:42:13 -0500
+
+
+Started GET "/assets/classtimes.css?body=1" for 127.0.0.1 at 2013-06-10 23:42:13 -0500
+
+
+Started GET "/assets/broadcasts.css?body=1" for 127.0.0.1 at 2013-06-10 23:42:13 -0500
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-06-10 23:42:13 -0500
+
+
+Started GET "/assets/fullcalendar.css?body=1" for 127.0.0.1 at 2013-06-10 23:42:13 -0500
+
+
+Started GET "/assets/fullcalendar.print.css?body=1" for 127.0.0.1 at 2013-06-10 23:42:13 -0500
+
+
+Started GET "/assets/scaffold.css?body=1" for 127.0.0.1 at 2013-06-10 23:42:13 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-06-10 23:42:13 -0500
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-06-10 23:42:13 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-06-10 23:42:13 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-10 23:42:13 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-10 23:42:13 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-06-10 23:42:13 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-06-10 23:42:13 -0500
+
+
+Started GET "/assets/broadcasts.js?body=1" for 127.0.0.1 at 2013-06-10 23:42:13 -0500
+
+
+Started GET "/assets/classtimes.js?body=1" for 127.0.0.1 at 2013-06-10 23:42:13 -0500
+
+
+Started GET "/assets/fullcalendar.min.js?body=1" for 127.0.0.1 at 2013-06-10 23:42:13 -0500
+
+
+Started GET "/assets/jquery-1.9.1.min.js?body=1" for 127.0.0.1 at 2013-06-10 23:42:13 -0500
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-06-10 23:42:13 -0500
+
+
+Started GET "/assets/jquery-ui-1.10.2.custom.min.js?body=1" for 127.0.0.1 at 2013-06-10 23:42:13 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-06-10 23:42:13 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-10 23:42:13 -0500
+
+
+Started POST "/import" for 127.0.0.1 at 2013-06-10 23:42:18 -0500
+Processing by PagesController#import as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PUI26b3w6Fhb0h5+e03V4FuXXC7XPEHP4biJSgnGnoI=", "import_csv"=>{"csv"=>#<ActionDispatch::Http::UploadedFile:0x007fed8e2ece70 @tempfile=#<Tempfile:/var/folders/j4/r9pzfz3s55x57489ypddszmw0000gn/T/RackMultipart20130610-6169-1wvhpo6>, @original_filename="Workbook1.xlsx", @content_type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", @headers="Content-Disposition: form-data; name=\"import_csv[csv]\"; filename=\"Workbook1.xlsx\"\r\nContent-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet\r\n">}, "commit"=>"上传学生信息"}
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError (undefined method `import' for #<Class:0x007fed8f28fe40>):
+  app/controllers/pages_controller.rb:57:in `import'
+
+
+  Rendered /Users/shiyang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.beta1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/shiyang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.beta1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/shiyang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.beta1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/shiyang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.beta1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.3ms)

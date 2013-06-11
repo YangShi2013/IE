@@ -1,6 +1,5 @@
 require 'net/http'
 require 'csv'
-
 class PagesController < ApplicationController
   def home
 
@@ -52,6 +51,11 @@ class PagesController < ApplicationController
   
   def editTopic
     redirect_to :action => "editTopic"
+  end
+  
+  def import
+    User.import(params[:file])
+    redirect_to :action=> "sisley", notice: "Products imported."
   end
   
   def loadUser
