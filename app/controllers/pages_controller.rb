@@ -53,10 +53,10 @@ class PagesController < ApplicationController
     redirect_to :action => "editTopic"
   end
   
-  def import
-    User.import(params[:file])
-    redirect_to :action=> "sisley", notice: "Products imported."
-  end
+  #def import
+    #User.import(params[:file])
+    #redirect_to :action=> "sisley", notice: "Products imported."
+    #end
   
   def loadUser
     User.import_data(params[:import_csv][:csv].read)
