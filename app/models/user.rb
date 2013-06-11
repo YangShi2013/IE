@@ -15,7 +15,6 @@ class User < ActiveRecord::Base
       name = String(row[0])
       password = String(row[1])
       birth = String(row[2])
-      #estimatedPrice = self.regression_model(bedrooms, minutes)
       cellNum = String(row[3])
       homeNum = String(row[4])
       club = String(row[5])

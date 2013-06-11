@@ -64,4 +64,18 @@ class PagesController < ApplicationController
     
     render "sisley"
   end
+  
+  def loadTopic
+    Topic.import_data(params[:import_csv][:csv].read)
+    @message = "db updated!"
+    
+    render "sisley"
+  end
+  
+  def loadClassTime
+    Classtime.import_data(params[:import_csv][:csv].read)
+    @message = "db updated!"
+    
+    render "sisley"
+  end
 end

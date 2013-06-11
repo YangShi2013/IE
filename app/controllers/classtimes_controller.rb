@@ -6,7 +6,14 @@ class ClasstimesController < ApplicationController
   def index
     @classtimes = Classtime.all
   end
-
+  def exportClasstime
+    @classtimes = Classtime.all
+    respond_to do |format|
+      format.html
+      format.xls  { send_data @products.to_csv(col_sep: "\t") }
+    end
+    render "index"
+  end
   # GET /classtimes/1
   # GET /classtimes/1.json
   def show

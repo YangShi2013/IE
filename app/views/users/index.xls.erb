@@ -1,25 +1,43 @@
 <?xml version="1.0"?>
 <Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
-  xmlns:o="urn:schemas-microsoft-com:office:office"
-  xmlns:x="urn:schemas-microsoft-com:office:excel"
-  xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
-  xmlns:html="http://www.w3.org/TR/REC-html40">
-  <Worksheet ss:Name="Sheet1">
-    <Table>
-      <Row>
-        <Cell><Data ss:Type="String">name</Data></Cell>
-        <Cell><Data ss:Type="String">password</Data></Cell>
-        <Cell><Data ss:Type="String">birth</Data></Cell>
-        <Cell><Data ss:Type="String">cellNum</Data></Cell>
-      </Row>
-    <% @users.each do |product| %>
-      <Row>
-        <Cell><Data ss:Type="String"><%= product.name %></Data></Cell>
-        <Cell><Data ss:Type="String"><%= product.password %></Data></Cell>
-        <Cell><Data ss:Type="String"><%= product.birth %></Data></Cell>
-        <Cell><Data ss:Type="String"><%= product.cellNum %></Data></Cell>
-      </Row>
-    <% end %>
-    </Table>
-  </Worksheet>
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+xmlns:html="http://www.w3.org/TR/REC-html40">
+<Worksheet ss:Name="Sheet1">
+	<Table>
+		<Row>
+			<Cell><Data ss:Type="String">Name</Data></Cell>
+			<Cell><Data ss:Type="String">Password</Data></Cell>
+			<Cell><Data ss:Type="String">Birth</Data></Cell>
+			<Cell><Data ss:Type="String">Cell_Number</Data></Cell>
+			<Cell><Data ss:Type="String">Home_Number</Data></Cell>
+			<Cell><Data ss:Type="String">Club</Data></Cell>
+			<Cell><Data ss:Type="String">Email</Data></Cell>
+			<Cell><Data ss:Type="String">Address</Data></Cell>
+			<Cell><Data ss:Type="String">From</Data></Cell>
+			<Cell><Data ss:Type="String">QQ</Data></Cell>
+			<Cell><Data ss:Type="String">MSN</Data></Cell>
+			<Cell><Data ss:Type="String">Location</Data></Cell>
+			<Cell><Data ss:Type="String">Condition</Data></Cell>
+		</Row>
+		<% @users.each do |product| %>
+		<Row>
+			<Cell><Data ss:Type="String"><%= product.name %></Data></Cell>
+			<Cell><Data ss:Type="String"><%= product.password %></Data></Cell>
+			<Cell><Data ss:Type="String"><%= product.birth %></Data></Cell>
+			<Cell><Data ss:Type="String"><%= product.cellNum %></Data></Cell>
+			<Cell><Data ss:Type="String"><%= product.homeNum %></Data></Cell>
+			<Cell><Data ss:Type="String"><%= product.club %></Data></Cell>
+			<Cell><Data ss:Type="String"><%= product.email %></Data></Cell>
+			<Cell><Data ss:Type="String"><%= product.address %></Data></Cell>
+			<Cell><Data ss:Type="String"><%= product.from %></Data></Cell>
+			<Cell><Data ss:Type="String"><%= product.qq %></Data></Cell>
+			<Cell><Data ss:Type="String"><%= product.MSN %></Data></Cell>
+			<Cell><Data ss:Type="String"><%= product.location %></Data></Cell>
+			<Cell><Data ss:Type="String"><%= product.condition %></Data></Cell>
+		</Row>
+		<% end %>
+	</Table>
+</Worksheet>
 </Workbook>

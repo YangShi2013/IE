@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+xmlns:html="http://www.w3.org/TR/REC-html40">
+<Worksheet ss:Name="Sheet1">
+	<Table>
+		t.string :year
+		t.string :month
+		t.string :day
+		t.string :startTime
+		t.string :endTime
+		t.string :people
+		t.string :theme
+		t.string :preparation
+		t.string :homework
+		<Row>
+			<Cell><Data ss:Type="String">Year</Data></Cell>
+			<Cell><Data ss:Type="String">Month</Data></Cell>
+			<Cell><Data ss:Type="String">Day</Data></Cell>
+			<Cell><Data ss:Type="String">Start_time</Data></Cell>
+			<Cell><Data ss:Type="String">End_time</Data></Cell>
+			<Cell><Data ss:Type="String">People</Data></Cell>
+			<Cell><Data ss:Type="String">Theme</Data></Cell>
+			<Cell><Data ss:Type="String">Preparation</Data></Cell>
+			<Cell><Data ss:Type="String">Homework</Data></Cell>
+		</Row>
+		<% @topics.each do |product| %>
+		<Row>
+			<Cell><Data ss:Type="String"><%= product.year %></Data></Cell>
+			<Cell><Data ss:Type="String"><%= product.month %></Data></Cell>
+			<Cell><Data ss:Type="String"><%= product.day %></Data></Cell>
+			<Cell><Data ss:Type="String"><%= product.startTime %></Data></Cell>
+			<Cell><Data ss:Type="String"><%= product.endTime %></Data></Cell>
+			<Cell><Data ss:Type="String"><%= product.people %></Data></Cell>
+			<Cell><Data ss:Type="String"><%= product.theme %></Data></Cell>
+			<Cell><Data ss:Type="String"><%= product.preparation %></Data></Cell>
+			<Cell><Data ss:Type="String"><%= product.homework %></Data></Cell>
+		</Row>
+		<% end %>
+	</Table>
+</Worksheet>
+</Workbook>

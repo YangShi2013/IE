@@ -6,7 +6,16 @@ class TopicsController < ApplicationController
   def index
     @topics = Topic.all
   end
-
+  
+  def exportTopic
+    @topics = Topic.all
+    respond_to do |format|
+      format.html
+      format.xls  { send_data @products.to_csv(col_sep: "\t") }
+    end
+    render "index"
+  end
+  
   # GET /topics/1
   # GET /topics/1.json
   def show
