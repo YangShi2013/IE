@@ -5,57 +5,57 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
 	<style type="text/css">
 	body { background-color: #ecf9f9;
-	       font-family: Futura, Segoe UI, Helvetica;
-	       color: #888888;}
-	.container {
-		width: 300px;
 		vertical-align:middle;
-		background-color: #ffffff;
-	}
-	</style>
-	
-</head>
-<body>
-	<br/>
-	<h1>Sisley 专属页面</h1>
-	<br/>
-	<div class="container">	
+		font-family: Futura, Segoe UI, Helvetica;
+		color: #888888;}
+		.container {
+			width: 300px;
+			vertical-align:middle;
+			background-color: #ffffff;
+		}
+		</style>
+	</head>
+	<body>
+		<br/>
+		<h1>Sisley 专属页面</h1>
+		<br/>
+		<div class="container">	
 		
-		<form action="broadcast" method="get">
-			<h5>发布消息</h5>
-			<input type="text" name="broadcast"></input>
-			<button class="btn parkBtn">发布</button>
-		</form>
+			<form action="broadcast" method="get">
+				<h5>发布消息</h5>
+				<input type="text" name="broadcast"></input>
+				<button class="btn parkBtn">发布</button>
+			</form>
 		
-		<form action="editUser" method="get">
-			<button class="btn parkBtn">编辑学生信息</button>
-		</form>
+			<form action="editUser" method="get">
+				<button class="btn parkBtn">编辑学生信息</button>
+			</form>
 		
-		<form action="editClasstime" method="get">
-			<button class="btn parkBtn">编辑学生账户信息</button>
-		</form>
+			<form action="editClasstime" method="get">
+				<button class="btn parkBtn">编辑学生账户信息</button>
+			</form>
 		
-		<form action="editTopic" method="get">
-			<button class="btn parkBtn">编辑本周课程</button>
-		</form>
-		<%= form_for :import_csv, :url => {:action => :loadUser}, :html => {:multipart => true} do |f| %>
-		<%= f.file_field :csv %>
-		<%= f.submit '上传学生信息'%>
-		<%end%>
-		<%= form_for :import_csv, :url => {:action => :loadClassTime}, :html => {:multipart => true} do |f| %>
-		<%= f.file_field :csv %>
-		<%= f.submit '上传学生账户信息'%>
-		<%end%>
-		<%= form_for :import_csv, :url => {:action => :loadTopic}, :html => {:multipart => true} do |f| %>
-		<%= f.file_field :csv %>
-		<%= f.submit '上传课程信息'%>
-		<%end%>
+			<form action="editTopic" method="get">
+				<button class="btn parkBtn">编辑本周课程</button>
+			</form>
+			<%= form_for :import_csv, :url => {:action => :loadUser}, :html => {:multipart => true} do |f| %>
+			<%= f.file_field :csv %>
+			<%= f.submit '上传学生信息'%>
+			<%end%>
+			<%= form_for :import_csv, :url => {:action => :loadClassTime}, :html => {:multipart => true} do |f| %>
+			<%= f.file_field :csv %>
+			<%= f.submit '上传学生账户信息'%>
+			<%end%>
+			<%= form_for :import_csv, :url => {:action => :loadTopic}, :html => {:multipart => true} do |f| %>
+			<%= f.file_field :csv %>
+			<%= f.submit '上传课程信息'%>
+			<%end%>
 		
-		<p>
-			<%= link_to "下载学生信息", users_path(format: "xls") %>
-			<%= link_to "下载学生账户信息", classtimes_path(format: "xls") %>
-			<%= link_to "下载课程信息", topics_path(format: "xls") %>
-		</p>
-	</div>
-</body>
-</html>
+			<p>
+				<%= link_to "下载学生信息", users_path(format: "xls") %>
+				<%= link_to "下载学生账户信息", classtimes_path(format: "xls") %>
+				<%= link_to "下载课程信息", topics_path(format: "xls") %>
+			</p>
+		</div>
+	</body>
+	</html>
