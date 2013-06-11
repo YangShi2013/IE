@@ -27,8 +27,14 @@
 		<form action="editTopic" method="get">
 			<button class="btn parkBtn">编辑本周课程</button>
 		</form>
-		
-		
+		<%= form_for :import_csv, :url => {:action => :loadUser}, :html => {:multipart => true} do |f| %>
+		  <%= f.file_field :csv %>
+		  <%= f.submit '上传学生信息'%>
+		<%end%>
+		<p>
+		  Download:
+		  <%= link_to "Excel", users_path(format: "xls") %>
+		</p>
 	</div>
 </body>
 </html>

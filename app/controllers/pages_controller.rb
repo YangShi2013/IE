@@ -1,3 +1,6 @@
+require 'net/http'
+require 'csv'
+
 class PagesController < ApplicationController
   def home
 
@@ -51,5 +54,10 @@ class PagesController < ApplicationController
     redirect_to :action => "editTopic"
   end
   
-  
+  def loadUser
+    User.import_data(params[:import_csv][:csv].read)
+    @message = "db updated!"
+    
+    render "sisley"
+  end
 end

@@ -53,20 +53,21 @@
 		</div>
 	</br>
 	<div id='calendar'></div>
-	<div id="topicTable">
-			<table id="topicTable" class = "table table-striped sortable" data-provides="rowlink">
-				<tr>
-					<td><b>年</b></td>
-					<td><b>月</b></td>
-					<td><b>日</b></td>
-					<td><b>开始时间</b></td>
-					<td><b>结束时间</b></td>
-					<td><b>上课人员</b></td>
-					<td><b>课程主题</b></td>
-					<td><b>课前准备工作</b></td>
-					<td><b>课后作业</b></td>
-				</tr>
-				<% @topic.each do |topic| %>
+	<div>
+		<table id="topicTable" class = "table table-striped sortable" data-provides="rowlink">
+			<tr>
+				<td><b>年</b></td>
+				<td><b>月</b></td>
+				<td><b>日</b></td>
+				<td><b>开始时间</b></td>
+				<td><b>结束时间</b></td>
+				<td><b>上课人员</b></td>
+				<td><b>课程主题</b></td>
+				<td><b>课前准备工作</b></td>
+				<td><b>课后作业</b></td>
+			</tr>
+			<% @topic.each do |topic| %>
+			<tr>
 				<td><%= topic.year %></td>
 				<td><%= topic.month %></td>
 				<td><%= topic.day %></td>
@@ -80,32 +81,31 @@
 			<% end %>
 		</table>
 	</div>
-</div>
-<button class="btn parkBtn" id="checkClassTime">查看上课情况</button>
-<div>
-	<table style="display:none" id="classTimeTable" class = "table table-striped sortable" data-provides="rowlink">
-		<tr>
-			<td><b>共有课时</b></td>
-			<td><b>已上课时</b></td>
-			<td><b>剩余课时</b></td>
-			<td><b>现有VIP课时</b></td>
-			<td><b>已上VIP课时</b></td>
-			<td><b>上次上课时间</b></td>
-			<td><b>课程有效期</b></td>
+	<button class="btn parkBtn" id="checkClassTime">查看上课情况</button>
+	<div>
+		<table style="display:none" id="classTimeTable" class = "table table-striped sortable" data-provides="rowlink">
+			<tr>
+				<td><b>共有课时</b></td>
+				<td><b>已上课时</b></td>
+				<td><b>剩余课时</b></td>
+				<td><b>现有VIP课时</b></td>
+				<td><b>已上VIP课时</b></td>
+				<td><b>上次上课时间</b></td>
+				<td><b>课程有效期</b></td>
+			</tr>
+			<td><%= @classTime.totalTime %></td>
+			<td><%= @classTime.takenTime %></td>
+			<td><%= @classTime.balance %></td>
+			<td><%= @classTime.VIPbalance %></td>
+			<td><%= @classTime.takenVIPTime %></td>
+			<td><%= @classTime.lastClass %></td>
+			<td><%= @classTime.validDate %></td>
 		</tr>
-		<td><%= @classTime.totalTime %></td>
-		<td><%= @classTime.takenTime %></td>
-		<td><%= @classTime.balance %></td>
-		<td><%= @classTime.VIPbalance %></td>
-		<td><%= @classTime.takenVIPTime %></td>
-		<td><%= @classTime.lastClass %></td>
-		<td><%= @classTime.validDate %></td>
-	</tr>
-</table>
+	</table>
 </div>
 <script>
 $('#checkClassTime').click(function() {
-$('#classTimeTable').toggle();
+	$('#classTimeTable').toggle();
 });
 </script>
 </div>

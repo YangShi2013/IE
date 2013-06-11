@@ -6,7 +6,16 @@ class UsersController < ApplicationController
   def index
     @users = User.all
   end
-
+  
+  def exportUser
+    @users = User.all
+    respond_to do |format|
+      format.html
+      format.xls  { send_data @products.to_csv(col_sep: "\t") }
+    end
+    render "index"
+  end
+  
   # GET /users/1
   # GET /users/1.json
   def show
