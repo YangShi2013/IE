@@ -3,20 +3,30 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
-	<%= stylesheet_link_tag "custom" %>
+	<style>
+	body {
+		text-align:center;
+		background-color: #ecf9f9;
+	}
+	.container {
+		width: 300px;
+		background-color: #ffffff;
+	}
+	</style>
 </head>
+
 <body>
 	<br/>
 	<h1>IE course</h1>
 	<br/>
 	<div class="container">
-    	<form action="search" method="get">
-    		<h5>姓名:</h5>
-    		<input type="text" name="name" required></input>
-    		<br/>
-    		<h5>密码:</h5>
-    		<input type="password" name="password"></input>
-    		<br/>
+		<form action="search" method="get">
+			<h5>姓名:</h5>
+			<input type="text" name="name" required></input>
+			<br/>
+			<h5>密码:</h5>
+			<input type="password" name="password"></input>
+			<br/>
 			<button class="btn parkBtn">登陆</button>
 		</form>
 	</div>

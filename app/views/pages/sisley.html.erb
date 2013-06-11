@@ -3,7 +3,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
-	<%= stylesheet_link_tag "custom" %>
+	<style>
+	body {
+		text-align:center;
+		background-color: #ecf9f9;
+	}
+	.container {
+		width: 300px;
+		background-color: #ffffff;
+	}
+	</style>
 </head>
 <body>
 	<br/>
@@ -29,19 +38,19 @@
 			<button class="btn parkBtn">编辑本周课程</button>
 		</form>
 		<%= form_for :import_csv, :url => {:action => :loadUser}, :html => {:multipart => true} do |f| %>
-		  <%= f.file_field :csv %>
-		  <%= f.submit '上传学生信息'%>
+		<%= f.file_field :csv %>
+		<%= f.submit '上传学生信息'%>
 		<%end%>
 		<!--
-		<%= form_for :import_csv, :url => {:action => :import}, :html => {:multipart => true} do |f| %>
-		   <%= file_field_tag :file %>
-		  <%= f.submit '上传学生信息'%>
-		<%end%>
-		-->
-		<p>
-			下载学生信息
-		  <%= link_to "Excel", users_path(format: "xls") %>
-		</p>
-	</div>
-</body>
-</html>
+			<%= form_for :import_csv, :url => {:action => :import}, :html => {:multipart => true} do |f| %>
+			<%= file_field_tag :file %>
+			<%= f.submit '上传学生信息'%>
+			<%end%>
+			-->
+			<p>
+				下载学生信息
+				<%= link_to "Excel", users_path(format: "xls") %>
+			</p>
+		</div>
+	</body>
+	</html>

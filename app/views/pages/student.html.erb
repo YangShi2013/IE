@@ -4,7 +4,16 @@
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
 	<script src="http://code.jquery.com/jquery-latest.js"></script>
-	<%= stylesheet_link_tag "custom" %>
+	<style>
+	body {
+		text-align:center;
+		background-color: #ecf9f9;
+	}
+	.container {
+		width: 300px;
+		background-color: #ffffff;
+	}
+	</style>
 	<script>
 	$(document).ready(function() {
 		$('#calendar').fullCalendar({
