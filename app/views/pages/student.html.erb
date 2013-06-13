@@ -87,9 +87,47 @@
 		</tr>
 	</table>
 </div>
+<button class="btn parkBtn" id="checkUser">查看个人信息</button>
+	<div>
+		<table style="display:none" id="userTable" class = "table table-striped sortable" data-provides="rowlink">
+			<tr>
+				<td><b>姓名</b></td>
+				<td><b>密码</b></td>
+				<td><b>生日</b></td>
+				<td><b>手机号</b></td>
+				<td><b>家庭电话</b></td>
+				<td><b>所在俱乐部</b></td>
+				<td><b>Email</b></td>
+				<td><b>地址</b></td>
+				<td><b>籍贯</b></td>
+				<td><b>QQ</b></td>
+				<td><b>MSN</b></td>
+				<td><b>目前所在地</b></td>
+				<td><b>现阶段状态</b></td>
+			</tr>
+			<td><%= @u.name %></td>
+			<td><%= @u.password %></td>
+			<td><%= @u.birth %></td>
+			<td><%= @u.cellNum %></td>
+			<td><%= @u.homeNum %></td>
+			<td><%= @u.club %></td>
+			<td><%= @u.email %></td>
+			<td><%= @u.address %></td>
+			<td><%= @u.from %></td>
+			<td><%= @u.qq %></td>
+			<td><%= @u.MSN %></td>
+			<td><%= @u.location %></td>
+			<td><%= @u.condition %></td>
+		</tr>
+	</table>
+</div>
+
 <script>
 $('#checkClassTime').click(function() {
 	$('#classTimeTable').toggle();
+});
+$('#checkUser').click(function() {
+	$('#userTable').toggle();
 });
 </script>
 </div>
