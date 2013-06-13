@@ -11,19 +11,19 @@
 			<form action="broadcast" method="get">
 				<h5>发布消息</h5>
 				<input type="text" name="broadcast"></input>
-				<button>发布</button>
+				<button class="btn parkBtn">发布</button>
 			</form>
 		
 			<form action="editUser" method="get">
-				<button>编辑学生信息</button>
+				<button class="btn parkBtn">编辑学生信息</button>
 			</form>
 		
 			<form action="editClasstime" method="get">
-				<button>编辑学生账户信息</button>
+				<button class="btn parkBtn">编辑学生账户信息</button>
 			</form>
 		
 			<form action="editTopic" method="get">
-				<button>编辑本周课程</button>
+				<button class="btn parkBtn">编辑本周课程</button>
 			</form>
 			<%= form_for :import_csv, :url => {:action => :loadUser}, :html => {:multipart => true} do |f| %>
 			<%= f.file_field :csv %>
