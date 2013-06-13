@@ -7,7 +7,8 @@ describe "topics/index" do
         :year => "Year",
         :month => "Month",
         :day => "Day",
-        :time => "Time",
+        :startTime => "Start Time",
+        :endTime => "End Time",
         :people => "People",
         :theme => "Theme",
         :preparation => "Preparation",
@@ -17,7 +18,8 @@ describe "topics/index" do
         :year => "Year",
         :month => "Month",
         :day => "Day",
-        :time => "Time",
+        :startTime => "Start Time",
+        :endTime => "End Time",
         :people => "People",
         :theme => "Theme",
         :preparation => "Preparation",
@@ -32,7 +34,8 @@ describe "topics/index" do
     assert_select "tr>td", :text => "Year".to_s, :count => 2
     assert_select "tr>td", :text => "Month".to_s, :count => 2
     assert_select "tr>td", :text => "Day".to_s, :count => 2
-    assert_select "tr>td", :text => "Time".to_s, :count => 2
+    assert_select "tr>td", :text => "Start Time".to_s, :count => 2
+    assert_select "tr>td", :text => "End Time".to_s, :count => 2
     assert_select "tr>td", :text => "People".to_s, :count => 2
     assert_select "tr>td", :text => "Theme".to_s, :count => 2
     assert_select "tr>td", :text => "Preparation".to_s, :count => 2

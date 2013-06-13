@@ -38915,31 +38915,3 @@ Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-06-13 11:38:28 -0500
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-13 11:38:28 -0500
-  [1m[36m (24.1ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
-  [1m[35m (27.7ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
-  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
-Migrating to CreateUsers (20130607164436)
-  [1m[35m (0.1ms)[0m  begin transaction
-  [1m[36m (0.6ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "password" varchar(255), "birth" varchar(255), "cellNum" varchar(255), "homeNum" varchar(255), "club" varchar(255), "email" varchar(255), "address" varchar(255), "from" varchar(255), "qq" varchar(255), "MSN" varchar(255), "location" varchar(255), "condition" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
-  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20130607164436"]]
-  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
-Migrating to CreateBroadcasts (20130607173226)
-  [1m[35m (0.1ms)[0m  begin transaction
-  [1m[36m (0.5ms)[0m  [1mCREATE TABLE "broadcasts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "content" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
-  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20130607173226"]]
-  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
-Migrating to CreateClasstimes (20130613173407)
-  [1m[35m (0.1ms)[0m  begin transaction
-  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "classtimes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "password" varchar(255), "totalTime" integer, "takenTime" integer, "balance" integer, "VIPbalance" integer, "givenVIPTime" varchar(255), "takenVIPTime" integer, "lastClass" varchar(255), "validYear" varchar(255), "validMonth" varchar(255), "validDay" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
-  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20130613173407"]]
-  [1m[36m (38.9ms)[0m  [1mcommit transaction[0m
-Migrating to CreateTopics (20130613173420)
-  [1m[35m (0.1ms)[0m  begin transaction
-  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
-  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
-Migrating to CreateTopics (20130613173506)
-  [1m[35m (0.1ms)[0m  begin transaction
-  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "topics" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "year" varchar(255), "month" varchar(255), "day" varchar(255), "time" varchar(255), "people" varchar(255), "theme" varchar(255), "preparation" varchar(255), "homework" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
-  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20130613173506"]]
-  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
-  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"

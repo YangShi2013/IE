@@ -6,7 +6,8 @@ describe "topics/show" do
       :year => "Year",
       :month => "Month",
       :day => "Day",
-      :time => "Time",
+      :startTime => "Start Time",
+      :endTime => "End Time",
       :people => "People",
       :theme => "Theme",
       :preparation => "Preparation",
@@ -20,7 +21,8 @@ describe "topics/show" do
     rendered.should match(/Year/)
     rendered.should match(/Month/)
     rendered.should match(/Day/)
-    rendered.should match(/Time/)
+    rendered.should match(/Start Time/)
+    rendered.should match(/End Time/)
     rendered.should match(/People/)
     rendered.should match(/Theme/)
     rendered.should match(/Preparation/)

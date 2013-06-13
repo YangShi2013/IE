@@ -6,7 +6,8 @@ describe "topics/edit" do
       :year => "MyString",
       :month => "MyString",
       :day => "MyString",
-      :time => "MyString",
+      :startTime => "MyString",
+      :endTime => "MyString",
       :people => "MyString",
       :theme => "MyString",
       :preparation => "MyString",
@@ -22,7 +23,8 @@ describe "topics/edit" do
       assert_select "input#topic_year[name=?]", "topic[year]"
       assert_select "input#topic_month[name=?]", "topic[month]"
       assert_select "input#topic_day[name=?]", "topic[day]"
-      assert_select "input#topic_time[name=?]", "topic[time]"
+      assert_select "input#topic_startTime[name=?]", "topic[startTime]"
+      assert_select "input#topic_endTime[name=?]", "topic[endTime]"
       assert_select "input#topic_people[name=?]", "topic[people]"
       assert_select "input#topic_theme[name=?]", "topic[theme]"
       assert_select "input#topic_preparation[name=?]", "topic[preparation]"
