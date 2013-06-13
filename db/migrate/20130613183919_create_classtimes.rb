@@ -7,6 +7,7 @@ class CreateClasstimes < ActiveRecord::Migration
       t.integer :takenTime
       t.integer :balance
       t.integer :VIPbalance
+      t.string :givenVIPtime
       t.integer :takenVIPTime
       t.string :lastClass
       t.string :validDate

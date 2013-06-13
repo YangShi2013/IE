@@ -10,6 +10,7 @@ describe "classtimes/index" do
         :takenTime => 2,
         :balance => 3,
         :VIPbalance => 4,
+        :givenVIPtime => "Given Vi Ptime",
         :takenVIPTime => 5,
         :lastClass => "Last Class",
         :validDate => "Valid Date"
@@ -21,6 +22,7 @@ describe "classtimes/index" do
         :takenTime => 2,
         :balance => 3,
         :VIPbalance => 4,
+        :givenVIPtime => "Given Vi Ptime",
         :takenVIPTime => 5,
         :lastClass => "Last Class",
         :validDate => "Valid Date"
@@ -37,6 +39,7 @@ describe "classtimes/index" do
     assert_select "tr>td", :text => 2.to_s, :count => 2
     assert_select "tr>td", :text => 3.to_s, :count => 2
     assert_select "tr>td", :text => 4.to_s, :count => 2
+    assert_select "tr>td", :text => "Given Vi Ptime".to_s, :count => 2
     assert_select "tr>td", :text => 5.to_s, :count => 2
     assert_select "tr>td", :text => "Last Class".to_s, :count => 2
     assert_select "tr>td", :text => "Valid Date".to_s, :count => 2

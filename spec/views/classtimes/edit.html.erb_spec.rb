@@ -9,6 +9,7 @@ describe "classtimes/edit" do
       :takenTime => 1,
       :balance => 1,
       :VIPbalance => 1,
+      :givenVIPtime => "MyString",
       :takenVIPTime => 1,
       :lastClass => "MyString",
       :validDate => "MyString"
@@ -26,6 +27,7 @@ describe "classtimes/edit" do
       assert_select "input#classtime_takenTime[name=?]", "classtime[takenTime]"
       assert_select "input#classtime_balance[name=?]", "classtime[balance]"
       assert_select "input#classtime_VIPbalance[name=?]", "classtime[VIPbalance]"
+      assert_select "input#classtime_givenVIPtime[name=?]", "classtime[givenVIPtime]"
       assert_select "input#classtime_takenVIPTime[name=?]", "classtime[takenVIPTime]"
       assert_select "input#classtime_lastClass[name=?]", "classtime[lastClass]"
       assert_select "input#classtime_validDate[name=?]", "classtime[validDate]"

@@ -9,6 +9,7 @@ describe "classtimes/show" do
       :takenTime => 2,
       :balance => 3,
       :VIPbalance => 4,
+      :givenVIPtime => "Given Vi Ptime",
       :takenVIPTime => 5,
       :lastClass => "Last Class",
       :validDate => "Valid Date"
@@ -24,6 +25,7 @@ describe "classtimes/show" do
     rendered.should match(/2/)
     rendered.should match(/3/)
     rendered.should match(/4/)
+    rendered.should match(/Given Vi Ptime/)
     rendered.should match(/5/)
     rendered.should match(/Last Class/)
     rendered.should match(/Valid Date/)

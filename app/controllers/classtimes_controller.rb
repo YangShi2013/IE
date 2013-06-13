@@ -6,6 +6,7 @@ class ClasstimesController < ApplicationController
   def index
     @classtimes = Classtime.all
   end
+  
   def exportClasstime
     @classtimes = Classtime.all
     respond_to do |format|
@@ -14,6 +15,7 @@ class ClasstimesController < ApplicationController
     end
     render "index"
   end
+  
   # GET /classtimes/1
   # GET /classtimes/1.json
   def show
@@ -69,13 +71,13 @@ class ClasstimesController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_classtime
-      @classtime = Classtime.find(params[:id])
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_classtime
+    @classtime = Classtime.find(params[:id])
+  end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def classtime_params
-      params.require(:classtime).permit(:name, :password, :totalTime, :takenTime, :balance, :VIPbalance, :takenVIPTime, :lastClass, :validDate)
-    end
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def classtime_params
+    params.require(:classtime).permit(:name, :password, :totalTime, :takenTime, :balance, :VIPbalance, :givenVIPtime, :takenVIPTime, :lastClass, :validDate)
+  end
 end
