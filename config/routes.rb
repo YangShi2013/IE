@@ -20,6 +20,7 @@ IE::Application.routes.draw do
   post "exportUser" => "users#exportUser"
   post "loadTopic" => "pages#loadTopic"
   post "loadClassTime" => "pages#loadClassTime"
+  get "backSisley" => "pages#backSisley"
   #post "import" => "pages#import"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

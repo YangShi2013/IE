@@ -78,4 +78,8 @@ class PagesController < ApplicationController
     
     render "sisley"
   end
+  
+  def backSisley
+    redirect_to :action => "sisley"
+  end
 end
