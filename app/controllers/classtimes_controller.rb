@@ -28,13 +28,26 @@ class ClasstimesController < ApplicationController
 
   # GET /classtimes/1/edit
   def edit
+    #name = params[:name]
+    #password = params[:password]
+    #totalTime = params[:totalTime]
+    #takenTime = params[:takenTime]
+    #vipbalance = params[:VIPbalance]
+    #givenVIPtime = params[:givenVIPtime]
+    #takenVIPTime = params[:takenVIPTime]
+    #validDate = params[:validDate]
+    #balance = totalTime - takenTime
+    #lastClass = Time.new
+    #@classtime.update_attributes(:name => name,:password => password, :totalTime => totalTime, :takenTime => takenTime,
+    #:balance => balance, :VIPbalance => vipbalance, :givenVIPtime => givenVIPtime, :takenVIPTime => takenVIPTime, :lastClass => lastClass,
+    #:validDate => validDate)
   end
+
 
   # POST /classtimes
   # POST /classtimes.json
   def create
     @classtime = Classtime.new(classtime_params)
-
     respond_to do |format|
       if @classtime.save
         format.html { redirect_to @classtime, notice: 'Classtime was successfully created.' }
