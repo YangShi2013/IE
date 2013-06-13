@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130610012626) do
+ActiveRecord::Schema.define(version: 20130613173506) do
 
   create_table "broadcasts", force: true do |t|
     t.string   "content"
@@ -26,9 +26,12 @@ ActiveRecord::Schema.define(version: 20130610012626) do
     t.integer  "takenTime"
     t.integer  "balance"
     t.integer  "VIPbalance"
+    t.string   "givenVIPTime"
     t.integer  "takenVIPTime"
     t.string   "lastClass"
-    t.string   "validDate"
+    t.string   "validYear"
+    t.string   "validMonth"
+    t.string   "validDay"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -37,8 +40,7 @@ ActiveRecord::Schema.define(version: 20130610012626) do
     t.string   "year"
     t.string   "month"
     t.string   "day"
-    t.string   "startTime"
-    t.string   "endTime"
+    t.string   "time"
     t.string   "people"
     t.string   "theme"
     t.string   "preparation"

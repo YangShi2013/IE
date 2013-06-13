@@ -10,9 +10,12 @@ describe "classtimes/index" do
         :takenTime => 2,
         :balance => 3,
         :VIPbalance => 4,
+        :givenVIPTime => "Given Vip Time",
         :takenVIPTime => 5,
         :lastClass => "Last Class",
-        :validDate => "Valid Date"
+        :validYear => "Valid Year",
+        :validMonth => "Valid Month",
+        :validDay => "Valid Day"
       ),
       stub_model(Classtime,
         :name => "Name",
@@ -21,9 +24,12 @@ describe "classtimes/index" do
         :takenTime => 2,
         :balance => 3,
         :VIPbalance => 4,
+        :givenVIPTime => "Given Vip Time",
         :takenVIPTime => 5,
         :lastClass => "Last Class",
-        :validDate => "Valid Date"
+        :validYear => "Valid Year",
+        :validMonth => "Valid Month",
+        :validDay => "Valid Day"
       )
     ])
   end
@@ -37,8 +43,11 @@ describe "classtimes/index" do
     assert_select "tr>td", :text => 2.to_s, :count => 2
     assert_select "tr>td", :text => 3.to_s, :count => 2
     assert_select "tr>td", :text => 4.to_s, :count => 2
+    assert_select "tr>td", :text => "Given Vip Time".to_s, :count => 2
     assert_select "tr>td", :text => 5.to_s, :count => 2
     assert_select "tr>td", :text => "Last Class".to_s, :count => 2
-    assert_select "tr>td", :text => "Valid Date".to_s, :count => 2
+    assert_select "tr>td", :text => "Valid Year".to_s, :count => 2
+    assert_select "tr>td", :text => "Valid Month".to_s, :count => 2
+    assert_select "tr>td", :text => "Valid Day".to_s, :count => 2
   end
 end

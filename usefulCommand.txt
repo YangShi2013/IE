@@ -2,11 +2,11 @@
 在“个人信息”里加一条“现在所在国家、地区”“本人现在所处状态（可选择：本科、研究生、博士、工作”
 rails generate scaffold user name:string password:string birth:string cellNum:string homeNum:string club:string email:string address:string from:string qq:string MSN:string location:string condition:string
 
-共有课时，已上课时，剩余课时，现有VIP课时，已上VIP课时，上次上课时间，课程有效期。
-rails generate scaffold classtime name:string password:string totalTime:integer takenTime:integer balance:integer VIPbalance:integer takenVIPTime:integer lastClass:string validDate:string
+共有课时，已上课时，剩余课时，现有VIP课时，赠送VIP课时，已上VIP课时，上次上课时间，课程有效期（年，月，日）。
+rails generate scaffold classtime name:string password:string totalTime:integer takenTime:integer balance:integer VIPbalance:integer givenVIPTime:string takenVIPTime:integer lastClass:string validYear:string validMonth:string validDay:string
 
-（1）上课日期、（2）上课时间，（3）上课人员，（4）课程主题，（5）课前准备工作，（6）课后作业。 创建时间
-rails generate scaffold topic date:string time:string people:string theme:string preparation:string homework:string
+（1）上课日期(年，月，日)、（2）上课时间，（3）上课人员，（4）课程主题，（5）课前准备工作，（6）课后作业。 创建时间
+rails generate scaffold topic year:string month:string day:string time:string people:string theme:string preparation:string homework:string
 
 发布信息
 rails generate scaffold broadcast content:string

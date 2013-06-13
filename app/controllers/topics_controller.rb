@@ -6,16 +6,7 @@ class TopicsController < ApplicationController
   def index
     @topics = Topic.all
   end
-  
-  def exportTopic
-    @topics = Topic.all
-    respond_to do |format|
-      format.html
-      format.xls  { send_data @products.to_csv(col_sep: "\t") }
-    end
-    render "index"
-  end
-  
+
   # GET /topics/1
   # GET /topics/1.json
   def show
@@ -78,6 +69,6 @@ class TopicsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def topic_params
-      params.require(:topic).permit(:year, :month, :day, :startTime, :endTime, :people, :theme, :preparation, :homework)
+      params.require(:topic).permit(:year, :month, :day, :time, :people, :theme, :preparation, :homework)
     end
 end

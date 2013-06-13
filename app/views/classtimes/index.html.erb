@@ -1,7 +1,5 @@
 <h1>Listing classtimes</h1>
-<form action="backSisley" method="get">
-<button class="btn parkBtn" id="backSisley">返回Sisley专属页面</button>
-</form>
+
 <table>
   <thead>
     <tr>
@@ -11,9 +9,12 @@
       <th>Takentime</th>
       <th>Balance</th>
       <th>Vipbalance</th>
+      <th>Givenviptime</th>
       <th>Takenviptime</th>
       <th>Lastclass</th>
-      <th>Validdate</th>
+      <th>Validyear</th>
+      <th>Validmonth</th>
+      <th>Validday</th>
       <th></th>
       <th></th>
       <th></th>
@@ -29,9 +30,12 @@
       <td><%= classtime.takenTime %></td>
       <td><%= classtime.balance %></td>
       <td><%= classtime.VIPbalance %></td>
+      <td><%= classtime.givenVIPTime %></td>
       <td><%= classtime.takenVIPTime %></td>
       <td><%= classtime.lastClass %></td>
-      <td><%= classtime.validDate %></td>
+      <td><%= classtime.validYear %></td>
+      <td><%= classtime.validMonth %></td>
+      <td><%= classtime.validDay %></td>
       <td><%= link_to 'Show', classtime %></td>
       <td><%= link_to 'Edit', edit_classtime_path(classtime) %></td>
       <td><%= link_to 'Destroy', classtime, method: :delete, data: { confirm: 'Are you sure?' } %></td>

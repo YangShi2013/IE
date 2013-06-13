@@ -4,8 +4,7 @@ class CreateTopics < ActiveRecord::Migration
       t.string :year
       t.string :month
       t.string :day
-      t.string :startTime
-      t.string :endTime
+      t.string :time
       t.string :people
       t.string :theme
       t.string :preparation
