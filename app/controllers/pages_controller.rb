@@ -32,7 +32,7 @@ class PagesController < ApplicationController
     @u = User.find_by_name(name)
     if (@u.password == password)
       latestBroadcast = Broadcast.order("created_at DESC")
-      @broadcast = latestBroadcast.take(1)
+      @broadcast = latestBroadcast.take(2)
       latestTopic = Topic.order("created_at DESC")
       @topic = latestTopic.take(20)
       @classTime = Classtime.find_by_name(name)
