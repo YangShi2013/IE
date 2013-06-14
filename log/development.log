@@ -45677,3 +45677,1158 @@ Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-06-13 17:21:38 -0500
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-13 17:21:38 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-14 01:41:49 -0500
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (18.6ms)
+Completed 200 OK in 1286ms (Views: 1285.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/broadcasts.css?body=1" for 127.0.0.1 at 2013-06-14 01:41:51 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-14 01:41:51 -0500
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-06-14 01:41:51 -0500
+
+
+Started GET "/assets/classtimes.css?body=1" for 127.0.0.1 at 2013-06-14 01:41:51 -0500
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-06-14 01:41:51 -0500
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2013-06-14 01:41:51 -0500
+
+
+Started GET "/assets/fullcalendar.css?body=1" for 127.0.0.1 at 2013-06-14 01:41:51 -0500
+
+
+Started GET "/assets/fullcalendar.print.css?body=1" for 127.0.0.1 at 2013-06-14 01:41:51 -0500
+
+
+Started GET "/assets/scaffold.css?body=1" for 127.0.0.1 at 2013-06-14 01:41:51 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-06-14 01:41:51 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-06-14 01:41:51 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-14 01:41:51 -0500
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-06-14 01:41:51 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-06-14 01:41:51 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-14 01:41:51 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-06-14 01:41:51 -0500
+
+
+Started GET "/assets/broadcasts.js?body=1" for 127.0.0.1 at 2013-06-14 01:41:51 -0500
+
+
+Started GET "/assets/classtimes.js?body=1" for 127.0.0.1 at 2013-06-14 01:41:51 -0500
+
+
+Started GET "/assets/jquery-1.9.1.min.js?body=1" for 127.0.0.1 at 2013-06-14 01:41:51 -0500
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-06-14 01:41:51 -0500
+
+
+Started GET "/assets/fullcalendar.min.js?body=1" for 127.0.0.1 at 2013-06-14 01:41:51 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-06-14 01:41:51 -0500
+
+
+Started GET "/assets/jquery-ui-1.10.2.custom.min.js?body=1" for 127.0.0.1 at 2013-06-14 01:41:51 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-14 01:41:51 -0500
+
+
+Started GET "/search?name=sisley&password=[FILTERED]" for 127.0.0.1 at 2013-06-14 01:41:55 -0500
+Processing by PagesController#search as HTML
+  Parameters: {"name"=>"sisley", "password"=>"[FILTERED]"}
+Redirected to http://0.0.0.0:3000/sisley?name=sisley&password=123
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sisley?name=sisley&password=[FILTERED]" for 127.0.0.1 at 2013-06-14 01:41:55 -0500
+Processing by PagesController#sisley as HTML
+  Parameters: {"name"=>"sisley", "password"=>"[FILTERED]"}
+  [1m[36mBroadcast Load (0.2ms)[0m  [1mSELECT "broadcasts".* FROM "broadcasts" ORDER BY created_at DESC LIMIT 1[0m
+  Rendered pages/sisley.html.erb within layouts/application (15.2ms)
+Completed 200 OK in 88ms (Views: 39.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/sisley?name=sisley" for 127.0.0.1 at 2013-06-14 01:42:00 -0500
+Processing by PagesController#sisley as HTML
+  Parameters: {"name"=>"sisley"}
+  [1m[35mBroadcast Load (0.2ms)[0m  SELECT "broadcasts".* FROM "broadcasts" ORDER BY created_at DESC LIMIT 1
+  Rendered pages/sisley.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 14ms (Views: 12.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/name=Yang" for 127.0.0.1 at 2013-06-14 01:42:14 -0500
+
+ActionController::RoutingError (No route matches [GET] "/name=Yang"):
+  actionpack (4.0.0.beta1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0.beta1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0.beta1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0.beta1) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0.beta1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0.beta1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0.beta1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0.beta1) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0.beta1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0.beta1) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0.beta1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0.beta1) lib/rails/engine.rb:510:in `call'
+  railties (4.0.0.beta1) lib/rails/application.rb:96:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/shiyang/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/shiyang/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/shiyang/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/shiyang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.beta1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /Users/shiyang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.beta1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.2ms)
+  Rendered /Users/shiyang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.beta1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.3ms)
+  Rendered /Users/shiyang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.beta1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (64.2ms)
+
+
+Started GET "/search?name=Yang+Shi&password=[FILTERED]" for 127.0.0.1 at 2013-06-14 01:42:25 -0500
+Processing by PagesController#search as HTML
+  Parameters: {"name"=>"Yang Shi", "password"=>"[FILTERED]"}
+Redirected to http://0.0.0.0:3000/student?name=Yang+Shi&password=123
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/student?name=Yang+Shi&password=[FILTERED]" for 127.0.0.1 at 2013-06-14 01:42:25 -0500
+Processing by PagesController#student as HTML
+  Parameters: {"name"=>"Yang Shi", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."name" = 'Yang Shi' LIMIT 1[0m
+Completed 500 Internal Server Error in 22ms
+
+NoMethodError (undefined method `password' for nil:NilClass):
+  app/controllers/pages_controller.rb:33:in `student'
+
+
+  Rendered /Users/shiyang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.beta1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /Users/shiyang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.beta1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /Users/shiyang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.beta1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /Users/shiyang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.beta1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (145.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2013-06-14 01:42:30 -0500
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (33.7ms)
+Completed 200 OK in 53ms (Views: 52.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/search?name=%E6%97%B6%E9%98%B3&password=[FILTERED]" for 127.0.0.1 at 2013-06-14 01:42:38 -0500
+Processing by PagesController#search as HTML
+  Parameters: {"name"=>"时阳", "password"=>"[FILTERED]"}
+Redirected to http://0.0.0.0:3000/student?name=%E6%97%B6%E9%98%B3&password=123
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/student?name=%E6%97%B6%E9%98%B3&password=[FILTERED]" for 127.0.0.1 at 2013-06-14 01:42:38 -0500
+Processing by PagesController#student as HTML
+  Parameters: {"name"=>"时阳", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."name" = '时阳' LIMIT 1[0m
+  [1m[35mBroadcast Load (0.1ms)[0m  SELECT "broadcasts".* FROM "broadcasts" ORDER BY created_at DESC LIMIT 2
+  [1m[36mTopic Load (0.1ms)[0m  [1mSELECT "topics".* FROM "topics" ORDER BY created_at DESC LIMIT 20[0m
+  [1m[35mClasstime Load (0.1ms)[0m  SELECT "classtimes".* FROM "classtimes" WHERE "classtimes"."name" = '时阳' LIMIT 1
+  Rendered pages/student.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 136ms (Views: 32.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/student?name=%E6%97%B6%E9%98%B3" for 127.0.0.1 at 2013-06-14 01:42:44 -0500
+Processing by PagesController#student as HTML
+  Parameters: {"name"=>"时阳"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."name" = '时阳' LIMIT 1[0m
+  Rendered pages/student.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    31: 		
+    32: 		<div id="broadcast">
+    33: 			<h4>消息发布</h4>
+    34: 			<% @broadcast.each do |broadcast| %>
+    35: 			<%= broadcast.content %>
+    36: 			<% end %>
+    37: 		</div>
+  app/views/pages/student.html.erb:34:in `_app_views_pages_student_html_erb__4385380201109896384_70366777255820'
+
+
+  Rendered /Users/shiyang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.beta1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/shiyang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.beta1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/shiyang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.beta1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.6ms)
+
+
+Started GET "/student?name=%E6%97%B6%E9%98%B3" for 127.0.0.1 at 2013-06-14 01:42:59 -0500
+Processing by PagesController#student as HTML
+  Parameters: {"name"=>"时阳"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."name" = '时阳' LIMIT 1
+  Rendered pages/student.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    31: 		
+    32: 		<div id="broadcast">
+    33: 			<h4>消息发布</h4>
+    34: 			<% @broadcast.each do |broadcast| %>
+    35: 			<%= broadcast.content %>
+    36: 			<% end %>
+    37: 		</div>
+  app/views/pages/student.html.erb:34:in `_app_views_pages_student_html_erb__4385380201109896384_70366777255820'
+
+
+  Rendered /Users/shiyang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.beta1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /Users/shiyang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.beta1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/shiyang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.beta1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (48.6ms)
+
+
+Started GET "/student?name=%E6%97%B6%E9%98%B3" for 127.0.0.1 at 2013-06-14 01:43:20 -0500
+Processing by PagesController#student as HTML
+  Parameters: {"name"=>"时阳"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."name" = '时阳' LIMIT 1[0m
+  Rendered pages/student.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    31: 		
+    32: 		<div id="broadcast">
+    33: 			<h4>消息发布</h4>
+    34: 			<% @broadcast.each do |broadcast| %>
+    35: 			<%= broadcast.content %>
+    36: 			<% end %>
+    37: 		</div>
+  app/views/pages/student.html.erb:34:in `_app_views_pages_student_html_erb__4385380201109896384_70366777255820'
+
+
+  Rendered /Users/shiyang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.beta1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /Users/shiyang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.beta1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/shiyang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.beta1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.6ms)
+
+
+Started GET "/student?name=%E6%97%B6%E9%98%B3&password=[FILTERED]" for 127.0.0.1 at 2013-06-14 01:43:23 -0500
+Processing by PagesController#student as HTML
+  Parameters: {"name"=>"时阳", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."name" = '时阳' LIMIT 1
+  [1m[36mBroadcast Load (0.2ms)[0m  [1mSELECT "broadcasts".* FROM "broadcasts" ORDER BY created_at DESC LIMIT 2[0m
+  [1m[35mTopic Load (0.2ms)[0m  SELECT "topics".* FROM "topics" ORDER BY created_at DESC LIMIT 20
+  [1m[36mClasstime Load (0.1ms)[0m  [1mSELECT "classtimes".* FROM "classtimes" WHERE "classtimes"."name" = '时阳' LIMIT 1[0m
+  Rendered pages/student.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 12ms (Views: 7.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/sisley?name=sisley" for 127.0.0.1 at 2013-06-14 01:43:50 -0500
+Processing by PagesController#sisley as HTML
+  Parameters: {"name"=>"sisley"}
+  [1m[35mBroadcast Load (0.1ms)[0m  SELECT "broadcasts".* FROM "broadcasts" ORDER BY created_at DESC LIMIT 1
+  Rendered pages/sisley.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/sisley?name=sisley" for 127.0.0.1 at 2013-06-14 01:44:01 -0500
+Processing by PagesController#sisley as HTML
+  Parameters: {"name"=>"sisley"}
+  [1m[36mBroadcast Load (0.2ms)[0m  [1mSELECT "broadcasts".* FROM "broadcasts" ORDER BY created_at DESC LIMIT 1[0m
+  Rendered pages/sisley.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 11ms (Views: 9.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/search?name=sisley&password=[FILTERED]" for 127.0.0.1 at 2013-06-14 01:45:16 -0500
+Processing by PagesController#search as HTML
+  Parameters: {"name"=>"sisley", "password"=>"[FILTERED]"}
+Redirected to http://0.0.0.0:3000/sisley?name=sisley&password=123
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sisley?name=sisley&password=[FILTERED]" for 127.0.0.1 at 2013-06-14 01:45:16 -0500
+Processing by PagesController#sisley as HTML
+  Parameters: {"name"=>"sisley", "password"=>"[FILTERED]"}
+  [1m[35mBroadcast Load (0.1ms)[0m  SELECT "broadcasts".* FROM "broadcasts" ORDER BY created_at DESC LIMIT 1
+  Rendered pages/sisley.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 13ms (Views: 9.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/sisley?name=sisley" for 127.0.0.1 at 2013-06-14 01:45:23 -0500
+Processing by PagesController#sisley as HTML
+  Parameters: {"name"=>"sisley"}
+  Rendered pages/sisley.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 10ms (Views: 9.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-14 11:30:05 -0500
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 694ms (Views: 694.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2013-06-14 11:30:07 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-14 11:30:07 -0500
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-06-14 11:30:07 -0500
+
+
+Started GET "/assets/classtimes.css?body=1" for 127.0.0.1 at 2013-06-14 11:30:07 -0500
+
+
+Started GET "/assets/broadcasts.css?body=1" for 127.0.0.1 at 2013-06-14 11:30:07 -0500
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-06-14 11:30:07 -0500
+
+
+Started GET "/assets/fullcalendar.css?body=1" for 127.0.0.1 at 2013-06-14 11:30:07 -0500
+
+
+Started GET "/assets/fullcalendar.print.css?body=1" for 127.0.0.1 at 2013-06-14 11:30:07 -0500
+
+
+Started GET "/assets/scaffold.css?body=1" for 127.0.0.1 at 2013-06-14 11:30:07 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-06-14 11:30:07 -0500
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-06-14 11:30:07 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-06-14 11:30:07 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-14 11:30:07 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-14 11:30:07 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-06-14 11:30:07 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-06-14 11:30:07 -0500
+
+
+Started GET "/assets/broadcasts.js?body=1" for 127.0.0.1 at 2013-06-14 11:30:07 -0500
+
+
+Started GET "/assets/classtimes.js?body=1" for 127.0.0.1 at 2013-06-14 11:30:07 -0500
+
+
+Started GET "/assets/fullcalendar.min.js?body=1" for 127.0.0.1 at 2013-06-14 11:30:07 -0500
+
+
+Started GET "/assets/jquery-1.9.1.min.js?body=1" for 127.0.0.1 at 2013-06-14 11:30:07 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-06-14 11:30:07 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-14 11:30:07 -0500
+
+
+Started GET "/assets/jquery-ui-1.10.2.custom.min.js?body=1" for 127.0.0.1 at 2013-06-14 11:30:07 -0500
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-06-14 11:30:07 -0500
+
+
+Started GET "/search?name=%E6%97%B6%E9%98%B3&password=[FILTERED]" for 127.0.0.1 at 2013-06-14 11:30:12 -0500
+Processing by PagesController#search as HTML
+  Parameters: {"name"=>"时阳", "password"=>"[FILTERED]"}
+Redirected to http://0.0.0.0:3000/student?name=%E6%97%B6%E9%98%B3&password=123
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/student?name=%E6%97%B6%E9%98%B3&password=[FILTERED]" for 127.0.0.1 at 2013-06-14 11:30:12 -0500
+Processing by PagesController#student as HTML
+  Parameters: {"name"=>"时阳", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."name" = '时阳' LIMIT 1[0m
+  [1m[35mBroadcast Load (0.1ms)[0m  SELECT "broadcasts".* FROM "broadcasts" ORDER BY created_at DESC LIMIT 2
+  [1m[36mTopic Load (0.1ms)[0m  [1mSELECT "topics".* FROM "topics" ORDER BY created_at DESC LIMIT 20[0m
+  [1m[35mClasstime Load (0.1ms)[0m  SELECT "classtimes".* FROM "classtimes" WHERE "classtimes"."name" = '时阳' LIMIT 1
+  Rendered pages/student.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 222ms (Views: 8.8ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/broadcasts" for 127.0.0.1 at 2013-06-14 11:30:20 -0500
+Processing by BroadcastsController#index as HTML
+  [1m[36mBroadcast Load (0.1ms)[0m  [1mSELECT "broadcasts".* FROM "broadcasts"[0m
+  Rendered broadcasts/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 11ms (Views: 9.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/broadcasts/new" for 127.0.0.1 at 2013-06-14 11:30:22 -0500
+Processing by BroadcastsController#new as HTML
+  Rendered broadcasts/_form.html.erb (123.6ms)
+  Rendered broadcasts/new.html.erb within layouts/application (164.2ms)
+Completed 200 OK in 174ms (Views: 173.0ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/broadcasts" for 127.0.0.1 at 2013-06-14 11:30:25 -0500
+Processing by BroadcastsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LhvhhspCow3DhH/lOYNGYcX8A+XkjC2+XDENkekScyk=", "broadcast"=>{"content"=>"123"}, "commit"=>"Create Broadcast"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (72.2ms)[0m  [1mINSERT INTO "broadcasts" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "123"], ["created_at", Fri, 14 Jun 2013 16:30:25 UTC +00:00], ["updated_at", Fri, 14 Jun 2013 16:30:25 UTC +00:00]]
+  [1m[35m (1.0ms)[0m  commit transaction
+Redirected to http://0.0.0.0:3000/broadcasts/1
+Completed 302 Found in 77ms (ActiveRecord: 73.3ms)
+
+
+Started GET "/broadcasts/1" for 127.0.0.1 at 2013-06-14 11:30:25 -0500
+Processing by BroadcastsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBroadcast Load (0.1ms)[0m  [1mSELECT "broadcasts".* FROM "broadcasts" WHERE "broadcasts"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered broadcasts/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 26ms (Views: 25.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/broadcasts" for 127.0.0.1 at 2013-06-14 11:30:27 -0500
+Processing by BroadcastsController#index as HTML
+  [1m[35mBroadcast Load (0.2ms)[0m  SELECT "broadcasts".* FROM "broadcasts"
+  Rendered broadcasts/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 10ms (Views: 9.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/broadcasts/new" for 127.0.0.1 at 2013-06-14 11:30:28 -0500
+Processing by BroadcastsController#new as HTML
+  Rendered broadcasts/_form.html.erb (2.3ms)
+  Rendered broadcasts/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 42ms (Views: 41.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/broadcasts" for 127.0.0.1 at 2013-06-14 11:30:31 -0500
+Processing by BroadcastsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LhvhhspCow3DhH/lOYNGYcX8A+XkjC2+XDENkekScyk=", "broadcast"=>{"content"=>"2131231"}, "commit"=>"Create Broadcast"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "broadcasts" ("content", "created_at", "updated_at") VALUES (?, ?, ?)  [["content", "2131231"], ["created_at", Fri, 14 Jun 2013 16:30:31 UTC +00:00], ["updated_at", Fri, 14 Jun 2013 16:30:31 UTC +00:00]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/broadcasts/2
+Completed 302 Found in 6ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/broadcasts/2" for 127.0.0.1 at 2013-06-14 11:30:31 -0500
+Processing by BroadcastsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mBroadcast Load (0.1ms)[0m  SELECT "broadcasts".* FROM "broadcasts" WHERE "broadcasts"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered broadcasts/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/broadcasts" for 127.0.0.1 at 2013-06-14 11:30:32 -0500
+Processing by BroadcastsController#index as HTML
+  [1m[36mBroadcast Load (0.1ms)[0m  [1mSELECT "broadcasts".* FROM "broadcasts"[0m
+  Rendered broadcasts/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 9ms (Views: 8.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-14 11:30:38 -0500
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?name=%E6%97%B6%E9%98%B3&password=[FILTERED]" for 127.0.0.1 at 2013-06-14 11:30:43 -0500
+Processing by PagesController#search as HTML
+  Parameters: {"name"=>"时阳", "password"=>"[FILTERED]"}
+Redirected to http://0.0.0.0:3000/student?name=%E6%97%B6%E9%98%B3&password=123
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/student?name=%E6%97%B6%E9%98%B3&password=[FILTERED]" for 127.0.0.1 at 2013-06-14 11:30:43 -0500
+Processing by PagesController#student as HTML
+  Parameters: {"name"=>"时阳", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."name" = '时阳' LIMIT 1
+  [1m[36mBroadcast Load (0.1ms)[0m  [1mSELECT "broadcasts".* FROM "broadcasts" ORDER BY created_at DESC LIMIT 2[0m
+  [1m[35mTopic Load (0.1ms)[0m  SELECT "topics".* FROM "topics" ORDER BY created_at DESC LIMIT 20
+  [1m[36mClasstime Load (0.1ms)[0m  [1mSELECT "classtimes".* FROM "classtimes" WHERE "classtimes"."name" = '时阳' LIMIT 1[0m
+  Rendered pages/student.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 10ms (Views: 7.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/student?name=%E6%97%B6%E9%98%B3&password=[FILTERED]" for 127.0.0.1 at 2013-06-14 11:31:43 -0500
+Processing by PagesController#student as HTML
+  Parameters: {"name"=>"时阳", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."name" = '时阳' LIMIT 1
+  [1m[36mBroadcast Load (0.1ms)[0m  [1mSELECT "broadcasts".* FROM "broadcasts" ORDER BY created_at DESC LIMIT 2[0m
+  [1m[35mTopic Load (0.1ms)[0m  SELECT "topics".* FROM "topics" ORDER BY created_at DESC LIMIT 20
+  [1m[36mClasstime Load (0.1ms)[0m  [1mSELECT "classtimes".* FROM "classtimes" WHERE "classtimes"."name" = '时阳' LIMIT 1[0m
+  Rendered pages/student.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 41ms (Views: 8.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2013-06-14 11:31:43 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-14 11:31:43 -0500
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-06-14 11:31:43 -0500
+
+
+Started GET "/assets/broadcasts.css?body=1" for 127.0.0.1 at 2013-06-14 11:31:43 -0500
+
+
+Started GET "/assets/fullcalendar.css?body=1" for 127.0.0.1 at 2013-06-14 11:31:43 -0500
+
+
+Started GET "/assets/classtimes.css?body=1" for 127.0.0.1 at 2013-06-14 11:31:43 -0500
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-06-14 11:31:43 -0500
+
+
+Started GET "/assets/fullcalendar.print.css?body=1" for 127.0.0.1 at 2013-06-14 11:31:43 -0500
+
+
+Started GET "/assets/scaffold.css?body=1" for 127.0.0.1 at 2013-06-14 11:31:43 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-06-14 11:31:43 -0500
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-06-14 11:31:43 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-06-14 11:31:43 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-14 11:31:43 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-14 11:31:43 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-06-14 11:31:43 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-06-14 11:31:43 -0500
+
+
+Started GET "/assets/broadcasts.js?body=1" for 127.0.0.1 at 2013-06-14 11:31:43 -0500
+
+
+Started GET "/assets/fullcalendar.min.js?body=1" for 127.0.0.1 at 2013-06-14 11:31:43 -0500
+
+
+Started GET "/assets/jquery-ui-1.10.2.custom.min.js?body=1" for 127.0.0.1 at 2013-06-14 11:31:43 -0500
+
+
+Started GET "/assets/classtimes.js?body=1" for 127.0.0.1 at 2013-06-14 11:31:43 -0500
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-06-14 11:31:43 -0500
+
+
+Started GET "/assets/jquery-1.9.1.min.js?body=1" for 127.0.0.1 at 2013-06-14 11:31:43 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-14 11:31:43 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-06-14 11:31:43 -0500
+
+
+Started GET "/student?name=%E6%97%B6%E9%98%B3&password=[FILTERED]" for 127.0.0.1 at 2013-06-14 11:31:57 -0500
+Processing by PagesController#student as HTML
+  Parameters: {"name"=>"时阳", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."name" = '时阳' LIMIT 1
+  [1m[36mBroadcast Load (0.2ms)[0m  [1mSELECT "broadcasts".* FROM "broadcasts" ORDER BY created_at DESC LIMIT 2[0m
+  [1m[35mTopic Load (0.2ms)[0m  SELECT "topics".* FROM "topics" ORDER BY created_at DESC LIMIT 20
+  [1m[36mClasstime Load (0.2ms)[0m  [1mSELECT "classtimes".* FROM "classtimes" WHERE "classtimes"."name" = '时阳' LIMIT 1[0m
+  Rendered pages/student.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 13ms (Views: 8.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2013-06-14 11:31:57 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-14 11:31:57 -0500
+
+
+Started GET "/assets/classtimes.css?body=1" for 127.0.0.1 at 2013-06-14 11:31:57 -0500
+
+
+Started GET "/assets/broadcasts.css?body=1" for 127.0.0.1 at 2013-06-14 11:31:57 -0500
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-06-14 11:31:57 -0500
+
+
+Started GET "/assets/fullcalendar.css?body=1" for 127.0.0.1 at 2013-06-14 11:31:57 -0500
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-06-14 11:31:57 -0500
+
+
+Started GET "/assets/fullcalendar.print.css?body=1" for 127.0.0.1 at 2013-06-14 11:31:57 -0500
+
+
+Started GET "/assets/scaffold.css?body=1" for 127.0.0.1 at 2013-06-14 11:31:57 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-06-14 11:31:57 -0500
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-06-14 11:31:57 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-06-14 11:31:57 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-14 11:31:57 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-14 11:31:57 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-06-14 11:31:57 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-06-14 11:31:57 -0500
+
+
+Started GET "/assets/broadcasts.js?body=1" for 127.0.0.1 at 2013-06-14 11:31:57 -0500
+
+
+Started GET "/assets/classtimes.js?body=1" for 127.0.0.1 at 2013-06-14 11:31:57 -0500
+
+
+Started GET "/assets/fullcalendar.min.js?body=1" for 127.0.0.1 at 2013-06-14 11:31:57 -0500
+
+
+Started GET "/assets/jquery-1.9.1.min.js?body=1" for 127.0.0.1 at 2013-06-14 11:31:57 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-06-14 11:31:57 -0500
+
+
+Started GET "/assets/jquery-ui-1.10.2.custom.min.js?body=1" for 127.0.0.1 at 2013-06-14 11:31:57 -0500
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-06-14 11:31:57 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-14 11:31:57 -0500
+
+
+Started GET "/student?name=%E6%97%B6%E9%98%B3&password=[FILTERED]" for 127.0.0.1 at 2013-06-14 11:32:21 -0500
+Processing by PagesController#student as HTML
+  Parameters: {"name"=>"时阳", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."name" = '时阳' LIMIT 1
+  [1m[36mBroadcast Load (0.3ms)[0m  [1mSELECT "broadcasts".* FROM "broadcasts" ORDER BY created_at DESC LIMIT 2[0m
+  [1m[35mTopic Load (0.2ms)[0m  SELECT "topics".* FROM "topics" ORDER BY created_at DESC LIMIT 20
+  [1m[36mClasstime Load (0.1ms)[0m  [1mSELECT "classtimes".* FROM "classtimes" WHERE "classtimes"."name" = '时阳' LIMIT 1[0m
+  Rendered pages/student.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 16ms (Views: 11.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2013-06-14 11:32:21 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-14 11:32:21 -0500
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-06-14 11:32:21 -0500
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-06-14 11:32:21 -0500
+
+
+Started GET "/assets/broadcasts.css?body=1" for 127.0.0.1 at 2013-06-14 11:32:21 -0500
+
+
+Started GET "/assets/classtimes.css?body=1" for 127.0.0.1 at 2013-06-14 11:32:21 -0500
+
+
+Started GET "/assets/fullcalendar.css?body=1" for 127.0.0.1 at 2013-06-14 11:32:21 -0500
+
+
+Started GET "/assets/fullcalendar.print.css?body=1" for 127.0.0.1 at 2013-06-14 11:32:21 -0500
+
+
+Started GET "/assets/scaffold.css?body=1" for 127.0.0.1 at 2013-06-14 11:32:21 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-06-14 11:32:21 -0500
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-06-14 11:32:21 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-06-14 11:32:21 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-14 11:32:21 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-14 11:32:21 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-06-14 11:32:21 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-06-14 11:32:21 -0500
+
+
+Started GET "/assets/broadcasts.js?body=1" for 127.0.0.1 at 2013-06-14 11:32:21 -0500
+
+
+Started GET "/assets/fullcalendar.min.js?body=1" for 127.0.0.1 at 2013-06-14 11:32:21 -0500
+
+
+Started GET "/assets/classtimes.js?body=1" for 127.0.0.1 at 2013-06-14 11:32:21 -0500
+
+
+Started GET "/assets/jquery-1.9.1.min.js?body=1" for 127.0.0.1 at 2013-06-14 11:32:21 -0500
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-06-14 11:32:21 -0500
+
+
+Started GET "/assets/jquery-ui-1.10.2.custom.min.js?body=1" for 127.0.0.1 at 2013-06-14 11:32:21 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-06-14 11:32:21 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-14 11:32:21 -0500
+
+
+Started GET "/student?name=%E6%97%B6%E9%98%B3&password=[FILTERED]" for 127.0.0.1 at 2013-06-14 11:32:38 -0500
+Processing by PagesController#student as HTML
+  Parameters: {"name"=>"时阳", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."name" = '时阳' LIMIT 1
+  [1m[36mBroadcast Load (0.2ms)[0m  [1mSELECT "broadcasts".* FROM "broadcasts" ORDER BY created_at DESC LIMIT 2[0m
+  [1m[35mTopic Load (0.2ms)[0m  SELECT "topics".* FROM "topics" ORDER BY created_at DESC LIMIT 20
+  [1m[36mClasstime Load (0.1ms)[0m  [1mSELECT "classtimes".* FROM "classtimes" WHERE "classtimes"."name" = '时阳' LIMIT 1[0m
+  Rendered pages/student.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 46ms (Views: 42.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2013-06-14 11:32:38 -0500
+
+
+Started GET "/assets/broadcasts.css?body=1" for 127.0.0.1 at 2013-06-14 11:32:38 -0500
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-06-14 11:32:38 -0500
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-06-14 11:32:38 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-14 11:32:38 -0500
+
+
+Started GET "/assets/classtimes.css?body=1" for 127.0.0.1 at 2013-06-14 11:32:38 -0500
+
+
+Started GET "/assets/fullcalendar.css?body=1" for 127.0.0.1 at 2013-06-14 11:32:38 -0500
+
+
+Started GET "/assets/fullcalendar.print.css?body=1" for 127.0.0.1 at 2013-06-14 11:32:38 -0500
+
+
+Started GET "/assets/scaffold.css?body=1" for 127.0.0.1 at 2013-06-14 11:32:39 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-06-14 11:32:39 -0500
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-06-14 11:32:39 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-06-14 11:32:39 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-14 11:32:39 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-14 11:32:39 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-06-14 11:32:39 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-06-14 11:32:39 -0500
+
+
+Started GET "/assets/broadcasts.js?body=1" for 127.0.0.1 at 2013-06-14 11:32:39 -0500
+
+
+Started GET "/assets/classtimes.js?body=1" for 127.0.0.1 at 2013-06-14 11:32:39 -0500
+
+
+Started GET "/assets/jquery-1.9.1.min.js?body=1" for 127.0.0.1 at 2013-06-14 11:32:39 -0500
+
+
+Started GET "/assets/fullcalendar.min.js?body=1" for 127.0.0.1 at 2013-06-14 11:32:39 -0500
+
+
+Started GET "/assets/jquery-ui-1.10.2.custom.min.js?body=1" for 127.0.0.1 at 2013-06-14 11:32:39 -0500
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-06-14 11:32:39 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-06-14 11:32:39 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-14 11:32:39 -0500
+
+
+Started GET "/student?name=%E6%97%B6%E9%98%B3&password=[FILTERED]" for 127.0.0.1 at 2013-06-14 11:33:24 -0500
+Processing by PagesController#student as HTML
+  Parameters: {"name"=>"时阳", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."name" = '时阳' LIMIT 1
+  [1m[36mBroadcast Load (0.2ms)[0m  [1mSELECT "broadcasts".* FROM "broadcasts" ORDER BY created_at DESC LIMIT 2[0m
+  [1m[35mTopic Load (0.1ms)[0m  SELECT "topics".* FROM "topics" ORDER BY created_at DESC LIMIT 20
+  [1m[36mClasstime Load (0.2ms)[0m  [1mSELECT "classtimes".* FROM "classtimes" WHERE "classtimes"."name" = '时阳' LIMIT 1[0m
+  Rendered pages/student.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 13ms (Views: 8.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2013-06-14 11:33:24 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-14 11:33:24 -0500
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-06-14 11:33:24 -0500
+
+
+Started GET "/assets/broadcasts.css?body=1" for 127.0.0.1 at 2013-06-14 11:33:24 -0500
+
+
+Started GET "/assets/classtimes.css?body=1" for 127.0.0.1 at 2013-06-14 11:33:24 -0500
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-06-14 11:33:24 -0500
+
+
+Started GET "/assets/fullcalendar.css?body=1" for 127.0.0.1 at 2013-06-14 11:33:24 -0500
+
+
+Started GET "/assets/fullcalendar.print.css?body=1" for 127.0.0.1 at 2013-06-14 11:33:24 -0500
+
+
+Started GET "/assets/scaffold.css?body=1" for 127.0.0.1 at 2013-06-14 11:33:24 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-06-14 11:33:24 -0500
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-06-14 11:33:24 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-06-14 11:33:24 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-14 11:33:24 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-14 11:33:24 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-06-14 11:33:24 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-06-14 11:33:24 -0500
+
+
+Started GET "/assets/broadcasts.js?body=1" for 127.0.0.1 at 2013-06-14 11:33:24 -0500
+
+
+Started GET "/assets/classtimes.js?body=1" for 127.0.0.1 at 2013-06-14 11:33:24 -0500
+
+
+Started GET "/assets/fullcalendar.min.js?body=1" for 127.0.0.1 at 2013-06-14 11:33:24 -0500
+
+
+Started GET "/assets/jquery-1.9.1.min.js?body=1" for 127.0.0.1 at 2013-06-14 11:33:24 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-06-14 11:33:24 -0500
+
+
+Started GET "/assets/jquery-ui-1.10.2.custom.min.js?body=1" for 127.0.0.1 at 2013-06-14 11:33:24 -0500
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-06-14 11:33:24 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-14 11:33:24 -0500
+
+
+Started GET "/student?name=%E6%97%B6%E9%98%B3&password=[FILTERED]" for 127.0.0.1 at 2013-06-14 11:33:26 -0500
+Processing by PagesController#student as HTML
+  Parameters: {"name"=>"时阳", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."name" = '时阳' LIMIT 1
+  [1m[36mBroadcast Load (0.2ms)[0m  [1mSELECT "broadcasts".* FROM "broadcasts" ORDER BY created_at DESC LIMIT 2[0m
+  [1m[35mTopic Load (0.2ms)[0m  SELECT "topics".* FROM "topics" ORDER BY created_at DESC LIMIT 20
+  [1m[36mClasstime Load (0.2ms)[0m  [1mSELECT "classtimes".* FROM "classtimes" WHERE "classtimes"."name" = '时阳' LIMIT 1[0m
+  Rendered pages/student.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 11ms (Views: 7.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-14 11:33:26 -0500
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2013-06-14 11:33:26 -0500
+
+
+Started GET "/assets/classtimes.css?body=1" for 127.0.0.1 at 2013-06-14 11:33:26 -0500
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-06-14 11:33:26 -0500
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-06-14 11:33:26 -0500
+
+
+Started GET "/assets/broadcasts.css?body=1" for 127.0.0.1 at 2013-06-14 11:33:26 -0500
+
+
+Started GET "/assets/fullcalendar.css?body=1" for 127.0.0.1 at 2013-06-14 11:33:26 -0500
+
+
+Started GET "/assets/fullcalendar.print.css?body=1" for 127.0.0.1 at 2013-06-14 11:33:26 -0500
+
+
+Started GET "/assets/scaffold.css?body=1" for 127.0.0.1 at 2013-06-14 11:33:26 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-06-14 11:33:26 -0500
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-06-14 11:33:26 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-06-14 11:33:26 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-14 11:33:26 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-14 11:33:26 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-06-14 11:33:26 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-06-14 11:33:26 -0500
+
+
+Started GET "/assets/broadcasts.js?body=1" for 127.0.0.1 at 2013-06-14 11:33:26 -0500
+
+
+Started GET "/assets/classtimes.js?body=1" for 127.0.0.1 at 2013-06-14 11:33:26 -0500
+
+
+Started GET "/assets/fullcalendar.min.js?body=1" for 127.0.0.1 at 2013-06-14 11:33:26 -0500
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-06-14 11:33:26 -0500
+
+
+Started GET "/assets/jquery-1.9.1.min.js?body=1" for 127.0.0.1 at 2013-06-14 11:33:26 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-06-14 11:33:26 -0500
+
+
+Started GET "/assets/jquery-ui-1.10.2.custom.min.js?body=1" for 127.0.0.1 at 2013-06-14 11:33:26 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-14 11:33:26 -0500
+
+
+Started GET "/student?name=%E6%97%B6%E9%98%B3&password=[FILTERED]" for 127.0.0.1 at 2013-06-14 11:34:09 -0500
+Processing by PagesController#student as HTML
+  Parameters: {"name"=>"时阳", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."name" = '时阳' LIMIT 1
+  [1m[36mBroadcast Load (0.2ms)[0m  [1mSELECT "broadcasts".* FROM "broadcasts" ORDER BY created_at DESC LIMIT 2[0m
+  [1m[35mTopic Load (0.2ms)[0m  SELECT "topics".* FROM "topics" ORDER BY created_at DESC LIMIT 20
+  [1m[36mClasstime Load (0.1ms)[0m  [1mSELECT "classtimes".* FROM "classtimes" WHERE "classtimes"."name" = '时阳' LIMIT 1[0m
+  Rendered pages/student.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 11ms (Views: 8.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-14 11:34:09 -0500
+
+
+Started GET "/assets/broadcasts.css?body=1" for 127.0.0.1 at 2013-06-14 11:34:09 -0500
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-06-14 11:34:09 -0500
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-06-14 11:34:09 -0500
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2013-06-14 11:34:09 -0500
+
+
+Started GET "/assets/classtimes.css?body=1" for 127.0.0.1 at 2013-06-14 11:34:09 -0500
+
+
+Started GET "/assets/fullcalendar.css?body=1" for 127.0.0.1 at 2013-06-14 11:34:09 -0500
+
+
+Started GET "/assets/fullcalendar.print.css?body=1" for 127.0.0.1 at 2013-06-14 11:34:09 -0500
+
+
+Started GET "/assets/scaffold.css?body=1" for 127.0.0.1 at 2013-06-14 11:34:09 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-06-14 11:34:09 -0500
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-06-14 11:34:09 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-06-14 11:34:09 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-14 11:34:09 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-14 11:34:09 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-06-14 11:34:09 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-06-14 11:34:09 -0500
+
+
+Started GET "/assets/broadcasts.js?body=1" for 127.0.0.1 at 2013-06-14 11:34:09 -0500
+
+
+Started GET "/assets/classtimes.js?body=1" for 127.0.0.1 at 2013-06-14 11:34:09 -0500
+
+
+Started GET "/assets/jquery-1.9.1.min.js?body=1" for 127.0.0.1 at 2013-06-14 11:34:09 -0500
+
+
+Started GET "/assets/fullcalendar.min.js?body=1" for 127.0.0.1 at 2013-06-14 11:34:09 -0500
+
+
+Started GET "/assets/jquery-ui-1.10.2.custom.min.js?body=1" for 127.0.0.1 at 2013-06-14 11:34:09 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-06-14 11:34:09 -0500
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-06-14 11:34:09 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-14 11:34:09 -0500
+
+
+Started GET "/student?name=%E6%97%B6%E9%98%B3&password=[FILTERED]" for 127.0.0.1 at 2013-06-14 11:34:11 -0500
+Processing by PagesController#student as HTML
+  Parameters: {"name"=>"时阳", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."name" = '时阳' LIMIT 1
+  [1m[36mBroadcast Load (0.1ms)[0m  [1mSELECT "broadcasts".* FROM "broadcasts" ORDER BY created_at DESC LIMIT 2[0m
+  [1m[35mTopic Load (0.1ms)[0m  SELECT "topics".* FROM "topics" ORDER BY created_at DESC LIMIT 20
+  [1m[36mClasstime Load (0.1ms)[0m  [1mSELECT "classtimes".* FROM "classtimes" WHERE "classtimes"."name" = '时阳' LIMIT 1[0m
+  Rendered pages/student.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 10ms (Views: 7.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2013-06-14 11:34:11 -0500
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-06-14 11:34:11 -0500
+
+
+Started GET "/assets/classtimes.css?body=1" for 127.0.0.1 at 2013-06-14 11:34:11 -0500
+
+
+Started GET "/assets/broadcasts.css?body=1" for 127.0.0.1 at 2013-06-14 11:34:11 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-14 11:34:11 -0500
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-06-14 11:34:11 -0500
+
+
+Started GET "/assets/fullcalendar.print.css?body=1" for 127.0.0.1 at 2013-06-14 11:34:11 -0500
+
+
+Started GET "/assets/fullcalendar.css?body=1" for 127.0.0.1 at 2013-06-14 11:34:11 -0500
+
+
+Started GET "/assets/scaffold.css?body=1" for 127.0.0.1 at 2013-06-14 11:34:11 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-06-14 11:34:11 -0500
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-06-14 11:34:11 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-06-14 11:34:11 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-14 11:34:11 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-14 11:34:11 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-06-14 11:34:11 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-06-14 11:34:11 -0500
+
+
+Started GET "/assets/broadcasts.js?body=1" for 127.0.0.1 at 2013-06-14 11:34:11 -0500
+
+
+Started GET "/assets/classtimes.js?body=1" for 127.0.0.1 at 2013-06-14 11:34:11 -0500
+
+
+Started GET "/assets/fullcalendar.min.js?body=1" for 127.0.0.1 at 2013-06-14 11:34:11 -0500
+
+
+Started GET "/assets/jquery-1.9.1.min.js?body=1" for 127.0.0.1 at 2013-06-14 11:34:11 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-06-14 11:34:11 -0500
+
+
+Started GET "/assets/jquery-ui-1.10.2.custom.min.js?body=1" for 127.0.0.1 at 2013-06-14 11:34:11 -0500
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-06-14 11:34:11 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-14 11:34:11 -0500

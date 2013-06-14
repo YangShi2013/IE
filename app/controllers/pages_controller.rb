@@ -9,16 +9,22 @@ class PagesController < ApplicationController
     name = params[:name]
     password = params[:password]
     if (name == "sisley" && password == "123")
-      redirect_to :action => "sisley", :name => name
+      redirect_to :action => "sisley", :name => name, :password => 123
     else
       redirect_to :action => "student", :name => name, :password => password
     end
   end
   
   def sisley
-    @u = User.all
-    latest = Broadcast.order("created_at DESC")
-    @broadcast = latest.take(1)
+    name = params[:name]
+    password = params[:password]
+    if (name == "sisley" && password == "123")
+      @u = User.all
+      latest = Broadcast.order("created_at DESC")
+      @broadcast = latest.take(1)
+    else
+      #error
+    end
   end
   def broadcast
     broadcast = params[:broadcast]
@@ -54,9 +60,9 @@ class PagesController < ApplicationController
   end
   
   #def import
-    #User.import(params[:file])
-    #redirect_to :action=> "sisley", notice: "Products imported."
-    #end
+  #User.import(params[:file])
+  #redirect_to :action=> "sisley", notice: "Products imported."
+  #end
   
   def loadUser
     User.import_data(params[:import_csv][:csv].read)
