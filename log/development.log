@@ -72603,3 +72603,69 @@ Started GET "/assets/jquery-ui-1.10.2.custom.min.js?body=1" for 127.0.0.1 at 201
 
 
 Started GET "/assets/jquery-1.9.1.min.js?body=1" for 127.0.0.1 at 2013-06-17 15:01:28 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-17 15:09:57 -0500
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (21.5ms)
+Completed 200 OK in 449ms (Views: 448.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-17 15:09:58 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-17 15:09:58 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-17 15:09:58 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-06-17 15:09:58 -0500
+
+
+Started GET "/assets/classtimes.js?body=1" for 127.0.0.1 at 2013-06-17 15:09:58 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-06-17 15:09:58 -0500
+
+
+Started GET "/assets/broadcasts.js?body=1" for 127.0.0.1 at 2013-06-17 15:09:58 -0500
+
+
+Started GET "/assets/fullcalendar.min.js?body=1" for 127.0.0.1 at 2013-06-17 15:09:58 -0500
+
+
+Started GET "/assets/jquery-1.9.1.min.js?body=1" for 127.0.0.1 at 2013-06-17 15:09:58 -0500
+
+
+Started GET "/assets/jquery-ui-1.10.2.custom.min.js?body=1" for 127.0.0.1 at 2013-06-17 15:09:58 -0500
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-06-17 15:09:58 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-06-17 15:09:58 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-17 15:09:58 -0500
+
+
+Started GET "/assets/bgimg.png" for 127.0.0.1 at 2013-06-17 15:09:58 -0500
+
+
+Started GET "/assets/loginbg.png" for 127.0.0.1 at 2013-06-17 15:09:58 -0500
+
+
+Started GET "/assets/loginpanel.png" for 127.0.0.1 at 2013-06-17 15:09:58 -0500
+
+
+Started GET "/assets/login.png" for 127.0.0.1 at 2013-06-17 15:09:58 -0500
+
+
+Started GET "/assets/user.png" for 127.0.0.1 at 2013-06-17 15:09:58 -0500
+
+
+Started GET "/assets/pass.png" for 127.0.0.1 at 2013-06-17 15:09:58 -0500
+
+
+Started GET "/assets/loginbottom.png" for 127.0.0.1 at 2013-06-17 15:09:58 -0500
