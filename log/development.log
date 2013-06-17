@@ -72048,3 +72048,558 @@ Started GET "/assets/login.png" for 127.0.0.1 at 2013-06-17 11:14:57 -0500
 
 
 Started GET "/assets/loginbottom.png" for 127.0.0.1 at 2013-06-17 11:14:57 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-17 14:52:34 -0500
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 1001ms (Views: 1000.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-17 14:52:36 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-17 14:52:36 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-17 14:52:36 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-06-17 14:52:36 -0500
+
+
+Started GET "/assets/broadcasts.js?body=1" for 127.0.0.1 at 2013-06-17 14:52:36 -0500
+
+
+Started GET "/assets/classtimes.js?body=1" for 127.0.0.1 at 2013-06-17 14:52:36 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-06-17 14:52:36 -0500
+
+
+Started GET "/assets/jquery-ui-1.10.2.custom.min.js?body=1" for 127.0.0.1 at 2013-06-17 14:52:36 -0500
+
+
+Started GET "/assets/jquery-1.9.1.min.js?body=1" for 127.0.0.1 at 2013-06-17 14:52:36 -0500
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-06-17 14:52:36 -0500
+
+
+Started GET "/assets/fullcalendar.min.js?body=1" for 127.0.0.1 at 2013-06-17 14:52:36 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-06-17 14:52:36 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-17 14:52:36 -0500
+
+
+Started GET "/assets/bgimg.png" for 127.0.0.1 at 2013-06-17 14:52:36 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-17 14:53:01 -0500
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 9ms (Views: 8.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-17 14:53:01 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-17 14:53:01 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-06-17 14:53:01 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-17 14:53:01 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-06-17 14:53:01 -0500
+
+
+Started GET "/assets/broadcasts.js?body=1" for 127.0.0.1 at 2013-06-17 14:53:01 -0500
+
+
+Started GET "/assets/classtimes.js?body=1" for 127.0.0.1 at 2013-06-17 14:53:01 -0500
+
+
+Started GET "/assets/jquery-ui-1.10.2.custom.min.js?body=1" for 127.0.0.1 at 2013-06-17 14:53:01 -0500
+
+
+Started GET "/assets/fullcalendar.min.js?body=1" for 127.0.0.1 at 2013-06-17 14:53:01 -0500
+
+
+Started GET "/assets/jquery-1.9.1.min.js?body=1" for 127.0.0.1 at 2013-06-17 14:53:01 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-06-17 14:53:01 -0500
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-06-17 14:53:01 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-17 14:53:01 -0500
+
+
+Started GET "/assets/loginpanel.png" for 127.0.0.1 at 2013-06-17 14:53:01 -0500
+
+
+Started GET "/assets/bgimg.png" for 127.0.0.1 at 2013-06-17 14:53:01 -0500
+
+
+Started GET "/assets/loginbg.png" for 127.0.0.1 at 2013-06-17 14:53:01 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-17 14:53:28 -0500
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 45ms (Views: 44.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-17 14:53:28 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-17 14:53:28 -0500
+
+
+Started GET "/assets/broadcasts.js?body=1" for 127.0.0.1 at 2013-06-17 14:53:28 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-06-17 14:53:28 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-06-17 14:53:28 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-17 14:53:28 -0500
+
+
+Started GET "/assets/classtimes.js?body=1" for 127.0.0.1 at 2013-06-17 14:53:28 -0500
+
+
+Started GET "/assets/fullcalendar.min.js?body=1" for 127.0.0.1 at 2013-06-17 14:53:28 -0500
+
+
+Started GET "/assets/jquery-1.9.1.min.js?body=1" for 127.0.0.1 at 2013-06-17 14:53:28 -0500
+
+
+Started GET "/assets/jquery-ui-1.10.2.custom.min.js?body=1" for 127.0.0.1 at 2013-06-17 14:53:28 -0500
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-06-17 14:53:28 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-17 14:53:28 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-06-17 14:53:28 -0500
+
+
+Started GET "/assets/loginpanel.png" for 127.0.0.1 at 2013-06-17 14:53:28 -0500
+
+
+Started GET "/assets/bgimg.png" for 127.0.0.1 at 2013-06-17 14:53:28 -0500
+
+
+Started GET "/assets/loginbg.png" for 127.0.0.1 at 2013-06-17 14:53:28 -0500
+
+
+Started GET "/assets/pass.png" for 127.0.0.1 at 2013-06-17 14:53:28 -0500
+
+
+Started GET "/assets/login.png" for 127.0.0.1 at 2013-06-17 14:53:28 -0500
+
+
+Started GET "/assets/user.png" for 127.0.0.1 at 2013-06-17 14:53:28 -0500
+
+
+Started GET "/assets/loginbottom.png" for 127.0.0.1 at 2013-06-17 14:53:28 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-17 14:53:40 -0500
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 8ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-17 14:53:40 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-17 14:53:40 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-06-17 14:53:40 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-06-17 14:53:40 -0500
+
+
+Started GET "/assets/broadcasts.js?body=1" for 127.0.0.1 at 2013-06-17 14:53:40 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-17 14:53:40 -0500
+
+
+Started GET "/assets/classtimes.js?body=1" for 127.0.0.1 at 2013-06-17 14:53:40 -0500
+
+
+Started GET "/assets/fullcalendar.min.js?body=1" for 127.0.0.1 at 2013-06-17 14:53:40 -0500
+
+
+Started GET "/assets/jquery-1.9.1.min.js?body=1" for 127.0.0.1 at 2013-06-17 14:53:40 -0500
+
+
+Started GET "/assets/jquery-ui-1.10.2.custom.min.js?body=1" for 127.0.0.1 at 2013-06-17 14:53:40 -0500
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-06-17 14:53:40 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-06-17 14:53:40 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-17 14:53:40 -0500
+
+
+Started GET "/assets/bgimg.png" for 127.0.0.1 at 2013-06-17 14:53:40 -0500
+
+
+Started GET "/assets/pass.png" for 127.0.0.1 at 2013-06-17 14:53:40 -0500
+
+
+Started GET "/assets/loginpanel.png" for 127.0.0.1 at 2013-06-17 14:53:40 -0500
+
+
+Started GET "/assets/login.png" for 127.0.0.1 at 2013-06-17 14:53:40 -0500
+
+
+Started GET "/assets/user.png" for 127.0.0.1 at 2013-06-17 14:53:40 -0500
+
+
+Started GET "/assets/loginbg.png" for 127.0.0.1 at 2013-06-17 14:53:40 -0500
+
+
+Started GET "/assets/loginbottom.png" for 127.0.0.1 at 2013-06-17 14:53:40 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-17 14:54:17 -0500
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 74ms (Views: 73.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-17 14:54:17 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-17 14:54:17 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-06-17 14:54:17 -0500
+
+
+Started GET "/assets/classtimes.js?body=1" for 127.0.0.1 at 2013-06-17 14:54:17 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-06-17 14:54:17 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-17 14:54:17 -0500
+
+
+Started GET "/assets/broadcasts.js?body=1" for 127.0.0.1 at 2013-06-17 14:54:17 -0500
+
+
+Started GET "/assets/fullcalendar.min.js?body=1" for 127.0.0.1 at 2013-06-17 14:54:17 -0500
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-06-17 14:54:17 -0500
+
+
+Started GET "/assets/jquery-ui-1.10.2.custom.min.js?body=1" for 127.0.0.1 at 2013-06-17 14:54:17 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-06-17 14:54:17 -0500
+
+
+Started GET "/assets/jquery-1.9.1.min.js?body=1" for 127.0.0.1 at 2013-06-17 14:54:17 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-17 14:54:17 -0500
+
+
+Started GET "/assets/loginbg.png" for 127.0.0.1 at 2013-06-17 14:54:17 -0500
+
+
+Started GET "/assets/bgimg.png" for 127.0.0.1 at 2013-06-17 14:54:17 -0500
+
+
+Started GET "/assets/login.png" for 127.0.0.1 at 2013-06-17 14:54:17 -0500
+
+
+Started GET "/assets/loginpanel.png" for 127.0.0.1 at 2013-06-17 14:54:17 -0500
+
+
+Started GET "/assets/pass.png" for 127.0.0.1 at 2013-06-17 14:54:17 -0500
+
+
+Started GET "/assets/loginbottom.png" for 127.0.0.1 at 2013-06-17 14:54:17 -0500
+
+
+Started GET "/assets/user.png" for 127.0.0.1 at 2013-06-17 14:54:17 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-17 14:54:18 -0500
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 45ms (Views: 44.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-17 14:54:19 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-17 14:54:19 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-17 14:54:19 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-06-17 14:54:19 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-06-17 14:54:19 -0500
+
+
+Started GET "/assets/broadcasts.js?body=1" for 127.0.0.1 at 2013-06-17 14:54:19 -0500
+
+
+Started GET "/assets/classtimes.js?body=1" for 127.0.0.1 at 2013-06-17 14:54:19 -0500
+
+
+Started GET "/assets/fullcalendar.min.js?body=1" for 127.0.0.1 at 2013-06-17 14:54:19 -0500
+
+
+Started GET "/assets/jquery-1.9.1.min.js?body=1" for 127.0.0.1 at 2013-06-17 14:54:19 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-06-17 14:54:19 -0500
+
+
+Started GET "/assets/jquery-ui-1.10.2.custom.min.js?body=1" for 127.0.0.1 at 2013-06-17 14:54:19 -0500
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-06-17 14:54:19 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-17 14:54:19 -0500
+
+
+Started GET "/assets/bgimg.png" for 127.0.0.1 at 2013-06-17 14:54:19 -0500
+
+
+Started GET "/assets/loginbg.png" for 127.0.0.1 at 2013-06-17 14:54:19 -0500
+
+
+Started GET "/assets/loginpanel.png" for 127.0.0.1 at 2013-06-17 14:54:19 -0500
+
+
+Started GET "/assets/login.png" for 127.0.0.1 at 2013-06-17 14:54:19 -0500
+
+
+Started GET "/assets/pass.png" for 127.0.0.1 at 2013-06-17 14:54:19 -0500
+
+
+Started GET "/assets/user.png" for 127.0.0.1 at 2013-06-17 14:54:19 -0500
+
+
+Started GET "/assets/loginbottom.png" for 127.0.0.1 at 2013-06-17 14:54:19 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-17 15:01:01 -0500
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (44.4ms)
+Completed 200 OK in 470ms (Views: 469.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-17 15:01:02 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-17 15:01:02 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-17 15:01:02 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-06-17 15:01:02 -0500
+
+
+Started GET "/assets/classtimes.js?body=1" for 127.0.0.1 at 2013-06-17 15:01:02 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-06-17 15:01:02 -0500
+
+
+Started GET "/assets/broadcasts.js?body=1" for 127.0.0.1 at 2013-06-17 15:01:02 -0500
+
+
+Started GET "/assets/fullcalendar.min.js?body=1" for 127.0.0.1 at 2013-06-17 15:01:02 -0500
+
+
+Started GET "/assets/jquery-1.9.1.min.js?body=1" for 127.0.0.1 at 2013-06-17 15:01:02 -0500
+
+
+Started GET "/assets/jquery-ui-1.10.2.custom.min.js?body=1" for 127.0.0.1 at 2013-06-17 15:01:02 -0500
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-06-17 15:01:02 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-06-17 15:01:02 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-17 15:01:02 -0500
+
+
+Started GET "/assets/bgimg.png" for 127.0.0.1 at 2013-06-17 15:01:03 -0500
+
+
+Started GET "/assets/loginpanel.png" for 127.0.0.1 at 2013-06-17 15:01:03 -0500
+
+
+Started GET "/assets/login.png" for 127.0.0.1 at 2013-06-17 15:01:03 -0500
+
+
+Started GET "/assets/loginbg.png" for 127.0.0.1 at 2013-06-17 15:01:03 -0500
+
+
+Started GET "/assets/user.png" for 127.0.0.1 at 2013-06-17 15:01:03 -0500
+
+
+Started GET "/assets/pass.png" for 127.0.0.1 at 2013-06-17 15:01:03 -0500
+
+
+Started GET "/assets/loginbottom.png" for 127.0.0.1 at 2013-06-17 15:01:03 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-17 15:01:22 -0500
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 41ms (Views: 40.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-17 15:01:22 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-17 15:01:22 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-06-17 15:01:22 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-17 15:01:22 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-06-17 15:01:22 -0500
+
+
+Started GET "/assets/broadcasts.js?body=1" for 127.0.0.1 at 2013-06-17 15:01:22 -0500
+
+
+Started GET "/assets/classtimes.js?body=1" for 127.0.0.1 at 2013-06-17 15:01:22 -0500
+
+
+Started GET "/assets/fullcalendar.min.js?body=1" for 127.0.0.1 at 2013-06-17 15:01:22 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-06-17 15:01:22 -0500
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-06-17 15:01:22 -0500
+
+
+Started GET "/assets/jquery-ui-1.10.2.custom.min.js?body=1" for 127.0.0.1 at 2013-06-17 15:01:22 -0500
+
+
+Started GET "/assets/jquery-1.9.1.min.js?body=1" for 127.0.0.1 at 2013-06-17 15:01:22 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-17 15:01:22 -0500
+
+
+Started GET "/assets/bgimg.png" for 127.0.0.1 at 2013-06-17 15:01:22 -0500
+
+
+Started GET "/assets/loginpanel.png" for 127.0.0.1 at 2013-06-17 15:01:22 -0500
+
+
+Started GET "/assets/loginbg.png" for 127.0.0.1 at 2013-06-17 15:01:22 -0500
+
+
+Started GET "/assets/login.png" for 127.0.0.1 at 2013-06-17 15:01:22 -0500
+
+
+Started GET "/assets/pass.png" for 127.0.0.1 at 2013-06-17 15:01:22 -0500
+
+
+Started GET "/assets/user.png" for 127.0.0.1 at 2013-06-17 15:01:22 -0500
+
+
+Started GET "/assets/loginbottom.png" for 127.0.0.1 at 2013-06-17 15:01:22 -0500
+
+
+Started GET "/search?name=sisley&password=[FILTERED]&x=38&y=16" for 127.0.0.1 at 2013-06-17 15:01:27 -0500
+Processing by PagesController#search as HTML
+  Parameters: {"name"=>"sisley", "password"=>"[FILTERED]", "x"=>"38", "y"=>"16"}
+Redirected to http://0.0.0.0:3000/sisley?name=sisley&password=123
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sisley?name=sisley&password=[FILTERED]" for 127.0.0.1 at 2013-06-17 15:01:27 -0500
+Processing by PagesController#sisley as HTML
+  Parameters: {"name"=>"sisley", "password"=>"[FILTERED]"}
+  [1m[36mBroadcast Load (0.1ms)[0m  [1mSELECT "broadcasts".* FROM "broadcasts" ORDER BY created_at DESC LIMIT 1[0m
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.1. Use 'data: { confirm: 'Text' }' instead. (called from _app_views_pages_sisley_html_erb__3643695854825978138_70105790424800 at /Users/shiyang/Documents/IE/app/views/pages/sisley.html.erb:51)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.1. Use 'data: { confirm: 'Text' }' instead. (called from _app_views_pages_sisley_html_erb__3643695854825978138_70105790424800 at /Users/shiyang/Documents/IE/app/views/pages/sisley.html.erb:52)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.1. Use 'data: { confirm: 'Text' }' instead. (called from _app_views_pages_sisley_html_erb__3643695854825978138_70105790424800 at /Users/shiyang/Documents/IE/app/views/pages/sisley.html.erb:53)
+  Rendered pages/sisley.html.erb within layouts/application (44.3ms)
+Completed 200 OK in 76ms (Views: 51.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-17 15:01:28 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-17 15:01:28 -0500
+
+
+Started GET "/assets/broadcasts.js?body=1" for 127.0.0.1 at 2013-06-17 15:01:28 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-17 15:01:28 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-06-17 15:01:28 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-06-17 15:01:28 -0500
+
+
+Started GET "/assets/classtimes.js?body=1" for 127.0.0.1 at 2013-06-17 15:01:28 -0500
+
+
+Started GET "/assets/fullcalendar.min.js?body=1" for 127.0.0.1 at 2013-06-17 15:01:28 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-06-17 15:01:28 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-17 15:01:28 -0500
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-06-17 15:01:28 -0500
+
+
+Started GET "/assets/jquery-ui-1.10.2.custom.min.js?body=1" for 127.0.0.1 at 2013-06-17 15:01:28 -0500
+
+
+Started GET "/assets/jquery-1.9.1.min.js?body=1" for 127.0.0.1 at 2013-06-17 15:01:28 -0500
