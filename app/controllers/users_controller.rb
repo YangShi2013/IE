@@ -5,9 +5,9 @@ class UsersController < ApplicationController
   # GET /users.json
   def index
     @users = User.all
-    #if params[:p] != "success"
-      #render 'pages/db'
-      #end
+    if params[:p] != "success"
+      render 'pages/db'
+    end
   end
   
   def exportUser
