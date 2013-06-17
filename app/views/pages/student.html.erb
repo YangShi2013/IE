@@ -1,3 +1,4 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -24,118 +25,283 @@
 		
 	});
 	</script>
+	<style type="text/css">
+		body {
+			background: #2f2422;
+			margin:0px;
+			padding:0px;
+			font-family: Futura, Segoe UI, Helvetica;
+			color: #ADADAD;
+			text-align:center;
+		}
+
+
+		.container {
+			background:url("/assets/stbg.png");
+			min-width: 1300px;
+			width: auto;
+			height:auto;
+		}
+
+		#stcontainer {
+			background:#000;
+			width: 1250px;
+			height:auto;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		#header {
+			background:url("/assets/head.png") no-repeat;
+			height:273px;
+			width: 1250px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		#pagebody {
+			width: 1250px;
+			min-height: 300px;
+			height: auto;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		#broadcast {
+			width: 1250px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		#firstbar {
+			width: 1250px;
+			min-height: 100px;
+			height: auto;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		#mainbody {}
+		#footer {
+			background: #231f20;
+			width: 1250px;
+			height: 40px;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 0px;
+		}
+
+		#who {
+			display: block;
+			width: 300px;
+			padding-top: 20px;
+			padding-left: 20px;
+			text-align: left;
+			font-size: 20px;
+			font-weight: bold;
+		}
+
+		.btn_parkBtn {
+			background: url("/assets/bt.png");
+			border:none;
+			border-radius: 7px;
+			width: 70px;
+			height: 70px;
+			color:white;
+			font-size: 15px;
+			font-weight: 900;
+			margin-top: 130px;
+		}
+
+		#checkClassTime {
+			margin-left: 1000px;
+		}
+
+		#checkUser {
+			margin-left: 30px;
+		}
+
+		#classTimeTable {
+			background: #1a1a1a;
+			margin-top: 15px;
+			border-collapse:collapse;
+		}	
+
+		#topicTable {
+			background: #1a1a1a;
+			margin-top: 15px;
+			border-collapse:collapse;
+		}		
+
+	
+
+		#userTable {
+			background: #1a1a1a;
+			margin-top: 15px;
+			border-collapse:collapse;
+		}	
+	
+		#classTimeTable  td{
+			border-collapse:collapse;
+			border: 1px solid #ADADAD;
+		}	
+
+		#topicTable td {
+
+			border: 1px solid #ADADAD;
+		}		
+
+	
+
+		#userTable td {
+			border: 1px solid #ADADAD;
+		}	
+
+		#topictr td {
+			background: url("/assets/td3.png");
+			color: #fff;
+			border: none;
+			font-weight: bold;
+		}	
+		#classTimetr td {
+			background: url("/assets/td3.png");
+			color: #fff;
+			border: none;
+			font-weight: bold;
+		}	
+		#usertr td {
+			background: url("/assets/td4.png");
+			color: #fff;
+			border: none;
+			font-weight: bold;
+		}	
+		
+		}
+	</style>
 </head>
 <body>
+	
 	<div class="container">	
-		<h3><%= @u.name%>的页面</h3>
-		
+		<div id="stcontainer">
+		<div id="header">
+			<span id="who"><%= @u.name%>的页面</span>		
+			<button class="btn_parkBtn" id="checkClassTime">查看上课情况</button>
+			<button class="btn_parkBtn" id="checkUser">查看个人信息</button>
+		</div>
+
 		<div id="broadcast">
-			<h4>消息发布</h4>
-			<table text:middle class = "table table-striped sortable" data-provides="rowlink">
-				<% @broadcast.each do |broadcast| %>
+				<h4>消息发布</h4>
+				<table text:middle class = "table table-striped sortable" data-provides="rowlink">
+					<% @broadcast.each do |broadcast| %>
+					<tr>
+						<td><center><%= broadcast.content %></center></td>
+					</tr>
+					<% end %>
+				</table>
+		</div>
+
+		<div id="pagebody">
+		<div id='calendar'></div>
+		<div id="firstbar">
+			<table  vertical-align:middle id="topicTable" class = "table table-striped sortable" data-provides="rowlink">
+				<tr id="topictr">
+					<td><b>年</b></td>
+					<td><b>月</b></td>
+					<td><b>日</b></td>
+					<td><b>开始时间</b></td>
+					<td><b>结束时间</b></td>
+					<td><b>上课人员</b></td>
+					<td><b>课程主题</b></td>
+					<td><b>课前准备工作</b></td>
+					<td><b>课后作业</b></td>
+				</tr>
+				<% @topic.each do |topic| %>
 				<tr>
-					<td><center><%= broadcast.content %></center></td>
+					<td><%= topic.year %></td>
+					<td><%= topic.month %></td>
+					<td><%= topic.day %></td>
+					<td><%= topic.startTime %></td>
+					<td><%= topic.endTime %></td>
+					<td><%= topic.people %></td>
+					<td><%= topic.theme %></td>
+					<td><%= topic.preparation %></td>
+					<td><%= topic.homework %></td>
 				</tr>
 				<% end %>
 			</table>
 		</div>
-	</br>
-	<div id='calendar'></div>
-	<div>
-		<table  vertical-align:middle id="topicTable" class = "table table-striped sortable" data-provides="rowlink">
+		
+		<div>
+			<table style="display:none" id="classTimeTable" class = "table table-striped sortable" data-provides="rowlink">
+				<tr id="classTimetr">
+					<td><b>共有课时</b></td>
+					<td><b>已上课时</b></td>
+					<td><b>剩余课时</b></td>
+					<td><b>现有VIP课时</b></td>
+					<td><b>赠送VIP课时</b></td>
+					<td><b>已上VIP课时</b></td>
+					<td><b>上次上课时间</b></td>
+					<td><b>课程有效期</b></td>
+				</tr>
 			<tr>
-				<td><b>年</b></td>
-				<td><b>月</b></td>
-				<td><b>日</b></td>
-				<td><b>开始时间</b></td>
-				<td><b>结束时间</b></td>
-				<td><b>上课人员</b></td>
-				<td><b>课程主题</b></td>
-				<td><b>课前准备工作</b></td>
-				<td><b>课后作业</b></td>
+				<td><%= @classTime.totalTime %></td>
+				<td><%= @classTime.takenTime %></td>
+				<td><%= @classTime.balance %></td>
+				<td><%= @classTime.VIPbalance %></td>
+				<td><%= @classTime.givenVIPtime %></td>
+				<td><%= @classTime.takenVIPTime %></td>
+				<td><%= @classTime.lastClass %></td>
+				<td><%= @classTime.validDate %></td>
 			</tr>
-			<% @topic.each do |topic| %>
-			<tr>
-				<td><%= topic.year %></td>
-				<td><%= topic.month %></td>
-				<td><%= topic.day %></td>
-				<td><%= topic.startTime %></td>
-				<td><%= topic.endTime %></td>
-				<td><%= topic.people %></td>
-				<td><%= topic.theme %></td>
-				<td><%= topic.preparation %></td>
-				<td><%= topic.homework %></td>
-			</tr>
-			<% end %>
 		</table>
 	</div>
-	<button class="btn parkBtn" id="checkClassTime">查看上课情况</button>
+	
 	<div>
-		<table style="display:none" id="classTimeTable" class = "table table-striped sortable" data-provides="rowlink">
-			<tr>
-				<td><b>共有课时</b></td>
-				<td><b>已上课时</b></td>
-				<td><b>剩余课时</b></td>
-				<td><b>现有VIP课时</b></td>
-				<td><b>赠送VIP课时</b></td>
-				<td><b>已上VIP课时</b></td>
-				<td><b>上次上课时间</b></td>
-				<td><b>课程有效期</b></td>
+		<table style="display:none" id="userTable" class = "table table-striped sortable" data-provides="rowlink">
+			<tr id="usertr">
+				<td><b>姓名</b></td>
+				<td><b>密码</b></td>
+				<td><b>生日</b></td>
+				<td><b>手机号</b></td>
+				<td><b>家庭电话</b></td>
+				<td><b>所在俱乐部</b></td>
+				<td><b>Email</b></td>
+				<td><b>地址</b></td>
+				<td><b>籍贯</b></td>
+				<td><b>QQ</b></td>
+				<td><b>MSN</b></td>
+				<td><b>目前所在地</b></td>
+				<td><b>现阶段状态</b></td>
 			</tr>
-			<td><%= @classTime.totalTime %></td>
-			<td><%= @classTime.takenTime %></td>
-			<td><%= @classTime.balance %></td>
-			<td><%= @classTime.VIPbalance %></td>
-			<td><%= @classTime.givenVIPtime %></td>
-			<td><%= @classTime.takenVIPTime %></td>
-			<td><%= @classTime.lastClass %></td>
-			<td><%= @classTime.validDate %></td>
-		</tr>
-	</table>
-</div>
-<button class="btn parkBtn" id="checkUser">查看个人信息</button>
-<div>
-	<table style="display:none" id="userTable" class = "table table-striped sortable" data-provides="rowlink">
-		<tr>
-			<td><b>姓名</b></td>
-			<td><b>密码</b></td>
-			<td><b>生日</b></td>
-			<td><b>手机号</b></td>
-			<td><b>家庭电话</b></td>
-			<td><b>所在俱乐部</b></td>
-			<td><b>Email</b></td>
-			<td><b>地址</b></td>
-			<td><b>籍贯</b></td>
-			<td><b>QQ</b></td>
-			<td><b>MSN</b></td>
-			<td><b>目前所在地</b></td>
-			<td><b>现阶段状态</b></td>
-		</tr>
-		<td><%= @u.name %></td>
-		<td><%= @u.password %></td>
-		<td><%= @u.birth %></td>
-		<td><%= @u.cellNum %></td>
-		<td><%= @u.homeNum %></td>
-		<td><%= @u.club %></td>
-		<td><%= @u.email %></td>
-		<td><%= @u.address %></td>
-		<td><%= @u.from %></td>
-		<td><%= @u.qq %></td>
-		<td><%= @u.MSN %></td>
-		<td><%= @u.location %></td>
-		<td><%= @u.condition %></td>
-	</tr>
-</table>
+			<tr>
+				<td><%= @u.name %></td>
+				<td><%= @u.password %></td>
+				<td><%= @u.birth %></td>
+				<td><%= @u.cellNum %></td>
+				<td><%= @u.homeNum %></td>
+				<td><%= @u.club %></td>
+				<td><%= @u.email %></td>
+				<td><%= @u.address %></td>
+				<td><%= @u.from %></td>
+				<td><%= @u.qq %></td>
+				<td><%= @u.MSN %></td>
+				<td><%= @u.location %></td>
+				<td><%= @u.condition %></td>
+			</tr>
+		</table>
+	</div>
+
+	</div>
+
 </div>
 
-<script>
-$('#checkClassTime').click(function() {
-$('#classTimeTable').toggle();
-});
-$('#checkUser').click(function() {
-$('#userTable').toggle();
-});
-</script>
+	<script>
+	$('#checkClassTime').click(function() {
+	$('#classTimeTable').toggle();
+	});
+	$('#checkUser').click(function() {
+	$('#userTable').toggle();
+	});
+	</script>
+
+	<!--<div id="footer"></div>-->
 </div>
 </body>
 </html>

@@ -39,7 +39,7 @@ class PagesController < ApplicationController
   def broadcast
     broadcast = params[:broadcast]
     Broadcast.create(:content => broadcast)
-    redirect_to :action => "sisley"
+    redirect_to :action => "sisley", :name => "sisley", :password => 123
   end
   
   def student
