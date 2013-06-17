@@ -3,97 +3,96 @@ body {
 	font-family: Futura, Segoe UI, Helvetica;
 	color: #888888;
 	text-align:center;
-	}
+}
 
 .container {
-		padding:0;
-		margin:auto;
-	}
+	padding:0;
+	margin:auto;
+}
 
- #loginstyle {
- margin-top:100px;
- width:300px;
- height:313px;
- background-image:url("/assets/loginbg.png") no-repeat;
-text-align:center;
- }
+#loginstyle {
+	margin-top:100px;
+	width:300px;
+	height:313px;
+	background-image:url("/assets/loginbg.png") no-repeat;
+	text-align:center;
+}
 
- #ieco {
- display:block;
- padding-top:10px;
- margin-top:0px;
- width:300px;
- height:56px;
- background-image:url("/assets/loginpanel.png") no-repeat;
- text-align:center;
- font-weight:bold;
- font-size:25px;
- color:white;
- }
+#ieco {
+	display:block;
+	padding-top:10px;
+	margin-top:0px;
+	width:300px;
+	height:56px;
+	background-image:url("/assets/loginpanel.png") no-repeat;
+	text-align:center;
+	font-weight:bold;
+	font-size:25px;
+	color:white;
+}
 
 .formlabel {
 	font-weight:bold;
- font-size:20px;
- color:white;
+	font-size:20px;
+	color:white;
 }
 
 #uname {
 	display:block;
 	margin-top:30px;
-	 background-image:url("/assets/user.png") no-repeat;
-	 width:262px;
+	background-image:url("/assets/user.png") no-repeat;
+	width:262px;
 	height:39px;
 }
 
 #upass {
 	display:block;
 	margin-top:30px;
-	 background-image:url("/assets/pass.png") no-repeat;
-	 width:262px;
+	background-image:url("/assets/pass.png") no-repeat;
+	width:262px;
 	height:39px;
 }
 
- #loginb {
+#loginb {
 	display:block;
 	margin-top:30px;
 	margin-left:0px;
 	width:300px;
 	padding-left:120px;
- }
+}
 
- #btnbg {
- width:98px;
- height:36px;
- border:none;
- background-image:url("/assets/login.png") no-repeat;
- font-family:'宋体';
- font-weight:bold;
- font-size:16px;
- color:white;
- }
+#btnbg {
+	width:98px;
+	height:36px;
+	border:none;
+	background-image:url("/assets/login.png") no-repeat;
+	font-family:'宋体';
+	font-weight:bold;
+	font-size:16px;
+	color:white;
+}
 
- #loginbottom {
- display:block;
- margin-top:20px;
- padding-bottom:0px;
- width:300px;
- height:53px;
- background-image:url("/assets/loginbottom.png") no-repeat;
- font-weight:bold;
- font-size:20px;
- color:white;
- }
+#loginbottom {
+	display:block;
+	margin-top:20px;
+	padding-bottom:0px;
+	width:300px;
+	height:53px;
+	background-image:url("/assets/loginbottom.png") no-repeat;
+	font-weight:bold;
+	font-size:20px;
+	color:white;
+}
 
 .space {
 	float:none;
 }
 
 .insty {
-font-weight:bold;
+	font-weight:bold;
 	margin-left:20px;
 	width:200px;
 	border:none;
 	background-color:#201f1f;
 	color:white;
 }
-</style>
