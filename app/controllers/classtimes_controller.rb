@@ -5,6 +5,9 @@ class ClasstimesController < ApplicationController
   # GET /classtimes.json
   def index
     @classtimes = Classtime.all
+    if params[:p] != "success"
+      render 'pages/db'
+    end
   end
   
   def exportClasstime

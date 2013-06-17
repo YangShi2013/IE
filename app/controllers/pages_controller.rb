@@ -23,9 +23,19 @@ class PagesController < ApplicationController
       latest = Broadcast.order("created_at DESC")
       @broadcast = latest.take(1)
     else
-      #error
+        render 'pages/db'
     end
   end
+  
+  def dbadmin
+    if params[:password] == "123"
+      render 'sisley'
+    else
+      @error = "wrong password!"
+      render 'db'
+    end
+  end
+
   def broadcast
     broadcast = params[:broadcast]
     Broadcast.create(:content => broadcast)
@@ -45,18 +55,6 @@ class PagesController < ApplicationController
     else
       #error
     end
-  end
-  
-  def editUser
-    redirect_to :action => "editUser"
-  end
-  
-  def editClasstime
-    redirect_to :action => "editClasstime"
-  end
-  
-  def editTopic
-    redirect_to :action => "editTopic"
   end
   
   #def import
@@ -87,5 +85,23 @@ class PagesController < ApplicationController
   
   def backSisley
     redirect_to :action => "sisley"
+  end
+  
+  def resetUser
+    User.delete_all
+    @message = "db deleted :("
+    render 'sisley'
+  end
+  
+  def resetClasstime
+    Classtime.delete_all
+    @message = "db deleted :("
+    render 'sisley'
+  end
+  
+  def resetTopic
+    Topic.delete_all
+    @message = "db deleted :("
+    render 'sisley'
   end
 end

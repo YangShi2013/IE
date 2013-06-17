@@ -5,6 +5,9 @@ class UsersController < ApplicationController
   # GET /users.json
   def index
     @users = User.all
+    #if params[:p] != "success"
+      #render 'pages/db'
+      #end
   end
   
   def exportUser
@@ -13,7 +16,7 @@ class UsersController < ApplicationController
       format.html
       format.xls  { send_data @products.to_csv(col_sep: "\t") }
     end
-    render "index"
+    render "index", :p => "success"
   end
   
   # GET /users/1
@@ -71,13 +74,13 @@ class UsersController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_user
-      @user = User.find(params[:id])
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_user
+    @user = User.find(params[:id])
+  end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def user_params
-      params.require(:user).permit(:name, :password, :birth, :cellNum, :homeNum, :club, :email, :address, :from, :qq, :MSN, :location, :condition)
-    end
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def user_params
+    params.require(:user).permit(:name, :password, :birth, :cellNum, :homeNum, :club, :email, :address, :from, :qq, :MSN, :location, :condition)
+  end
 end

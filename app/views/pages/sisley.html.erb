@@ -3,28 +3,32 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
-	<body>
-		<div class="container">	
-			<br/>
-			<h1>Sisley 专属页面</h1>
-			<br/>
-			<form action="broadcast" method="get">
-				<h5>发布消息</h5>
-				<input type="text" name="broadcast"></input>
-				<button class="btn parkBtn">发布</button>
-			</form>
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+</head>
+<body>
+	<div class="container">	
+		<br/>
+		<h1>Sisley 专属页面</h1>
+		<br/>
+		<form action="broadcast" method="get">
+			<h5>发布消息</h5>
+			<input type="text" name="broadcast"></input>
+			<button class="btn parkBtn">发布</button>
+		</form>
+		<%= link_to "编辑学生信息", 
+		users_path(:p => "success"), 
+		:remote=> false, :method=> :get %></br></br>
+		  
+		<%= link_to "编辑学生账户信息", 
+		classtimes_path(:p => "success"), 
+		:remote=> false, :method=> :get %></br></br>
+		  
+		<%= link_to "编辑本周课程", 
+		topics_path(:p => "success"), 
+		:remote=> false, :method=> :get %></br></br>
 		
-			<form action="editUser" method="get">
-				<button class="btn parkBtn">编辑学生信息</button>
-			</form>
-		
-			<form action="editClasstime" method="get">
-				<button class="btn parkBtn">编辑学生账户信息</button>
-			</form>
-		
-			<form action="editTopic" method="get">
-				<button class="btn parkBtn">编辑本周课程</button>
-			</form>
+		<button class="btn parkBtn" id="handleData">数据库操作</button>
+		<div id="database" style="display:none">
 			<%= form_for :import_csv, :url => {:action => :loadUser}, :html => {:multipart => true} do |f| %>
 			<%= f.file_field :csv %>
 			<%= f.submit '上传学生信息'%>
@@ -35,14 +39,27 @@
 			<%end%>
 			<%= form_for :import_csv, :url => {:action => :loadTopic}, :html => {:multipart => true} do |f| %>
 			<%= f.file_field :csv %>
-			<%= f.submit '上传课程信息'%>
+			<%= f.submit '上传本周课程信息'%>
 			<%end%>
 		
 			<p>
-				<%= link_to "下载学生信息", users_path(format: "xls") %>
-				<%= link_to "下载学生账户信息", classtimes_path(format: "xls") %>
-				<%= link_to "下载课程信息", topics_path(format: "xls") %>
+				<%= link_to "下载学生信息", users_path(format: "xls", :p => "success") %>
+				<%= link_to "下载学生账户信息", classtimes_path(format: "xls", :p => "success") %>
+				<%= link_to "下载本周课程信息", topics_path(format: "xls", :p => "success") %>
 			</p>
-		</div>
-	</body>
-	</html>
+			<p>
+				<%= link_to "删除学生信息", { :action => "resetUser", :p => "success"}, :confirm => 'Are you sure?'%>
+				<%= link_to "删除学生账户信息", { :action => "resetClasstime", :p => "success"}, :confirm => 'Are you sure?'%>
+				<%= link_to "删除本周课程信息", { :action => "resetTopic", :p => "success"}, :confirm => 'Are you sure?'%>
+			</br>
+			<%= @message%>
+		</p>
+	</div>
+	<script>
+	$('#handleData').click(function() {
+		$('#database').toggle();
+	});
+	</script>
+</div>
+</body>
+</html>

@@ -5,6 +5,9 @@ class TopicsController < ApplicationController
   # GET /topics.json
   def index
     @topics = Topic.all
+    if params[:p] != "success"
+      render 'pages/db'
+    end
   end
   
   def exportTopic

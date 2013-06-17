@@ -12,10 +12,8 @@ IE::Application.routes.draw do
   get "search" => "pages#search"
   get "student" => "pages#student"
   get "sisley" => "pages#sisley"
-  get "editUser" => "users#index"
-  get "editClasstime" => "classtimes#index"
+  
   get "broadcast"=> "pages#broadcast"
-  get "editTopic" => "topics#index"
   
   post "loadUser" => "pages#loadUser"
   post "exportUser" => "users#exportUser"
@@ -23,6 +21,12 @@ IE::Application.routes.draw do
   post "loadClassTime" => "pages#loadClassTime"
   
   get "backSisley" => "pages#backSisley"
+  
+  get "resetUser" => "pages#resetUser"
+  get "resetClasstime" => "pages#resetClasstime"
+  get "resetTopic" => "pages#resetTopic"
+  
+  get "/pages/dbadmin" => "pages#dbadmin"
   #post "import" => "pages#import"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
