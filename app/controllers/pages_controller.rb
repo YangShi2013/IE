@@ -84,7 +84,7 @@ class PagesController < ApplicationController
   end
   
   def backSisley
-    redirect_to :action => "sisley"
+    redirect_to :action => "sisley",:name => "sisley", :password => 123
   end
   
   def resetUser
