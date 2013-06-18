@@ -25,11 +25,11 @@
   </div>
   <div class="field">
     <%= f.label :startTime %><br />
-    <%= f.select :startTime, "<option>12:00</option><option>1:00</option><option>2:00</option><option>3:00</option><option>4:00</option>".html_safe, :multiple => false %>
+    <%= f.text_field :startTime%>
   </div>
   <div class="field">
     <%= f.label :endTime %><br />
-   <%= f.select :endTime, "<option>2:00</option><option>3:00</option><option>4:00</option><option>5:00</option><option>6:00</option>".html_safe, :multiple => false %>
+   <%= f.text_field :endTime%>
   </div>
   <div class="field">
     <%= f.label :people %><br />
