@@ -124,6 +124,10 @@
 		topics_path(:p => "success"), 
 		:remote=> false, :method=> :get %></br></br>
 		
+		
+		<%= link_to "编辑发布信息", 
+		broadcasts_path(:p => "success"), 
+		:remote=> false, :method=> :get %></br></br>
 		<button class="btn parkBtn" id="handleData">数据库操作</button>
 		<div id="database" style="display:none">
 			<%= form_for :import_csv, :url => {:action => :loadUser}, :html => {:multipart => true} do |f| %>
