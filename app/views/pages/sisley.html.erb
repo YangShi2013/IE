@@ -141,12 +141,16 @@
 		
 			<p>
 				<%= link_to "下载学生信息", users_path(format: "xls") %>
+			</br>
 				<%= link_to "下载学生账户信息", classtimes_path(format: "xls") %>
+			</br>
 				<%= link_to "下载本周课程信息", topics_path(format: "xls") %>
 			</p>
 			<p>
 				<%= link_to "删除学生信息", { :action => "resetUser"}, :confirm => 'Are you sure?'%>
+			</br>
 				<%= link_to "删除学生账户信息", { :action => "resetClasstime"}, :confirm => 'Are you sure?'%>
+			</br>
 				<%= link_to "删除本周课程信息", { :action => "resetTopic"}, :confirm => 'Are you sure?'%>
 			</br>
 			<%= @message%>

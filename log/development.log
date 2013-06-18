@@ -77508,3 +77508,188 @@ Started GET "/assets/thbg.png" for 127.0.0.1 at 2013-06-18 11:59:07 -0500
 
 
 Started GET "/assets/subbtn1.png" for 127.0.0.1 at 2013-06-18 11:59:07 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-18 12:06:18 -0500
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (21.5ms)
+Completed 200 OK in 842ms (Views: 841.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-18 12:06:20 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-18 12:06:20 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-18 12:06:20 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-06-18 12:06:20 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-06-18 12:06:20 -0500
+
+
+Started GET "/assets/broadcasts.js?body=1" for 127.0.0.1 at 2013-06-18 12:06:20 -0500
+
+
+Started GET "/assets/classtimes.js?body=1" for 127.0.0.1 at 2013-06-18 12:06:20 -0500
+
+
+Started GET "/assets/fullcalendar.min.js?body=1" for 127.0.0.1 at 2013-06-18 12:06:20 -0500
+
+
+Started GET "/assets/jquery-1.9.1.min.js?body=1" for 127.0.0.1 at 2013-06-18 12:06:20 -0500
+
+
+Started GET "/assets/jquery-ui-1.10.2.custom.min.js?body=1" for 127.0.0.1 at 2013-06-18 12:06:20 -0500
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-06-18 12:06:20 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-06-18 12:06:20 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-18 12:06:20 -0500
+
+
+Started GET "/assets/bgimg.png" for 127.0.0.1 at 2013-06-18 12:06:20 -0500
+
+
+Started GET "/assets/loginbottom.png" for 127.0.0.1 at 2013-06-18 12:06:20 -0500
+
+
+Started GET "/assets/loginbg.png" for 127.0.0.1 at 2013-06-18 12:06:20 -0500
+
+
+Started GET "/search?name=sisley&password=[FILTERED]" for 127.0.0.1 at 2013-06-18 12:06:25 -0500
+Processing by PagesController#search as HTML
+  Parameters: {"name"=>"sisley", "password"=>"[FILTERED]"}
+Redirected to http://0.0.0.0:3000/sisley?name=sisley&password=123
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sisley?name=sisley&password=[FILTERED]" for 127.0.0.1 at 2013-06-18 12:06:25 -0500
+Processing by PagesController#sisley as HTML
+  Parameters: {"name"=>"sisley", "password"=>"[FILTERED]"}
+  [1m[36mBroadcast Load (20.8ms)[0m  [1mSELECT "broadcasts".* FROM "broadcasts" ORDER BY created_at DESC LIMIT 1[0m
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.1. Use 'data: { confirm: 'Text' }' instead. (called from _app_views_pages_sisley_html_erb__2500801612620832316_70150574703960 at /Users/shiyang/Documents/IE/app/views/pages/sisley.html.erb:150)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.1. Use 'data: { confirm: 'Text' }' instead. (called from _app_views_pages_sisley_html_erb__2500801612620832316_70150574703960 at /Users/shiyang/Documents/IE/app/views/pages/sisley.html.erb:151)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.1. Use 'data: { confirm: 'Text' }' instead. (called from _app_views_pages_sisley_html_erb__2500801612620832316_70150574703960 at /Users/shiyang/Documents/IE/app/views/pages/sisley.html.erb:152)
+  Rendered pages/sisley.html.erb within layouts/application (51.9ms)
+Completed 200 OK in 108ms (Views: 57.8ms | ActiveRecord: 21.2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-18 12:06:25 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-18 12:06:25 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-06-18 12:06:25 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-06-18 12:06:25 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-18 12:06:25 -0500
+
+
+Started GET "/assets/broadcasts.js?body=1" for 127.0.0.1 at 2013-06-18 12:06:25 -0500
+
+
+Started GET "/assets/classtimes.js?body=1" for 127.0.0.1 at 2013-06-18 12:06:25 -0500
+
+
+Started GET "/assets/fullcalendar.min.js?body=1" for 127.0.0.1 at 2013-06-18 12:06:25 -0500
+
+
+Started GET "/assets/jquery-ui-1.10.2.custom.min.js?body=1" for 127.0.0.1 at 2013-06-18 12:06:25 -0500
+
+
+Started GET "/assets/jquery-1.9.1.min.js?body=1" for 127.0.0.1 at 2013-06-18 12:06:25 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-06-18 12:06:25 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-18 12:06:25 -0500
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-06-18 12:06:25 -0500
+
+
+Started GET "/assets/thbg.png" for 127.0.0.1 at 2013-06-18 12:06:25 -0500
+
+
+Started GET "/assets/crudbg.png" for 127.0.0.1 at 2013-06-18 12:06:25 -0500
+
+
+Started GET "/assets/thlogo.png" for 127.0.0.1 at 2013-06-18 12:06:25 -0500
+
+
+Started GET "/assets/subbtn1.png" for 127.0.0.1 at 2013-06-18 12:06:25 -0500
+
+
+Started GET "/sisley?name=sisley&password=[FILTERED]" for 127.0.0.1 at 2013-06-18 12:06:47 -0500
+Processing by PagesController#sisley as HTML
+  Parameters: {"name"=>"sisley", "password"=>"[FILTERED]"}
+  [1m[35mBroadcast Load (0.7ms)[0m  SELECT "broadcasts".* FROM "broadcasts" ORDER BY created_at DESC LIMIT 1
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.1. Use 'data: { confirm: 'Text' }' instead. (called from _app_views_pages_sisley_html_erb__2500801612620832316_70150520506640 at /Users/shiyang/Documents/IE/app/views/pages/sisley.html.erb:150)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.1. Use 'data: { confirm: 'Text' }' instead. (called from _app_views_pages_sisley_html_erb__2500801612620832316_70150520506640 at /Users/shiyang/Documents/IE/app/views/pages/sisley.html.erb:152)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.1. Use 'data: { confirm: 'Text' }' instead. (called from _app_views_pages_sisley_html_erb__2500801612620832316_70150520506640 at /Users/shiyang/Documents/IE/app/views/pages/sisley.html.erb:154)
+  Rendered pages/sisley.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 15ms (Views: 12.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-18 12:06:47 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-06-18 12:06:47 -0500
+
+
+Started GET "/assets/broadcasts.js?body=1" for 127.0.0.1 at 2013-06-18 12:06:47 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-18 12:06:47 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-18 12:06:47 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-06-18 12:06:47 -0500
+
+
+Started GET "/assets/classtimes.js?body=1" for 127.0.0.1 at 2013-06-18 12:06:47 -0500
+
+
+Started GET "/assets/fullcalendar.min.js?body=1" for 127.0.0.1 at 2013-06-18 12:06:47 -0500
+
+
+Started GET "/assets/jquery-1.9.1.min.js?body=1" for 127.0.0.1 at 2013-06-18 12:06:47 -0500
+
+
+Started GET "/assets/jquery-ui-1.10.2.custom.min.js?body=1" for 127.0.0.1 at 2013-06-18 12:06:47 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-18 12:06:47 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-06-18 12:06:47 -0500
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-06-18 12:06:47 -0500
+
+
+Started GET "/assets/thbg.png" for 127.0.0.1 at 2013-06-18 12:06:47 -0500
+
+
+Started GET "/assets/subbtn1.png" for 127.0.0.1 at 2013-06-18 12:06:47 -0500
+
+
+Started GET "/assets/crudbg.png" for 127.0.0.1 at 2013-06-18 12:06:47 -0500
+
+
+Started GET "/assets/thlogo.png" for 127.0.0.1 at 2013-06-18 12:06:47 -0500
