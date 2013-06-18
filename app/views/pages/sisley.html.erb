@@ -4,17 +4,114 @@
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
 	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<style type="text/css">
+		body {
+			background: #e6e6e7;
+			margin:0px;
+			padding:0px;
+			font-family: Futura, Segoe UI, Helvetica;
+			color: #ADADAD;
+			text-align:center;
+		}
+		.container {
+			background:url("/assets/thbg.png");
+			width:100%;
+			height:800px;
+		}
+		#header {}
+		#pagebody {}
+		#sidebar {}
+		#mainbody {}
+		#footer {}
+		#thwlcome {
+			display: block;
+			width: 300px;
+			padding-top: 20px;
+			padding-left: 50px;
+			text-align: left;
+			font-size: 40px;
+			font-weight: bold;
+		}
+		#news {
+			background: #fff;
+			width: 762px;
+			height: 92px;
+			margin-left: 70px;
+			text-align: left;
+			float: left;
+			clear:right;
+
+		}
+		#newstitle {
+			margin-left: 10px;
+			margin-top: 10px;
+			text-align: left;
+			font-size: 18px;
+			font-weight: bold;
+		}
+		#inarea {
+			margin-top: 5px;
+			margin-left: 10px;
+			width: 740px;
+			height: 50px;
+		}
+		#subbtn {
+			background: url("/assets/subbtn1.png");
+			width: 72px;
+			height: 26px;
+			border:none;
+			border-radius: 2px;
+			margin-top: 3px;
+			margin-right: 10px;
+			float: right;
+			color:white;
+			font-size: 15px;
+			font-weight: 900px;
+		}
+		#leftbar {
+			background: url("/assets/thlogo.png");
+			width: 762px;
+			height: 396px;
+			margin-left: 70px;
+			margin-top: 10px;
+			float: left;
+		}
+		#rightbar {
+			background: url("/assets/crudbg.png");
+			width: 400px;
+			min-height: 499px;
+			height: auto;
+			margin-left: 860px;
+			color:#8c8c8c;
+
+		}
+
+		#crud {
+			margin-left: 20px;
+			margin-right: 20px;
+		}
+	</style>
 </head>
 <body>
 	<div class="container">	
 		<br/>
-		<h1>Sisley 专属页面</h1>
+		<span id="thwlcome">Sisley 专属页面</span>
 		<br/>
-		<form action="broadcast" method="get">
-			<h5>发布消息</h5>
-			<input type="text" name="broadcast"></input>
-			<button class="btn parkBtn">发布</button>
+		
+
+		<div id="news">
+			<form action="broadcast" method="get">
+			<span id="newstitle">发布消息</span>
+			<button class="btn parkBtn" id="subbtn">发布</button>
+			
+			<input type="text" name="broadcast" id="inarea"></input>		
 		</form>
+		</div>
+		<div id="leftbar"></div>
+
+				<div id="rightbar">
+					<div id="crud">
+						<br /><br /><br />
 		<%= link_to "编辑学生信息", 
 		users_path(:p => "success"), 
 		:remote=> false, :method=> :get %></br></br>
@@ -25,10 +122,6 @@
 		  
 		<%= link_to "编辑本周课程", 
 		topics_path(:p => "success"), 
-		:remote=> false, :method=> :get %></br></br>
-		
-		<%= link_to "编辑发布信息", 
-		broadcasts_path(:p => "success"), 
 		:remote=> false, :method=> :get %></br></br>
 		
 		<button class="btn parkBtn" id="handleData">数据库操作</button>
@@ -47,18 +140,22 @@
 			<%end%>
 		
 			<p>
-				<%= link_to "下载学生信息", users_path(format: "xls", :p => "success") %>
-				<%= link_to "下载学生账户信息", classtimes_path(format: "xls", :p => "success") %>
-				<%= link_to "下载本周课程信息", topics_path(format: "xls", :p => "success") %>
+				<%= link_to "下载学生信息", users_path(format: "xls") %>
+				<%= link_to "下载学生账户信息", classtimes_path(format: "xls") %>
+				<%= link_to "下载本周课程信息", topics_path(format: "xls") %>
 			</p>
 			<p>
-				<%= link_to "删除学生信息", { :action => "resetUser", :p => "success"}, :confirm => 'Are you sure?'%>
-				<%= link_to "删除学生账户信息", { :action => "resetClasstime", :p => "success"}, :confirm => 'Are you sure?'%>
-				<%= link_to "删除本周课程信息", { :action => "resetTopic", :p => "success"}, :confirm => 'Are you sure?'%>
+				<%= link_to "删除学生信息", { :action => "resetUser"}, :confirm => 'Are you sure?'%>
+				<%= link_to "删除学生账户信息", { :action => "resetClasstime"}, :confirm => 'Are you sure?'%>
+				<%= link_to "删除本周课程信息", { :action => "resetTopic"}, :confirm => 'Are you sure?'%>
 			</br>
 			<%= @message%>
-		</p>
+			</p>
+		</div>
 	</div>
+	</div>
+
+
 	<script>
 	$('#handleData').click(function() {
 		$('#database').toggle();
@@ -66,4 +163,5 @@
 	</script>
 </div>
 </body>
+
 </html>
