@@ -19,6 +19,12 @@ class ClasstimesController < ApplicationController
     render "index"
   end
   
+  def search
+    name = params[:name]
+    @classtimes = Classtime.where("name = ?", name).select('*')
+    render "index"
+  end
+  
   # GET /classtimes/1
   # GET /classtimes/1.json
   def show
