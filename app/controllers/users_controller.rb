@@ -19,6 +19,12 @@ class UsersController < ApplicationController
     render "index", :p => "success"
   end
   
+  def search
+    name = params[:name]
+    @users = User.where("name = ?", name).select('*')
+    render "index"
+  end
+  
   # GET /users/1
   # GET /users/1.json
   def show

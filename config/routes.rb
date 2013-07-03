@@ -27,6 +27,8 @@ IE::Application.routes.draw do
   get "resetTopic" => "pages#resetTopic"
   
   get "/pages/dbadmin" => "pages#dbadmin"
+  
+  get "searchUser" => "users#search"
   #post "import" => "pages#import"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
